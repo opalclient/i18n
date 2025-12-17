@@ -442,7 +442,7 @@
     "used": "Usata",
     "total": "Totale",
     "title": "Statistiche rivenditori",
-    "description": "Visualizza le statistiche di utilizzo delle chiavi per ogni prefisso rivenditore."
+    "description": "Visualizza le statistiche di utilizzo delle chiavi per ogni rivenditore."
   },
   "manage": {
     "roadmap": {
@@ -479,11 +479,11 @@
       "createItem": "Crea elemento",
       "save": "Salva",
       "saving": "Salvataggio...",
-      "confirmDelete": "Sei sicuro?"
+      "confirmDelete": "Sei sicuro di voler eliminarlo?"
     },
     "bugs": {
       "filterStatus": "Filtra per stato",
-      "confirmClose": "Chiudere questa segnalazione bug?",
+      "confirmClose": "Sei sicuro di voler chiudere questa segnalazione bug?",
       "closed": "Chiuso",
       "title": "Segnalazioni bug",
       "searchPlaceholder": "Cerca segnalazioni bug...",
@@ -500,7 +500,7 @@
         "actions": "Azioni"
       },
       "confirmInvalid": "Segnare come non valido?",
-      "confirmDelete": "Sei assolutamente sicuro? Questa operazione eliminerà la segnalazione bug in modo permanente.",
+      "confirmDelete": "Sei assolutamente sicuro? Questa operazione eliminerà la segnalazione bug permanentemente.",
       "toast": {
         "closed": "Segnalazione bug chiusa",
         "invalid": "Segnalazione bug segnata come non valida",
@@ -608,7 +608,7 @@
         "result": {
           "title": "Chiavi generate",
           "copyAll": "Copia tutte le chiavi",
-          "description": "Sono state generate {count} chiavi. Copiale ora: non le vedrai di nuovo.",
+          "description": "Sono state generate {count} chiavi. Copiale ora, perche non le vedrai di nuovo.",
           "amountOwed": "Importo dovuto:"
         }
       }
@@ -690,7 +690,7 @@
       "table": {
         "charge": "Addebito",
         "keys": "Chiavi",
-        "usdAmount": "Importo USD",
+        "usdAmount": "Importo Dollari (USD)",
         "generatedBy": "Generato da",
         "payment": "Pagamento",
         "date": "Data",
