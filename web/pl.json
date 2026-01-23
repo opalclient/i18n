@@ -10,7 +10,7 @@
     "hero": {
       "texts": [
         {
-          "before": "Dominuj giere z",
+          "before": "Dominuj gre z",
           "after": "."
         },
         {
@@ -246,17 +246,17 @@
           },
           {
             "code": "0x5e",
-            "title": "Incompatible Launcher",
+            "title": "Nie kompatybilny launcher",
             "description": "Ten błąd oznacza, że argumenty Java są nieobecne. Często zdarza się to przy użyciu niekompatybilnego launchera."
           },
           {
             "code": "4e-63 / 4f-63",
-            "title": "Connection Issue",
+            "title": "Problem z połączeniem",
             "description": "Te błędy zazwyczaj wskazują na słabe lub niestabilne połączenie internetowe, lub zakłócenia spowodowane przez VPN P2P (np. Radmin, Hamachi). Proszę wyłączyć te usługi i spróbować ponownie."
           },
           {
             "code": "G-26",
-            "title": "HWID Mismatch",
+            "title": "HWID nie prawidłowe",
             "description": "Nie jesteśmy pewni, co dokładnie to powoduje, ale zazwyczaj zresetowanie HWID to naprawia. Możesz o to poprosić w zgłoszeniu wsparcia, jeśli to konieczne."
           }
         ]
@@ -415,7 +415,7 @@
           "step2": "Utwórz nową aplikację (dowolna nazwa/opis)",
           "step3": "Dodaj ten URI przekierowania do ustawień swojej aplikacji:",
           "copied": "Skopiowano!",
-          "clientId": "Client ID",
+          "clientId": "ID Klienta",
           "clientIdPlaceholder": "Twój Spotify Client ID",
           "clientSecret": "Client Secret",
           "clientSecretPlaceholder": "Twój Spotify Client Secret",
@@ -803,7 +803,7 @@
     }
   },
   "footer": {
-    "copyright": "Opal × Terminus. All rights reserved.",
+    "copyright": "Opal × Terminus. Wszelkie prawa zastrzeżone",
     "terms": "Regulamin",
     "privacy": "Polityka prywatności"
   },
