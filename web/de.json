@@ -14,7 +14,7 @@
           "after": "."
         },
         {
-          "before": "So good, competitors pretend they're",
+          "before": "So gut, Konkurrenten tuen so als ob sie uns wären",
           "after": "."
         },
         {
@@ -31,7 +31,7 @@
         }
       ],
       "brand": "Opal Client",
-      "description": "Eine premium Minecraft utility mod gebaut für die best mögliche Erfahrung. Opal unterstützt Fabric für Minecraft 1.21.10, bietet eine reibungslose und ein unterhaltsames Erlebnis sowohl auf 1.8 Servern als auch auf den neuesten Versionen.",
+      "description": "Ein Premium Minecraft Utility Client für die bestmögliche Spielerfahrung. Opal unterstützt Fabric für Minecraft 1.21.10, bietet ein reibungsloses und unterhaltsames Erlebnis sowohl auf 1.8 Servern als auch auf den neuesten Versionen.",
       "purchase": "Erwerben",
       "learnMore": "Erfahre mehr"
     },
@@ -41,23 +41,23 @@
       "items": {
         "abundant": {
           "title": "Funktionsreich",
-          "description": "Opal hat eine große Nummer an modules mit einer Vielzahl von Veränderungsmöglichkeiten."
+          "description": "Opal bietet eine große Auswahl an Modulen mit einer Vielzahl von Veränderungsmöglichkeiten."
         },
         "userFriendly": {
-          "title": "Nutzer freundlich",
-          "description": "Opal ist gemacht zum simple und einfach zu nutzen zu sein. Lade es einfach herunter und du kannst es nutzen!"
+          "title": "Benutzerfreundlich",
+          "description": "Opal ist gemacht um simple und einfach zu nutzen zu sein. Lade es einfach herunter und du kannst es benutzen!"
         },
         "updates": {
           "title": "Konsistente updates",
-          "description": "Wir liefern regelmäßige Updates, damit Sie mit neuen Funktionen auf dem Laufenden bleiben."
+          "description": "Wir liefern regelmäßige Updates, damit du mit neuen Funktionen auf dem Laufenden bleiben."
         },
         "compatibility": {
           "title": "Universelle Kompatibilität",
-          "description": "Opal has been tested for compatibility on Windows, macOS, and Linux."
+          "description": "Opal wurde für Kompatibilität auf Windows, Linux und MacOS getestet."
         },
         "trusted": {
           "title": "Tausende vertrauen uns",
-          "description": "Opal wird von führenden Entwicklern entwickelt, die seit Jahren an clients arbeiten."
+          "description": "Opal wird von führenden Entwicklern entwickelt, die seit Jahren an Clients arbeiten."
         },
         "quality": {
           "title": "Premium qualität",
@@ -70,14 +70,14 @@
       "subtitle": "Schaut euch einige Videos an, die von unserer Community erstellt wurden!"
     },
     "cta": {
-      "title": "Verbessern Sie Ihr Minecraft Erlebnis. Deine Reise beginnt hier.",
+      "title": "Verbesser dein Minecraft Erlebnis. Deine Reise beginnt hier.",
       "button": "Jetzt kaufen"
     }
   },
   "purchase": {
     "header": {
       "title": "Wähle deine Edition",
-      "subtitle": "Hol dir Opal eigenständig, oder schalte das volle Erlebnis mit Terminus frei und bekommst Opal kostenlos."
+      "subtitle": "Hol dir Opal eigenständig, oder schalte das volle Erlebnis mit Terminus frei und bekomme Opal kostenlos."
     },
     "chinaBanner": {
       "text": "Bist du in China? Kaufen Sie bei unseren offiziellen Resellern für besseren Support und bessere Zahlungsmöglichkeiten.",
@@ -92,10 +92,10 @@
       "features": [
         "Opal Client (lebenslänglich)",
         "Alle zukünftigen updates",
-        "Discord support zugriff"
+        "Discord support"
       ],
       "button": "Kauf Opal",
-      "paymentMethods": "Card, Apple Pay, Google Pay, Klarna, CashApp, WeChat Pay"
+      "paymentMethods": "Karte, Apple Pay, Google Pay, Klarna, CashApp, WeChat Pay"
     },
     "terminus": {
       "badge": "Bester Wert",
@@ -106,32 +106,32 @@
       "featuresTitle": "Was ist enthalten",
       "features": [
         "Terminus: Minigame Edition (lebenslänglich)",
-        "Opal Client included FREE (lebenslänglich)",
+        "Opal Client GRATIS (lebenslänglich)",
         "Alle zukünftigen updates",
-        "Discord support zugriff",
+        "Discord support",
         "Prioritäts support"
       ],
       "button": "Kaufe das Terminus Bundle",
       "paymentMethods": "Card, Apple Pay, Google Pay, Klarna, CashApp, WeChat Pay"
     },
     "crypto": {
-      "title": "Zahle mit Crypto?",
-      "description": "Öffne ein ticket im Discord USDT, BTC, ETH, LTC, oder XMR Zahlungsmöglickeiten."
+      "title": "Willst du mit Crypto bezahlen?",
+      "description": "Öffne ein ticket im Discord für USDT, BTC, ETH, LTC, oder XMR Zahlungsmöglickeiten."
     },
     "resellers": {
       "title": "Offizielle Reseller",
-      "description": "Kaufe Opal von unseren vertrauenswürdigen partnern für lokale Zahlungsmöglickeiten und support.",
+      "description": "Kaufe Opal von unseren vertrauenswürdigen Partnern für lokale Zahlungsmöglickeiten und Support.",
       "visit": "Besuche unseren Store",
       "localized": {
         "title": "Globale Zahlungsmöglickeiten",
-        "description": "Suchen Sie nach regionalen Preisen oder bestimmten Zahlungsmethoden, die oben nicht aufgeführt sind? Unsere offiziellen Reseller können ihnen helfen."
+        "description": "Suchst du nach regionalen Preisen oder bestimmten Zahlungsmethoden, die oben nicht aufgeführt sind? Unsere offiziellen Reseller können ihnen helfen."
       }
     },
     "upgrade": {
       "title": "Bereits Opal User?",
-      "description": "Upgrade zu Terminus für nur 25.99 USD. Öfnne ein  ticket zum beanspruchen."
+      "description": "Upgrade zu Terminus für nur 25.99 USD. Öfnne ein Ticket zum beanspruchen."
     },
-    "terms": "Durch den Kauf stimmen Sie unseren Nutzungsbedingungen zu. Alle Verkäufe sind endgültig. Lebenszeit bedeutet für die Lebensdauer des Produkts."
+    "terms": "Durch den Kauf stimmst du unseren Nutzungsbedingungen zu. Alle Verkäufe sind endgültig. Lebenszeit bedeutet für die Lebensdauer des Produkts."
   },
   "dashboard": {
     "title": "Hauptmenü",
@@ -167,7 +167,7 @@
       "title": "Downloads",
       "opalClient": "Opal Client",
       "downloadOpal": "Opal herunterladen",
-      "selectRelease": "Wählen Sie eine Veröffentlichung aus",
+      "selectRelease": "Wähle eine Veröffentlichung aus",
       "download": "Download",
       "updated": "Updated",
       "ownedSince": "Seitdem im Besitz",
@@ -198,18 +198,18 @@
     },
     "setup": {
       "title": "Client Einrichtung",
-      "description": "Folgen Sie diesen Anweisungen, um Opal auf Ihrem Gerät zum Laufen zu bringen.",
+      "description": "Folgen Sie diesen Anweisungen, um Opal auf deinem Gerät zum Laufen zu bringen.",
       "instructions": {
         "title": "Setup Anleitung",
         "description": "Step-by-step guide zur installation.",
         "step1": {
           "title": "Launcher Setup",
           "text": "Lade {prismLink} herunter, richte ein neues {fabricLink} Profil für 1.21.10 und installiere die Fabric API Mod.",
-          "note": "Prism wird empfohlen, bis unser Custom Launcher erscheint."
+          "note": "Prism wird empfohlen, bis unser eigener Launcher erscheint."
         },
         "step2": {
           "title": "Lade Opal herunter",
-          "text": "Lade Opal von {dashLink} herunter und plaziere es in deinem mod Ordner mit deiner Fabric API."
+          "text": "Lade Opal von {dashLink} herunter und plaziere es in deinem mod Ordner mit der Fabric API."
         },
         "step3": {
           "title": "JVM Arguments",
@@ -231,7 +231,7 @@
             "Korrekte JVM-Argumente angewandt?",
             "Systemzeit synchronisiert?",
             "VPN deaktiviert oder Standort geändert?",
-            "Verbindung aus der blockierten Region (HK/CN)?"
+            "Verbindung aus blockierten Region (HK/CN)?"
           ]
         }
       },
@@ -247,17 +247,17 @@
           {
             "code": "0x5e",
             "title": "Inkompatibler Launcher",
-            "description": "Dieser Fehler bedeutet, dass die Java-Argumente fehlen. Das passiert häufig bei Verwendung eines inkompatiblen Launchers."
+            "description": "Dieser Fehler bedeutet, dass die Java-Argumente fehlen. Dies passiert häufig bei Verwendung eines inkompatiblen Launchers."
           },
           {
             "code": "4e-63 / 4f-63",
             "title": "Verbindungsproblem",
-            "description": "Diese Fehler deuten typischerweise auf eine schwache oder instabile Internetverbindung oder auf Störungen durch ein P2P-VPN (z. B. Radmin, Hamachi) hin. Bitte deaktivieren Sie diese Dienste und versuchen Sie es erneut."
+            "description": "Diese Fehler deuten typischerweise auf eine schwache oder instabile Internetverbindung oder auf Störungen durch ein P2P-VPN (z. B. Radmin, Hamachi) hin. Bitte deaktiviere diese Dienste und versuchen Sie es erneut."
           },
           {
             "code": "G-26",
             "title": "HWID Mismatch",
-            "description": "Wir wissen nicht genau, was das verursacht, aber normalerweise behebt ein Reset Ihres HWID das Problem. Du kannst das bei Bedarf in einem Support-Ticket anfordern."
+            "description": "Wir wissen nicht genau, was das verursacht, aber normalerweise behebt ein Reset Ihrer HWID das Problem. Du kannst das bei Bedarf in einem Support-Ticket anfordern."
           }
         ]
       },
@@ -276,12 +276,12 @@
           "accountSwitcherTooltip": "Tritt dem Discord bei, nachdem du dein Konto verknüpft hast, um unsere eigene Version zu erhalten"
         },
         "incompatible": {
-          "title": "Inkompatible",
+          "title": "Inkompatibel",
           "badge": "Nicht verwenden"
         },
         "unsupportedLaunchers": {
           "title": "Unsupported Launchers",
-          "badge": "Not Supported",
+          "badge": "Nicht unterstützt",
           "description": "Die folgenden Launcher werden nicht unterstützt. Bitte nutze unseren offiziellen Launcher oder eine kompatible Alternative."
         }
       },
@@ -306,7 +306,7 @@
     },
     "activate": {
       "title": "Lizenz aktivieren",
-      "description": "Hast du einen Aktivierungsschlüssel? Gib es unten ein, um es einzulösen. Wenn Sie Ihren Client-Zugriff migrieren möchten, klicken Sie stattdessen auf {migrate}.",
+      "description": "Hast du einen Aktivierungsschlüssel? Gib ihn unten ein, um ihn einzulösen. Wenn du deinen Client-Zugriff migrieren möchten, klicke stattdessen auf {migrate}.",
       "migrateBold": "Migrate",
       "tabs": {
         "redeem": "Einlösen",
@@ -330,8 +330,8 @@
       },
       "success": {
         "title": "Kongratulation!",
-        "description": "Dir wurde Zugang zu Opal gewährt. <br />Willkommen aboard!",
-        "dashboard": "Geh zum Hauptmenü"
+        "description": "Dir wurde der Zugang zu Opal gewährt. <br />Willkommen aboard!",
+        "dashboard": "Gehe zum Hauptmenü"
       },
       "errors": {
         "invalidKey": "Code existiert nicht oder ist bereits eingelöst.",
@@ -357,17 +357,17 @@
       "copiedToast": "Command kopiert in dein clipboard!",
       "publish": "Veröffentlichen",
       "publishTitle": "Mache deine config öffentlich!",
-      "publishDescription": "Wählen Sie eine bestehende öffentliche Config aus, um sie zu aktualisieren, oder veröffentlichen Sie Ihre Config als neue. Wenn du eine Config veröffentlichst, können andere Nutzer sie einsehen.",
+      "publishDescription": "Wähle eine bestehende öffentliche Config aus, um sie zu aktualisieren, oder veröffentliche Ihre Config als neue. Wenn du eine Config veröffentlichst, können andere Nutzer sie einsehen.",
       "chooseConfig": "Wähle eine config aus zum veröffentlichen...",
       "publishNew": "Veröffentliche es als eine neue config",
       "clone": "Klone zu deinen privaten configs",
       "cloneTitle": "Bist du dir ganz sicher?",
-      "cloneDescription": "You are about to clone this config to your private configs.",
+      "cloneDescription": "Du wirst diese Config in deine privaten Configs kopieren.",
       "cancel": "Abbrechen",
       "continue": "Weiter",
       "delete": "Löschen",
       "deleteTitle": "Bist du dir ganz sicher?",
-      "deleteDescription": "{name} ({id}) wird mit allen verknüpften Daten gelöscht. Diese aktion kannst du nicht rückgängig machen.",
+      "deleteDescription": "{name} ({id}) wird mit allen verknüpften Daten gelöscht. Diese aktion kann nicht rückgängig gemacht werden.",
       "changesSaved": "Änderungen gespeichert!"
     }
   },
@@ -398,7 +398,7 @@
       "title": "Verknüpfungen",
       "card": {
         "title": "Verknüpfungen",
-        "description": "Verknüpfen Sie Ihr Konto mit Drittanbieterdiensten, um auf zusätzliche Funktionen zuzugreifen.",
+        "description": "Verknüpfe dein Konto mit Drittanbieterdiensten, um auf zusätzliche Funktionen zuzugreifen.",
         "connected": "Verbunden",
         "ago": "her",
         "requiresSetup": "Benötigt Einrichtung",
@@ -409,7 +409,7 @@
         "setup": "Einrichten",
         "spotify": {
           "title": "Richte die Spotify Integration ein",
-          "description": "Erstellen Sie Ihre eigene Spotify-App, um die Integration zu ermöglichen. Dies ist aufgrund der API-Grenzen von Spotify erforderlich.",
+          "description": "Erstelle deine eigene Spotify-App, um die Integration zu ermöglichen. Dies ist aufgrund der API-Grenzen von Spotify erforderlich.",
           "instructions": "Anleitung:",
           "step1": "Gehe zu {link}",
           "step2": "Erstelle eine neue App (any name/description)",
@@ -428,16 +428,16 @@
       "title": "Sicherheit",
       "password": {
         "title": "Ändere dein Passwort",
-        "description": "Zu Ihrer Sicherheit empfehlen wir Ihnen dringend, ein starkes Passwort zu wählen, das Sie sonst nirgendwo verwenden.",
+        "description": "Zu deiner Sicherheit empfehlen wir Ihnen dringend, ein starkes Passwort zu wählen, das du sonst nirgendwo verwendest.",
         "current": "Aktuelles passwort",
         "new": "New password",
-        "requirements": "Ihr neues Passwort muss zwischen 6 und 72 Zeichen lang sein.",
+        "requirements": "Dein neues Passwort muss zwischen 6 und 72 Zeichen lang sein.",
         "save": "Änderungen speichern",
         "toast": "Dein Passwort wurde geändert!"
       },
       "twoFactor": {
         "title": "Zwei-Faktor-Authentifizierung",
-        "description": "Sichern Sie Ihr Konto mit TOTP-Zwei-Faktor-Authentifizierung.",
+        "description": "Sichere dein Konto mit TOTP-Zwei-Faktor-Authentifizierung.",
         "button": "Aktiviere 2FA",
         "footer": "Wir empfehlen, einen vertrauenswürdigen Authenticator für 2FA zu verwenden, wie 1Password, Google Authenticator oder Authy.",
         "enabled": "Aktiviert",
@@ -453,15 +453,15 @@
         },
         "backup": {
           "title": "Speichere deine Backup Codes",
-          "description": "Diese Codes können verwendet werden, um auf Ihr Konto zuzugreifen, falls Sie Ihren Authentifikator verlieren. Jeder Code kann nur einmal verwendet werden.",
-          "warning": "Bewahren Sie diese Codes an einem sicheren Ort auf. Sie werden nicht mehr gezeigt.",
+          "description": "Diese Codes können verwendet werden, um auf dein Konto zuzugreifen, falls du deinen Authentifikator verlieren. Jeder Code kann nur einmal verwendet werden.",
+          "warning": "Bewahre diese Codes an einem sicheren Ort auf. Sie werden dir nicht mehr gezeigt.",
           "copy": "Kopiere alle Codes",
           "copied": "Kopiert!",
           "confirm": "Ich habe meine Codes gespeichert"
         },
         "disableDialog": {
           "title": "Deaktiviere Zwei-Faktor-Authentifizierung",
-          "description": "Gib dein Passwort zur Bestätigung ein. Das macht Ihr Konto weniger sicher.",
+          "description": "Gib dein Passwort zur Bestätigung ein. Das macht dein Konto weniger sicher.",
           "password": "Passwort",
           "cancel": "Abbrechen",
           "confirm": "Deaktiviere 2FA",
@@ -472,7 +472,7 @@
           "enabled": "2FA erfolgreich aktiviert",
           "invalidCode": "Ungültiger Verifizierungscode",
           "disabled": "2FA wurde deaktiviert",
-          "invalidPassword": "Invalides Passwort",
+          "invalidPassword": "Ungültiges Passwort",
           "copied": "Backup codes kopiert",
           "secretCopied": "Secret kopiert"
         }
@@ -481,18 +481,18 @@
   },
   "auth": {
     "login": {
-      "title": "Melden Sie sich in Ihrem Konto an",
-      "description": "Bitte geben Sie Ihre Zugangsdaten ein, um fortzufahren.",
+      "title": "Melde dich in deinem Konto an",
+      "description": "Bitte gebe deine Zugangsdaten ein, um fortzufahren.",
       "email": "Email addresse",
       "password": "Passwort",
       "forgotPassword": "Passwort vergessen?",
       "signIn": "Anmelden",
-      "noAccount": "Haben Sie kein Konto?",
+      "noAccount": "Habst du kein Konto?",
       "signUp": "Konto erstellen",
       "twoFactor": {
         "title": "2FA Code",
         "back": "Zurück",
-        "hint": "Geben Sie den sechsstelligen Code aus Ihrer Authenticator-App oder einen Backup-Code ein."
+        "hint": "Gebe den sechsstelligen Code aus deiner Authenticator-App oder einen Backup-Code ein."
       }
     },
     "authorize": {
@@ -503,7 +503,7 @@
     },
     "register": {
       "title": "Erstelle ein Account",
-      "description": "Bitte geben Sie Ihre Daten ein, um ein Account zu erstellen.",
+      "description": "Bitte gebe deine Daten ein, um ein Account zu erstellen.",
       "username": "Nutzername",
       "email": "Email",
       "password": "Passwort",
@@ -518,7 +518,7 @@
   },
   "reseller": {
     "title": "Reseller Statistiken",
-    "description": "Sehen Sie sich Schlüsselnutzungsstatistiken für jedes Reseller-Präfix an.",
+    "description": "Sehe dir Schlüsselnutzungsstatistiken für jeden Reseller-Präfix an.",
     "total": "Total",
     "used": "Benutzt",
     "available": "Verfügbar"
@@ -569,15 +569,15 @@
       "manageMedia": "Verwalte Media",
       "viewUsers": "Sieh Users",
       "resellers": "Resellers",
-      "noResellersYet": "Keine Reseller in diesem Netzwerk jetzt."
+      "noResellersYet": "Aktuell keine Reseller in dem Netzwerk."
     },
     "users": {
       "title": "Nutzer",
       "count": "{count} Nutzer in deinem Netzwerk",
-      "countPlural": "{count} Nutzers in deinem Netzwerk",
+      "countPlural": "{count} Nutzer in deinem Netzwerk",
       "noUsersYet": "Keine Nutzer wurden in deinem Netzwerk gefunden.",
       "noResellersFirst": "Keine Reseller in diesem Netzwerk bisher. Füge erst Reseller hinzu um Nutzer zu sehen.",
-      "searchPlaceholder": "Suche beim Namen oder Email...",
+      "searchPlaceholder": "Suche anhand des Namen oder der Email...",
       "allResellers": "All Reseller",
       "noMatchFilters": "Keine Nutzer passen zu deinen Filtern.",
       "never": "Niemals",
@@ -619,7 +619,7 @@
     "resellers": {
       "title": "Reseller",
       "count": "{count} reseller in deinem Netzwerk",
-      "countPlural": "{count} Resellers in deinem Netzwerk",
+      "countPlural": "{count} Reselle in deinem Netzwerk",
       "addReseller": "Füge Reseller hinzu",
       "noResellersYet": "Bisher keine Reseller. Füge deinen ersten Reseller hinzu um einen Key zu generieren.",
       "viewStore": "Sieh store",
@@ -635,7 +635,7 @@
       },
       "create": {
         "title": "Füge Reseller hinzu",
-        "description": "Füge einen neuen Reseller zu deinem Netzwerk hinzu. The prefix will be used for key generation.",
+        "description": "Füge einen neuen Reseller zu deinem Netzwerk hinzu. Der prefix wird für die erstellung von Keys benutzt.",
         "name": "Name",
         "namePlaceholder": "Reseller Name",
         "prefix": "Key Prefix",
