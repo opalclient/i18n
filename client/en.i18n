@@ -503,25 +503,46 @@ module.overlay.spacebar.name=Spacebar
 module.overlay.show_cps.name=Show CPS
 module.overlay.mouse_buttons.name=Mouse Buttons
 
-# ESP
-module.esp.name=ESP
-module.esp.description=Extra sensory perception.
-module.esp.stroke.name=Stroke
-module.esp.elements.name=Elements
-module.esp.indicators.name=Indicators
-module.esp.color.name=Color
-module.esp.hurt_flash.name=Hurt Flash
-module.esp.filled.name=Filled
-module.esp.outline.name=Outline
-module.esp.types.name=Types
-module.esp.ores.name=Ores
-module.esp.blocks.name=Blocks
-module.esp.players.name=Players
-module.esp.box.name=Box
-module.esp.health_bar.name=Health Bar
-module.esp.skeletons.name=Skeletons
-module.esp.name_tags.name=Name Tags
-module.esp.glow.name=Glow
-module.esp.containers.name=Containers
-module.esp.resources.name=Resources
+# Entity ESP
+module.entity_esp.name=Entity ESP
+module.entity_esp.description=Renders visual overlays on players and entities.
+module.entity_esp.box.name=Box
+module.entity_esp.box.enabled.name=Enabled
+module.entity_esp.box.stroke.name=Stroke
+module.entity_esp.health_bar.name=Health Bar
+module.entity_esp.health_bar.enabled.name=Enabled
+module.entity_esp.health_bar.stroke.name=Stroke
+module.entity_esp.skeletons.name=Skeletons
+module.entity_esp.skeletons.enabled.name=Enabled
+module.entity_esp.name_tags.name=Name Tags
+module.entity_esp.name_tags.enabled.name=Enabled
+module.entity_esp.name_tags.elements.name=Elements
+module.entity_esp.name_tags.indicators.name=Indicators
+module.entity_esp.glow.name=Glow
+module.entity_esp.glow.enabled.name=Enabled
+module.entity_esp.glow.color.name=Color
+module.entity_esp.glow.hurt_flash.name=Hurt Flash
 
+# Item ESP
+module.item_esp.name=Item ESP
+module.item_esp.description=Renders nametags on dropped items.
+module.item_esp.name_tags.name=Name Tags
+module.item_esp.name_tags.enabled.name=Enabled
+module.item_esp.name_tags.range.name=Range
+module.item_esp.name_tags.elements.name=Elements
+
+# Block ESP
+module.block_esp.name=Block ESP
+module.block_esp.description=Renders visual overlays on containers and resources.
+module.block_esp.containers.name=Containers
+module.block_esp.containers.enabled.name=Enabled
+module.block_esp.containers.filled.name=Filled
+module.block_esp.containers.outline.name=Outline
+module.block_esp.containers.types.name=Types
+module.block_esp.resources.name=Resources
+module.block_esp.resources.enabled.name=Enabled
+module.block_esp.resources.filled.name=Filled
+module.block_esp.resources.outline.name=Outline
+module.block_esp.resources.range.name=Range
+module.block_esp.resources.ores.name=Ores
+module.block_esp.resources.blocks.name=Blocks
