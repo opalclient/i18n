@@ -1,6 +1,7 @@
 # ============================================================
 # Combat
 # ============================================================
+category.combat.name=Combat
 
 # Aim Assist
 module.aim_assist.name=瞄准辅助
@@ -112,6 +113,7 @@ module.wtap.only_ground.name=Only Ground
 # ============================================================
 # Movement
 # ============================================================
+category.movement.name=Movement
 
 # Clipper
 module.clipper.name=穿墙
@@ -231,6 +233,7 @@ module.target_strafe.auto_3rd_person.name=Auto 3rd Person
 # ============================================================
 # Utility
 # ============================================================
+category.utility.name=Utility
 
 # Disabler
 module.disabler.name=禁用器
@@ -327,6 +330,7 @@ module.spammer.anti_spam_bypass.name=Anti Spam Bypass
 # ============================================================
 # World
 # ============================================================
+category.world.name=World
 
 # Timer
 module.timer.name=变速齿轮
@@ -373,6 +377,7 @@ module.breaker.break_surroundings.name=Break Surroundings
 # ============================================================
 # Visual
 # ============================================================
+category.visual.name=Visual
 
 # Tab GUI
 module.tab_gui.name=标签界面
@@ -524,3 +529,5 @@ module.esp.name_tags.name=Name Tags
 module.esp.glow.name=Glow
 module.esp.containers.name=Containers
 module.esp.resources.name=Resources
+
+category.scripting.name=Scripts
