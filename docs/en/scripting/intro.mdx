@@ -1,0 +1,49 @@
+# Scripting Introduction
+
+Opal's scripting engine runs on **GraalVM JavaScript (ES6+)**. Scripts are hot-reloaded from the `opal/scripts/` directory.
+
+The engine provides a sandboxed environment with access to specific Java classes and a suite of "Proxy" objects that bridge JavaScript to the client's internal codebase.
+
+## Anatomy of a Script
+
+Every script entry point must register itself using `registerScript`. This returns a handle used to register specific modules.
+
+```javascript
+const script = registerScript({
+    name: "My Script",
+    version: "1.0.0",
+    authors: ["User"]
+});
+
+script.registerModule({
+    name: "AutoGreeter",
+    description: "Automatically greets players"
+}, (module) => {
+    // Module logic goes here
+    module.on("enable", () => {
+        client.print("Module enabled!");
+    });
+});
+```
+
+## Java Interop
+
+Specific Java classes are exposed globally for use in your scripts. You do not need to import these.
+
+| Class | Description |
+| :--- | :--- |
+| `Vec3d` | `net.minecraft.util.math.Vec3d` |
+| `Vec3i` | `net.minecraft.util.math.Vec3i` |
+| `BlockPos` | `net.minecraft.util.math.BlockPos` |
+| `MathHelper` | `net.minecraft.util.math.MathHelper` |
+| `Color` | `java.awt.Color` |
+| `mc` | The raw `MinecraftClient` instance. |
+
+<Callout type="warning">
+    Accessing properties on `mc` requires knowledge of the underlying Minecraft source mappings (intermediary/mojang). Whenever possible, use the provided Proxy objects (e.g., `player`, `world`) instead of raw `mc` calls.
+</Callout>
+
+### Enums
+Standard enum constants are available as global variables:
+*   `MAIN_HAND`
+*   `OFF_HAND`

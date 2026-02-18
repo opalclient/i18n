@@ -1,0 +1,967 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "purchase": "購入",
+    "discord": "Discord",
+    "dashboard": "ダッシュボード",
+    "manage": "管理"
+  },
+  "home": {
+    "hero": {
+      "texts": [
+        {
+          "before": "ゲームを支配せよ",
+          "after": "。"
+        },
+        {
+          "before": "真似できない性能",
+          "after": "。"
+        },
+        {
+          "before": "唯一無二。絶対。",
+          "after": "。"
+        },
+        {
+          "before": "本物を選ぼう",
+          "after": "。"
+        },
+        {
+          "before": "真似されるのは一流の証",
+          "after": "。"
+        }
+      ],
+      "brand": "Opal Client",
+      "description": "最高の体験を得られるように作られたMinecraftの便利mod。 OpalはFabricのMinecraft 1.21.10に対応していて、滑らかで快適な体験を1.8と最新バージョンのサーバー両方で提供しています。",
+      "purchase": "購入",
+      "learnMore": "もっと見る"
+    },
+    "features": {
+      "title": "なぜOpalを選ぶの？",
+      "subtitle": "豊富な機能を備えていて、他のクライアントに戻りたくなくなるでしょう。",
+      "items": {
+        "abundant": {
+          "title": "多彩な機能",
+          "description": "Opalは膨大な数のモジュールとカスタマイズできる設定を備えています。"
+        },
+        "userFriendly": {
+          "title": "使いやすさ",
+          "description": "Opalはシンプルで使いやすいように設計されています。インストールしてまじですぐ使えます"
+        },
+        "updates": {
+          "title": "安定したアップデート",
+          "description": "新機能の最新情報をいち早くお届けするため、頻繁にアップデートしています"
+        },
+        "compatibility": {
+          "title": "互換性",
+          "description": "OpalはWindows、macOS、Linuxで互換性のテストを実施済みです。"
+        },
+        "trusted": {
+          "title": "コミュニティからの信頼",
+          "description": "Opalは長年Client開発に携わってきた一流の開発者によって開発されています。"
+        },
+        "quality": {
+          "title": "最高級の品質",
+          "description": "私達はユーザーを大切にし、クライアントを可能な限り良くするためにすべく務めています。"
+        }
+      }
+    },
+    "media": {
+      "title": "メディア",
+      "subtitle": "私達のコミュニティで作られた動画を見てください！"
+    },
+    "cta": {
+      "title": "マインクラフトの体験を更に高めよう。あなたの旅はここから始まる。",
+      "button": "今すぐ購入"
+    }
+  },
+  "purchase": {
+    "header": {
+      "title": "お好みのエディションを選択してください",
+      "subtitle": "Opal単体？それともTerminusを購入してOpalを無料で手に入れる？"
+    },
+    "chinaBanner": {
+      "text": "Are you in China? Purchase from our official resellers for better support and payment options.",
+      "link": "View Resellers"
+    },
+    "opal": {
+      "title": "Opal Client",
+      "price": "8.99",
+      "currency": "USD",
+      "description": "必須のハイブリッドなマインクラフトの便利クライアント。洗練されていてかつ軽量で、未検知。",
+      "featuresTitle": "含まれる内容",
+      "features": [
+        "Opal Client (永久)",
+        "全てのアップデート",
+        "Discordサポートへのアクセス"
+      ],
+      "button": "Opalを購入する",
+      "paymentMethods": "Card, Apple Pay, Google Pay, Klarna, CashApp, WeChat Pay"
+    },
+    "terminus": {
+      "badge": "最高のコスパ",
+      "title": "Terminus: Minigame Edition",
+      "price": "45.00",
+      "currency": "USD",
+      "description": "究極のミニゲーム用クライアント。Opalクライアントが無料で付属します。",
+      "featuresTitle": "含まれる内容",
+      "features": [
+        "Terminus: Minigame Edition (永久)",
+        "無料のOpal Client (永久)",
+        "全てのアップデート",
+        "Discordサポートへのアクセス",
+        "優先サポート"
+      ],
+      "button": "Terminusバンドルを購入する",
+      "paymentMethods": "Card, Apple Pay, Google Pay, Klarna, CashApp, WeChat Pay"
+    },
+    "crypto": {
+      "title": "仮想通貨で支払う？",
+      "description": "USDT、BTC、ETH、LTC、またはXMRでの支払いについては、Discordでチケットを開いてください。"
+    },
+    "resellers": {
+      "title": "公式代理店",
+      "description": "信頼できるパートナーから地域に合わせた支払い方法とサポートでOpalを購入",
+      "visit": "ストアを見る",
+      "localized": {
+        "title": "多様な決済方法が使えます",
+        "description": "地域別の価格設定や上記に記載されていない特定の支払い方法をお探しですか？公式代理店が対応いたします。"
+      }
+    },
+    "upgrade": {
+      "title": "もうOpalを持っている？",
+      "description": "たったの25.99USDでTerminusにアップグレードできます。詳細はチケットでご確認ください"
+    },
+    "terms": "購入することで、利用規約に同意したものとみなされます。永久とは、製品が提供されている期間を意味します。"
+  },
+  "dashboard": {
+    "title": "ダッシュボード",
+    "manage": "管理",
+    "nav": {
+      "home": "ホーム",
+      "purchase": "購入",
+      "discord": "Discord",
+      "docs": "説明書",
+      "setup": "セットアップ",
+      "configs": "コンフィグ",
+      "changelog": "更新ログ",
+      "activate": "有効化",
+      "settings": "設定",
+      "overview": "概要",
+      "users": "ユーザー",
+      "network": "ネットワーク",
+      "forums": "フォーラム"
+    },
+    "overview": {
+      "title": "概要",
+      "userId": "ユーザーID",
+      "launch": "起動",
+      "launches": "起動回数",
+      "online": "オンライン"
+    },
+    "news": {
+      "title": "ニュース",
+      "view": "表示",
+      "empty": "現時点ではここに何もない。時間を開けてから確認してください！"
+    },
+    "downloads": {
+      "title": "ダウンロード",
+      "opalClient": "Opal Client",
+      "downloadOpal": "Opalをダウンロード",
+      "selectRelease": "バージョンを選択",
+      "download": "ダウンロード",
+      "updated": "更新済み",
+      "ownedSince": "所有されてから",
+      "changelog": "更新ログ"
+    },
+    "launcher": {
+      "title": "ランチャー",
+      "opalLauncher": "Opalランチャー",
+      "availableSince": "利用開始日",
+      "updated": "更新済み",
+      "changelog": "更新ログ"
+    },
+    "access": {
+      "title": "アクセス制御",
+      "hwid": "ハードウェアID",
+      "lastChanged": "最終変更日",
+      "ago": "前",
+      "changeable": "30日ごとに更新可能",
+      "reset": "リセット"
+    },
+    "docs": {
+      "title": "Opal虎の巻",
+      "description": "Opalを最大限に活用する方法",
+      "nav": {
+        "setup": "初期設定",
+        "modules": "機能"
+      }
+    },
+    "setup": {
+      "title": "クライアント初期設定",
+      "description": "手順に従ってOpalをあなたの機器で起動できるようにしましょう",
+      "instructions": {
+        "title": "設定手順",
+        "description": "インストール手順",
+        "step1": {
+          "title": "ランチャーの初期設定",
+          "text": "prismLink} をダウンロードし、{fabricLink} で 1.21.10 用の新しいプロファイルを作成して、Fabric API Modをインストールしてください。",
+          "note": "独自のランチャーがリリースされるまではPrism Launcherがおすすめです。"
+        },
+        "step2": {
+          "title": "Opalをダウンロード",
+          "text": "Opalを{dashLink}からダウンロードしてFabric APIと共にモッドフォルダーに入れてください。"
+        },
+        "step3": {
+          "title": "JVM引数",
+          "text": "JVM引数をあなたの起動プロファイルに追加してください。(プロファイル → 編集 → 設定 → Java引数):"
+        },
+        "step4": {
+          "title": "起動",
+          "text": "Opalを起動してください。Opalアカウントでのサインインが求められます。"
+        }
+      },
+      "troubleshooting": {
+        "title": "トラブルシューティング",
+        "description": "よくある問題と、質問する前に確認すること",
+        "checklist": {
+          "title": "確認事項",
+          "items": [
+            "セットアップ手順を正確に実行しましたか？",
+            "Prism Launcherを使用していますか？",
+            "正しいJVM引数が適用されていますか？",
+            "システムの時間は同期されていますか？",
+            "VPNがオフになった/国が変わった？",
+            "ブロックされた地域（香港/中国）から接続していますか？"
+          ]
+        }
+      },
+      "commonErrors": {
+        "title": "よくあるエラー",
+        "description": "この中のエラーに遭遇したら、これらの解決方法を参照してください",
+        "items": [
+          {
+            "code": "Launch Error (No Code)",
+            "title": "Missing Java Arguments",
+            "description": "これは必要なJVM引数が見つからないことを示しています。"
+          },
+          {
+            "code": "0x5e",
+            "title": "Incompatible Launcher",
+            "description": "このエラーはJava引数が見つからないことを意味しています。サポートされていないランチャーでよく起こります。"
+          },
+          {
+            "code": "4e-63 / 4f-63",
+            "title": "Connection Issue",
+            "description": "このエラーは不安定や弱いネット環境か、それかピアツーピアのVPNが干渉していることを示しています。これらを無効化してもう一度試してみてください。"
+          },
+          {
+            "code": "G-26",
+            "title": "HWID Mismatch",
+            "description": "このエラーは何によって引き起こされるのかまだ分かっていません、HWIDをリセットすることで直せます。必要ならサポートチケットを開いてください。"
+          }
+        ]
+      },
+      "mods": {
+        "title": "Mods",
+        "description": "互換性があるモッドとないモッド",
+        "required": {
+          "title": "必要",
+          "badge": "必須"
+        },
+        "recommended": {
+          "title": "おすすめ",
+          "badge": "推奨",
+          "sodium": "パフォーマンス",
+          "accountSwitcher": "ゲーム内アカウントスイッチャー",
+          "accountSwitcherTooltip": "Discordに入って限定のカスタムバージョンを手に入れてください"
+        },
+        "incompatible": {
+          "title": "非互換",
+          "badge": "非対応"
+        },
+        "unsupportedLaunchers": {
+          "title": "サポート外のランチャー",
+          "badge": "未対応",
+          "description": "このランチャーは動作保証されていません。私達の公式ランチャーか互換性のあるランチャーを使ってください。"
+        }
+      },
+      "faq": {
+        "title": "FAQ",
+        "description": "よくある質問",
+        "questions": {
+          "olderVersions": {
+            "q": "どうやったらOpalを古いサーバーで使えますか？",
+            "a": "{link}を使ってください。"
+          }
+        }
+      }
+    },
+    "changelog": {
+      "title": "更新ログ",
+      "description": "最新版のOpalに何が追加されたか確認しましょう！",
+      "opalLauncher": "Opalランチャー",
+      "opal": "Opal",
+      "launcherBadge": "ランチャー",
+      "noNotes": "更新ログはありません。"
+    },
+    "activate": {
+      "title": "ライセンスを有効化",
+      "description": "有効化キーを持っている？ここに入力して引き換えてください。アクセスを移行したいなら、{migrate}をクリック",
+      "migrateBold": "移行",
+      "tabs": {
+        "redeem": "引き換え",
+        "migrate": "移行",
+        "buy": "買う"
+      },
+      "forms": {
+        "redeem": {
+          "placeholder": "OPAL-XXXX-XXXX-XXXX"
+        },
+        "migrate": {
+          "description": "<strong class=\"font-medium\">Opal</strong>をすでに持っているなら、これを使って新しいシステムに転送してください。サポートが必要なら、チケットを開いてください。",
+          "username": "ユーザー名",
+          "password": "パスワード"
+        },
+        "buy": {
+          "description": "<strong class=\"font-medium\">Opal</strong>を購入。キーは購入が成功した後あなたのメールに送られます",
+          "button": "お会計に進む"
+        },
+        "continue": "続ける"
+      },
+      "success": {
+        "title": "おめでとうございます!",
+        "description": "Opalへのアクセスが認められました。 <br />ようこそ！",
+        "dashboard": "ダッシュボードへ進む"
+      },
+      "errors": {
+        "invalidKey": "コードが存在しないか、すでに有効化されています。",
+        "invalidCredentials": "無効な情報",
+        "generic": "問題が発生しました。後ほど再度お試しください。",
+        "failedCheckout": "チェックアウトに失敗しました"
+      }
+    }
+  },
+  "configs": {
+    "title": "公開コンフィグ",
+    "card": {
+      "noDescription": "説明がありません",
+      "ago": "前",
+      "edit": "編集",
+      "editTitle": "編集する {name}",
+      "nameLabel": "名前",
+      "namePlaceholder": "{name}の素晴らしいコンフィグ",
+      "descriptionLabel": "説明",
+      "descriptionPlaceholder": "このコンフィグは何のためですか？共有したいメモがあれば追加してください。",
+      "saveChanges": "変更を保存",
+      "copyCommand": "ロードコマンドをコピー",
+      "copiedToast": "コマンドをクリップボードにコピーしました！",
+      "publish": "公開",
+      "publishTitle": "あなたのコンフィグを公開しましょう！",
+      "publishDescription": "既存の公開コンフィグを選択して更新するか、設定を新規として公開する。設定を公開すると、他のユーザーが閲覧できるようになります。",
+      "chooseConfig": "公開するコンフィグを選択",
+      "publishNew": "新しいコンフィグとして公開",
+      "clone": "非公開のコンフィグに複製",
+      "cloneTitle": "本当にそれでいいですか？",
+      "cloneDescription": "あなたはこのコンフィグを自分の非公開のコンフィグとして複製しようとしています。",
+      "cancel": "中断",
+      "continue": "続行",
+      "delete": "削除",
+      "deleteTitle": "本当にそれでいいですか？",
+      "deleteDescription": "{name} ({id}) は関連するすべてのデータとともに永久に削除されます。この操作は取り消せません。",
+      "changesSaved": "変更が保存されました！"
+    }
+  },
+  "settings": {
+    "title": "設定",
+    "nav": {
+      "account": "アカウント",
+      "security": "セキュリティ",
+      "connections": "接続"
+    },
+    "account": {
+      "title": "アカウント",
+      "username": {
+        "title": "ユーザー名",
+        "description": "これはあなたのアカウントに関連付けられているユーザー名です。",
+        "toast": "ユーザー名が変更されました！",
+        "cooldown": "ユーザーネームが再び変更できるようになるまで: {time}.",
+        "requirements": "ユーザー名は1 ~ 24までの間に設定しないといけません",
+        "save": "変更を保存"
+      },
+      "email": {
+        "title": "メールアドレス",
+        "description": "これはあなたのアカウントに紐づけられたメールアドレスです。",
+        "footer": "メールアドレスは変更不可"
+      }
+    },
+    "connections": {
+      "title": "接続",
+      "card": {
+        "title": "接続",
+        "description": "他のサービスとあなたのアカウントを紐づけして追加の機能にアクセスできるようにしましょう！",
+        "connected": "接続済み",
+        "ago": "前",
+        "requiresSetup": "初期設定が必要",
+        "notConnected": "未接続",
+        "disconnect": "切断",
+        "connect": "接続",
+        "connectSpotify": "Spotifyに接続",
+        "setup": "セットアップ",
+        "spotify": {
+          "title": "Spotifyとの連携を設定",
+          "description": "連携を有効化するにはあなたのSpotifyアプリを作成しないといけません。これはSpotifyのAPI制限が原因です",
+          "instructions": "手順:",
+          "step1": "{link}をクリック",
+          "step2": "新しいアプリを作る(名前や説明はお好みで)",
+          "step3": "このリダイレクトURIをアプリの設定に追加:",
+          "copied": "コピーしました！",
+          "clientId": "クライアントID",
+          "clientIdPlaceholder": "あなたのSpotifyクライアントID",
+          "clientSecret": "クライアントシークレット",
+          "clientSecretPlaceholder": "あなたのSpotifyクライアントシークレット",
+          "saving": "保存中...",
+          "save": "認証情報を保存"
+        }
+      }
+    },
+    "security": {
+      "title": "セキュリティ",
+      "password": {
+        "title": "パスワードを変える",
+        "description": "セキュリティを向上させるため、他で使いまわしていない文字数の多いパスワードをおすすめします。",
+        "current": "今のパスワード",
+        "new": "新しいパスワード",
+        "requirements": "パスワードは6 ~ 72文字以内でないといけません。",
+        "save": "変更を保存",
+        "toast": "パスワードは変更されました！"
+      },
+      "twoFactor": {
+        "title": "2段階認証",
+        "description": "TOTP2段階認証でアカウントを守りましょう",
+        "button": "2段階認証を有効化",
+        "footer": "信用できる認証アプリ(1Password, Google Authenticator, Authyなど)がおすすめです。",
+        "enabled": "有効",
+        "disable": "無効",
+        "setup": {
+          "title": "2段階認証をセットアップ",
+          "description": "認証アプリでQRコードをスキャンしてください",
+          "manualEntry": "スキャンできない？コードを手動で打つ:",
+          "verificationCode": "認証コード",
+          "verify": "認証 & 有効",
+          "verifying": "認証中...",
+          "cancel": "中断"
+        },
+        "backup": {
+          "title": "バックアップコードを保存",
+          "description": "このコードは認証アプリを失った場合に使います。各コードは一回のみ使用可能です。",
+          "warning": "コードは二度と表示されないので、安全な場所に保管してください。",
+          "copy": "全てのコードをコピー",
+          "copied": "コピーされました！",
+          "confirm": "私はコードを保存しました"
+        },
+        "disableDialog": {
+          "title": "2段階認証を無効化",
+          "description": "パスワードを入力して確認。この操作はアカウントの安全性を低くします。",
+          "password": "パスワード",
+          "cancel": "中断",
+          "confirm": "2段階認証を無効化する",
+          "disabling": "無効化中..."
+        },
+        "toast": {
+          "setupFailed": "2段階認証のセットアップに失敗しました",
+          "enabled": "2段階認証は正常に有効化されました",
+          "invalidCode": "無効な認証コード",
+          "disabled": "2段階認証は無効化されました",
+          "invalidPassword": "無効なパスワード",
+          "copied": "バックアップコードをコピー",
+          "secretCopied": "シークレットはコピーされました"
+        }
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "アカウントにサインイン",
+      "description": "認証情報を入力して進む",
+      "email": "メールアドレス",
+      "password": "パスワード",
+      "forgotPassword": "パスワードを忘れましたか？",
+      "signIn": "サインイン",
+      "noAccount": "アカウントを持っていない？",
+      "signUp": "サインアップ",
+      "twoFactor": {
+        "title": "2要素コード",
+        "back": "戻る",
+        "hint": "認証アプリから6桁のコードを入力、それかバックアップコード。"
+      }
+    },
+    "authorize": {
+      "title": "アプリを承認する",
+      "request": "{app}がアカウントに接続したいようです",
+      "allow": "許可",
+      "deny": "否定"
+    },
+    "register": {
+      "title": "アカウントを作る",
+      "description": "あなたの情報を入力してサインアップしてください",
+      "username": "ユーザー名",
+      "email": "メールアドレス",
+      "password": "パスワード",
+      "confirmPassword": "パスワードを確認",
+      "submit": "サインアップ",
+      "haveAccount": "もうアカウントを持っている？",
+      "signIn": "サインイン"
+    },
+    "spotify": {
+      "connect": "Spotifyに接続"
+    }
+  },
+  "reseller": {
+    "title": "代理業者の統計",
+    "description": "各代理業者の主要な使用統計を表示する。",
+    "total": "全体",
+    "used": "使用済み",
+    "available": "利用可能"
+  },
+  "network": {
+    "title": "ネットワーク",
+    "networkSuffix": "ネットワーク",
+    "nav": {
+      "overview": "概要",
+      "users": "ユーザー",
+      "resellers": "代理業者",
+      "keys": "キー",
+      "media": "メディア",
+      "payments": "支払い方法"
+    },
+    "common": {
+      "loading": "読込中...",
+      "save": "保存",
+      "cancel": "中断",
+      "delete": "削除",
+      "edit": "編集",
+      "close": "閉じる",
+      "confirm": "確認",
+      "noPermission": "あなたは必要な権限を持っていません",
+      "thisMonth": "今月",
+      "remaining": "残っている",
+      "unknown": "不明",
+      "never": "決して",
+      "all": "全て",
+      "yes": "はい",
+      "no": "いいえ"
+    },
+    "overview": {
+      "totalKeysGenerated": "生成されたキーの総数",
+      "usersInNetwork": "ネットワーク内のユーザー",
+      "withKeysFrom": "{count} の代理業者からのキー",
+      "withKeysFromPlural": "{count} の各代理業者からのキー",
+      "mediaKeysThisMonth": "今月のメディアキー",
+      "amountOwed": "未払い金額",
+      "networkInfo": "ネットワーク情報",
+      "currency": "通過",
+      "exchangeRate": "為替レート",
+      "keyPrice": "キーの価格",
+      "mediaKeyPrefix": "メディアキーのプレフィックス",
+      "yourPermissions": "あなたの権限",
+      "generateKeys": "キーを生成",
+      "manageResellers": "代理業者を管理",
+      "manageMedia": "メディアを管理",
+      "viewUsers": "ユーザーを見る",
+      "resellers": "代理業者",
+      "noResellersYet": "このネットワークには代理業者たちはいません。"
+    },
+    "users": {
+      "title": "ユーザー",
+      "count": "このネットワークには{count}人のユーザーがいます",
+      "countPlural": "このネットワークには{count}人のユーザーたちがいます",
+      "noUsersYet": "このネットワークにユーザーは見つかりませんでした",
+      "noResellersFirst": "このネットワークには代理業者はありません。先に代理業者を追加してユーザーを見る。",
+      "searchPlaceholder": "名前かメールで検索...",
+      "allResellers": "全ての代理業者",
+      "noMatchFilters": "指定した条件に一致するユーザーはいません。",
+      "never": "決して",
+      "table": {
+        "user": "ユーザー",
+        "reseller": "代理業者",
+        "key": "キー",
+        "hwid": "HWID",
+        "registered": "登録済み",
+        "actions": "アクション"
+      },
+      "hwid": {
+        "bound": "設定済み",
+        "notBound": "設定されていない",
+        "reset": "HWIDをリセット",
+        "history": "HWIDの履歴",
+        "resetConfirm": {
+          "title": "ハードウェアIDをリセット",
+          "description": "本当に{name}のハードウェアIDをリセットしますか？再認証が必要になります。",
+          "confirm": "HWIDをリセット",
+          "cancel": "中断"
+        },
+        "historyDialog": {
+          "title": "HWIDの履歴",
+          "description": "{name}のハードウェアIDが変更されました",
+          "noHistory": "HWID変更の履歴は確認されませんでした。",
+          "eventSet": "HWIDをセット",
+          "eventReset": "HWIDをリセット"
+        },
+        "resetSuccess": "ハードウェアIDが正常にリセットされました！",
+        "resetError": "ハードウェアIDをリセットするのに失敗しました。"
+      },
+      "pagination": {
+        "page": "ページ{current} / {total}",
+        "previous": "前",
+        "next": "次"
+      }
+    },
+    "resellers": {
+      "title": "代理業者",
+      "count": "このネットワークには{count}人の代理業者がいます",
+      "countPlural": "このネットワークには{count}人の代理業者たちがいます",
+      "addReseller": "代理業者を追加",
+      "noResellersYet": "代理業者がいません。最初の代理業者を追加してキーを生成しよう。",
+      "viewStore": "ストアを見る",
+      "table": {
+        "reseller": "代理業者",
+        "prefix": "プレフィックス",
+        "keys": "キー",
+        "users": "ユーザー",
+        "status": "状況",
+        "created": "作成済み",
+        "active": "有効",
+        "inactive": "無効"
+      },
+      "create": {
+        "title": "代理業者を追加",
+        "description": "あなたのネットワークに代理業者を追加。プレフィックスはキーの生成に使われます。",
+        "name": "名前",
+        "namePlaceholder": "代理業者の名前",
+        "prefix": "キーのプレフィックス",
+        "prefixPlaceholder": "例: HHKW",
+        "prefixHint": "2-10文字の大文字でアルファベットか数字。キーは: PREFIX-XXXXXXXXXXXX",
+        "storeUrl": "URLを保存(任意)",
+        "storeUrlPlaceholder": "https://...",
+        "description_field": "説明(任意)",
+        "descriptionPlaceholder": "説明は公開の代理業者ページに載せられます...",
+        "contactInfo": "連絡先(任意)",
+        "contactInfoPlaceholder": "WeChat, QQ, Discordなど",
+        "submit": "代理業者を追加",
+        "success": "代理業者が追加されました",
+        "error": "代理業者を追加するのに失敗しました"
+      },
+      "edit": {
+        "title": "代理業者を編集",
+        "description": "{name}の詳細を更新。",
+        "submit": "変更を保存",
+        "success": "代理業者を更新しました",
+        "error": "代理業者を更新するのに失敗しました"
+      },
+      "delete": {
+        "confirm": "\"{name}\"を削除しますか？この操作は取り消せません",
+        "success": "代理業者を削除しました",
+        "error": "代理業者を削除するのに失敗しました"
+      }
+    },
+    "keys": {
+      "title": "キー",
+      "count": "ネットワークに{count}個のキー",
+      "countPlural": "ネットワークに{count}個のキー",
+      "stats": "{total} 全体 • {used} 有効化済み • {unused} 未使用",
+      "noKeysYet": "キーがありません",
+      "noResellersFirst": "このネットワークに代理業者がいません。先に代理業者を追加してキーを生成してください。",
+      "generateKeys": "キーを生成",
+      "copyUnusedKeys": "未使用のキーをコピー",
+      "allResellers": "全ての代理業者",
+      "allKeys": "全てのキー",
+      "unusedOnly": "未使用のみ",
+      "usedOnly": "使用済みのみ",
+      "noMatchFilters": "フィルターに一致するキーはありません。",
+      "table": {
+        "key": "キー",
+        "reseller": "代理業者",
+        "status": "ステータス",
+        "created": "作成",
+        "redeemed": "有効化済み",
+        "used": "使用済み",
+        "unused": "未使用",
+        "media": "メディア"
+      },
+      "copy": {
+        "single": "キーをクリップボードにコピーしました",
+        "multiple": "{count}個のキーをクリップボードにコピーしました",
+        "noUnused": "未使用のキーがありません"
+      },
+      "generate": {
+        "title": "キーを生成",
+        "description": "代理業者のためにキーを生成する。",
+        "reseller": "代理業者",
+        "resellerPlaceholder": "代理業者を選択",
+        "count": "キーの数",
+        "countPlaceholder": "1-100",
+        "submit": "キーを生成",
+        "success": "{count}キーを生成 - ${usd} ({local} {currency})",
+        "error": "キーを生成するのに失敗しました",
+        "result": {
+          "title": "キーの生成",
+          "description": "{count}キーが正常に生成されました。二度と表示されないので早くコピーしてください",
+          "amountOwed": "未払金額:",
+          "copyAll": "全てのキーをコピー"
+        }
+      },
+      "pagination": {
+        "page": "ページ {current} / {total}",
+        "previous": "前",
+        "next": "次"
+      }
+    },
+    "media": {
+      "title": "メディア",
+      "count": "ネットワークに{count}人のメディアがいます",
+      "countPlural": "ネットワークに{count}人のメディアがいます",
+      "monthlyUsage": "{used}/{limit} 今月使われたキー • 残り{remaining}",
+      "noPermission": "あなたはメディアアカウントを管理する権限を持っていません。",
+      "addMedia": "メディアを追加する",
+      "noMediaYet": "メディアアカウントは見つかりませんでした",
+      "table": {
+        "name": "名前",
+        "platform": "プラットフォーム",
+        "key": "キー",
+        "status": "ステータス",
+        "added": "追加された",
+        "active": "有効",
+        "inactive": "無効",
+        "noKey": "キーがない"
+      },
+      "create": {
+        "title": "メディアアカウントを追加",
+        "description": "ネットワークのメディアプログラムにコンテンツクリエイターを追加する。",
+        "name": "名前",
+        "namePlaceholder": "作者の名前かチャンネル名",
+        "platform": "プラットフォーム",
+        "platformPlaceholder": "プラットフォームを選択",
+        "platformUrl": "チャンネル/プロファイル URL",
+        "platformUrlPlaceholder": "https://youtube.com/@channel",
+        "notes": "メモ",
+        "notesPlaceholder": "連絡先、主なコンテンツなど",
+        "generateKey": "キーを生成",
+        "keysRemaining": "今月{count}個のメディアキーが残っている",
+        "limitReached": "今月のリミットに達しました",
+        "submit": "メディアを追加",
+        "success": "メディアアカウントが作成されました",
+        "successWithKey": "メディアアカウントが作成されました! コピーされたキー: {key}",
+        "error": "メディアアカウントを作成するのに失敗しました"
+      },
+      "edit": {
+        "title": "メディアアカウントを編集する",
+        "description": "メディアアカウントの詳細を更新",
+        "submit": "変更を保存",
+        "success": "メディアアカウントが更新されました",
+        "error": "メディアアカウントを更新するのに失敗しました"
+      },
+      "delete": {
+        "confirm": "メディアアカウントを削除しますか \"{name}\"?",
+        "success": "メディアアカウントを削除しました",
+        "error": "メディアアカウントを削除するのに失敗しました"
+      },
+      "generateKey": {
+        "confirm": "\"{name}\"にキーを生成する？",
+        "success": "キーが生成されました: {code}",
+        "error": "キーを生成するのに失敗しました"
+      },
+      "actions": {
+        "generateKey": "キーを生成",
+        "edit": "編集",
+        "delete": "削除"
+      }
+    },
+    "payments": {
+      "title": "支払い方法",
+      "noPermission": "あなたは支払い方法を見る権限を持っていません",
+      "balanceOwed": "未払い残高",
+      "youOwe": "未払い残高",
+      "overpaid": "クレジット残高",
+      "settled": "全て解決済み",
+      "totalCharges": "総費用",
+      "keysGenerated": "生成されたキー",
+      "paymentsReceived": "受け取った支払い",
+      "payments": "支払い",
+      "keyPrice": "キーの価格",
+      "perKeyGenerated": "生成されたキーごとに",
+      "noPaymentsYet": "まだ支払い記録はありません。記録はキーが生成されたときに作成されます。",
+      "table": {
+        "type": "タイプ",
+        "generatedBy": "生成元",
+        "keys": "キー",
+        "usdAmount": "USD金額",
+        "localAmount": "ローカル金額",
+        "date": "日付",
+        "charge": "金額",
+        "payment": "支払い"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "Opal × Terminus. すべての権利は留保される。",
+    "terms": "利用規約",
+    "privacy": "プライバシーポリシー"
+  },
+  "banner": {
+    "text": "ホリデーセール: 12月31日までにHOLIDAY10を使って10%オフ"
+  },
+  "forums": {
+    "warningTitle": "バグのチェック",
+    "warning": "レポートを作る前にバグが報告されているか確認してください。同じ報告をすると直すのが遅れます",
+    "roadmap": {
+      "title": "ロードマップ",
+      "searchPlaceholder": "ロードマップを検索...",
+      "allCategories": "すべてのカテゴリー",
+      "empty": "アイテムなし",
+      "planned": "計画中",
+      "inProgress": "進行中",
+      "done": "完了"
+    },
+    "suggestions": {
+      "title": "提案",
+      "new": "新しい提案",
+      "searchPlaceholder": "提案を探す...",
+      "allStatuses": "すべてのステータス",
+      "pending": "保留中",
+      "approved": "承認済み",
+      "denied": "拒否済み",
+      "empty": "指定した条件に一致する提案が見つかりませんでした。",
+      "dialog": {
+        "title": "機能を提案",
+        "titleLabel": "タイトル",
+        "titlePlaceholder": "短いタイトル",
+        "contentLabel": "説明",
+        "contentPlaceholder": "提案を説明...",
+        "submit": "提出",
+        "submitting": "提出中...",
+        "success": "提案が提出されました"
+      }
+    },
+    "nav": {
+      "roadmap": "ロードマップ",
+      "suggestions": "提案",
+      "bugs": "バグ報告",
+      "changelog": "更新ログ"
+    },
+    "bugs": {
+      "title": "バグ報告",
+      "new": "バグを報告する",
+      "searchPlaceholder": "バグを探す...",
+      "allStatuses": "すべてのステータス",
+      "open": "オープン",
+      "closed": "閉鎖済み",
+      "invalid": "不明",
+      "empty": "指定した条件に一致するバグ報告は見つかりませんでした。",
+      "noItems": "まだバグは報告されていません。",
+      "version": "バージョン",
+      "steps": "ステップ",
+      "dialog": {
+        "title": "バグを報告",
+        "titleLabel": "問題のタイトル",
+        "titlePlaceholder": "簡単な要約",
+        "versionLabel": "Client Version",
+        "descriptionLabel": "説明",
+        "descriptionPlaceholder": "何が起こった？",
+        "stepsLabel": "再現方法",
+        "stepsPlaceholder": "1. ここへ行って... 2. クリック...",
+        "submit": "報告を提出",
+        "submitting": "提出中...",
+        "success": "バグ報告が提出されました"
+      }
+    }
+  },
+  "manage": {
+    "roadmap": {
+      "title": "ロードマップ",
+      "searchPlaceholder": "ロードマップを検索...",
+      "filterStatus": "ステータスで絞り込み",
+      "allStatuses": "すべてのステータス",
+      "addItem": "アイテムを追加",
+      "editItem": "アイテムを編集",
+      "createItem": "アイテムを作成",
+      "titleLabel": "タイトル",
+      "descriptionLabel": "説明",
+      "categoryLabel": "カテゴリ",
+      "categoryPlaceholder": "例: クライアント",
+      "typeLabel": "タイプ",
+      "feature": "機能",
+      "bug": "バグ",
+      "statusLabel": "ステータス",
+      "planned": "計画中",
+      "inProgress": "進行中",
+      "done": "完了",
+      "save": "保存",
+      "saving": "保存中...",
+      "table": {
+        "title": "タイトル",
+        "category": "カテゴリー",
+        "type": "タイプ",
+        "status": "ステータス",
+        "actions": "アクション",
+        "empty": "アイテムが見つかりませんでした"
+      },
+      "toast": {
+        "updated": "アイテムが更新されました",
+        "created": "アイテムが作成されました",
+        "deleted": "アイテムが削除されました"
+      },
+      "confirmDelete": "本当にそれでいいですか？"
+    },
+    "suggestions": {
+      "title": "提案",
+      "searchPlaceholder": "提案を検索...",
+      "filterStatus": "ステータスで絞り込み",
+      "allStatuses": "すべてのステータス",
+      "pending": "保留中",
+      "approved": "承認済み",
+      "denied": "拒否済み",
+      "table": {
+        "content": "コンテンツ",
+        "author": "作者",
+        "votes": "投票",
+        "status": "ステータス",
+        "created": "作成",
+        "actions": "アクション",
+        "empty": "提案が見つかりませんでした"
+      },
+      "toast": {
+        "approved": "提案が承認され、コインが送られました",
+        "denied": "提案が拒否されました",
+        "deleted": "提案が削除されました"
+      },
+      "confirmDeny": "提案を拒否しますか？",
+      "confirmDelete": "本当にそれでいいですか？この操作は提案を永久に削除します。"
+    },
+    "bugs": {
+      "title": "バグ報告",
+      "searchPlaceholder": "バグ報告を検索...",
+      "filterStatus": "ステータスで絞り込み",
+      "allStatuses": "すべてのステータス",
+      "open": "オープン",
+      "closed": "閉鎖済み",
+      "invalid": "不明",
+      "table": {
+        "issue": "問題",
+        "author": "作者",
+        "version": "バージョン",
+        "status": "ステータス",
+        "created": "作成",
+        "actions": "アクション",
+        "empty": "バグ報告は見つかりませんでした"
+      },
+      "toast": {
+        "closed": "バグ報告が閉鎖されました",
+        "invalid": "バグ報告が不明にマークされました",
+        "deleted": "バグ報告が削除されました"
+      },
+      "confirmClose": "バグ報告を閉じますか？",
+      "confirmInvalid": "不明にマークしますか？",
+      "confirmDelete": "本当にそれでいいですか？この操作はバグ報告を永久に削除します。"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+# Event Reference
+
+Events are registered using `module.on(eventName, callback)`.
+
+| Event Name | Callback Args | Description |
+| :--- | :--- | :--- |
+| `enable` | None | Fired when the module is toggled on. |
+| `disable` | None | Fired when the module is toggled off. |
+| `preGameTick` | `PreGameTickEvent` | Fired at the start of a game tick (20 TPS). Ideal for logic updates. |
+| `renderScreen` | `RenderScreenEvent` | Fired every frame while the 2D HUD is rendering. Use `renderer` here. |
+| `renderWorld` | `RenderWorldEvent` | Fired every frame while the 3D world is rendering. |
+| `preMove` | `PreMoveEvent` | Fired before player movement calculations are applied. |
+| `postMove` | `PostMoveEvent` | Fired after player movement is calculated. |
+| `preMovementPacket`| `PreMovementPacketEvent`| Fired before the client sends the movement packet (Motion update). |
+| `postMovementPacket`| `PostMovementPacketEvent`| Fired after the movement packet is sent. |
+| `sendPacket` | `SendPacketEvent` | Fired when a packet is about to be sent to the server. |
+| `receivePacket` | `ReceivePacketEvent` | Fired when a packet is received from the server. |
+| `instantaneousSendPacket`| `InstantaneousSendPacketEvent`| Fired when an immediate packet is sent (no queue). |
+| `instantaneousReceivePacket`| `InstantaneousReceivePacketEvent`| Fired when an immediate packet is received (no queue). |

@@ -1,0 +1,349 @@
+# Interaction Proxies
+
+These proxies handle player actions, movement, and combat.
+
+---
+
+## Inventory Proxy
+**Global Binding:** `inventory`
+
+Manages hotbar slots, item searching, and stack inspection.
+
+### Slot Switching
+
+<Method
+    name="setSlot"
+    signature="void setSlot(int slot)"
+    description="Switches the player's selected hotbar slot normally (visible to client and server)."
+    params={[
+        { name: "slot", type: "int", desc: "Hotbar index (0-8)." }
+    ]}
+/>
+
+<Method
+    name="setSlotSilent"
+    signature="void setSlotSilent(int slot)"
+    description="Switches the slot server-side only. The client continues to render the original item."
+    params={[
+        { name: "slot", type: "int", desc: "Hotbar index (0-8)." }
+    ]}
+/>
+
+<Method
+    name="setSlotFullSilent"
+    signature="void setSlotFullSilent(int slot)"
+    description="Completely spoofs the slot switch packet. The server sees the change, but client state remains untouched."
+    params={[
+        { name: "slot", type: "int", desc: "Hotbar index (0-8)." }
+    ]}
+/>
+
+<Method
+    name="getSelectedSlot"
+    signature="int getSelectedSlot()"
+    description="Returns the currently selected hotbar index (0-8)."
+    returns={{ type: "int", desc: "Slot index." }}
+/>
+
+### Item Searching
+
+<Method
+    name="findBlock"
+    signature="int findBlock()"
+    description="Searches the hotbar (0-8) for a valid placeable block."
+    returns={{ type: "int", desc: "Slot index, or -1 if none found." }}
+/>
+
+<Method
+    name="findItem"
+    signature="int findItem(String name)"
+    description="Searches the hotbar (0-8) for an item containing the given name (case-insensitive)."
+    params={[
+        { name: "name", type: "String", desc: "Substring to search for." }
+    ]}
+    returns={{ type: "int", desc: "Slot index, or -1." }}
+/>
+
+<Method
+    name="findItemInInventory"
+    signature="int findItemInInventory(String name)"
+    description="Searches the full inventory (0-35) for an item containing the name."
+    params={[
+        { name: "name", type: "String", desc: "Substring to search for." }
+    ]}
+    returns={{ type: "int", desc: "Slot index (0-35), or -1." }}
+/>
+
+### Stack Inspection
+
+<Method
+    name="getStack"
+    signature="ItemStack getStack(int slot)"
+    description="Returns the ItemStack in the specified hotbar slot."
+    params={[
+        { name: "slot", type: "int", desc: "Hotbar index (0-8)." }
+    ]}
+    returns={{ type: "ItemStack", desc: "Item stack." }}
+/>
+
+<Method
+    name="getMainHandStack"
+    signature="ItemStack getMainHandStack()"
+    description="Returns the stack currently held in the main hand (accounts for silent switching)."
+    returns={{ type: "ItemStack", desc: "Main hand item stack." }}
+/>
+
+<Method
+    name="getOffHandStack"
+    signature="ItemStack getOffHandStack()"
+    description="Returns the stack in the offhand."
+    returns={{ type: "ItemStack", desc: "Offhand item stack." }}
+/>
+
+<Method
+    name="isHeldItemBlock"
+    signature="boolean isHeldItemBlock()"
+    description="Returns true if the main hand holds a placeable block."
+    returns={{ type: "boolean", desc: "True if block." }}
+/>
+
+<Method
+    name="isBlock"
+    signature="boolean isBlock(int slot)"
+    description="Returns true if the specified slot contains a placeable block."
+    params={[
+        { name: "slot", type: "int", desc: "Slot index (0-8)." }
+    ]}
+    returns={{ type: "boolean", desc: "True if block." }}
+/>
+
+<Method
+    name="getItemName"
+    signature="String getItemName(int slot)"
+    description="Returns the display name of the item in a slot."
+    params={[
+        { name: "slot", type: "int", desc: "Slot index." }
+    ]}
+    returns={{ type: "String", desc: "Item name." }}
+/>
+
+<Method
+    name="getItemCount"
+    signature="int getItemCount(int slot)"
+    description="Returns the stack size in a slot."
+    params={[
+        { name: "slot", type: "int", desc: "Slot index." }
+    ]}
+    returns={{ type: "int", desc: "Item count." }}
+/>
+
+<Method
+    name="countItem"
+    signature="int countItem(String name)"
+    description="Counts the total number of items matching the name across the entire inventory."
+    params={[
+        { name: "name", type: "String", desc: "Item name substring." }
+    ]}
+    returns={{ type: "int", desc: "Total count." }}
+/>
+
+<Method
+    name="countBlocks"
+    signature="int countBlocks()"
+    description="Counts the total number of valid placeable blocks in the hotbar and offhand."
+    returns={{ type: "int", desc: "Total blocks." }}
+/>
+
+---
+
+## Movement Proxy
+**Global Binding:** `movement`
+
+Manipulates player velocity, direction, and state.
+
+### Speed Queries
+
+<Method
+    name="getBlocksPerSecond"
+    signature="double getBlocksPerSecond()"
+    description="Returns horizontal speed in blocks/second."
+    returns={{ type: "double", desc: "Speed (bps)." }}
+/>
+
+<Method
+    name="getSpeed"
+    signature="double getSpeed()"
+    description="Returns horizontal speed in blocks/tick."
+    returns={{ type: "double", desc: "Speed (bpt)." }}
+/>
+
+### Speed Manipulation
+
+<Method
+    name="setSpeed"
+    signature="void setSpeed(double speed)"
+    description="Sets the player's horizontal speed in the current movement direction."
+    params={[
+        { name: "speed", type: "double", desc: "Target speed in blocks/tick." }
+    ]}
+/>
+
+<Method
+    name="setSpeed (Strafing)"
+    signature="void setSpeed(double speed, double strafePercentage)"
+    description="Sets speed with a blend between forward and strafe motion."
+    params={[
+        { name: "speed", type: "double", desc: "Target speed in blocks/tick." },
+        { name: "strafePercentage", type: "double", desc: "0.0 (forward) to 1.0 (strafe)." }
+    ]}
+/>
+
+<Method
+    name="setSpeed (Directional)"
+    signature="void setSpeed(double speed, float yaw)"
+    description="Sets speed along a specific yaw angle."
+    params={[
+        { name: "speed", type: "double", desc: "Target speed in blocks/tick." },
+        { name: "yaw", type: "float", desc: "Direction angle." }
+    ]}
+/>
+
+<Method
+    name="setEntitySpeed"
+    signature="void setEntitySpeed(Entity entity, double speed, double yaw)"
+    description="Sets the velocity of an arbitrary entity."
+    params={[
+        { name: "entity", type: "Entity", desc: "Target entity." },
+        { name: "speed", type: "double", desc: "Target speed in blocks/tick." },
+        { name: "yaw", type: "double", desc: "Direction angle." }
+    ]}
+/>
+
+### Direction
+
+<Method
+    name="getMoveYaw"
+    signature="float getMoveYaw()"
+    description="Returns the movement yaw based on input (WASD) and camera rotation."
+    returns={{ type: "float", desc: "Yaw angle." }}
+/>
+
+<Method
+    name="getDirectionDegrees"
+    signature="float getDirectionDegrees()"
+    description="Returns movement direction in degrees."
+    returns={{ type: "float", desc: "Direction (degrees)." }}
+/>
+
+<Method
+    name="getDirectionRadians"
+    signature="double getDirectionRadians()"
+    description="Returns movement direction in radians."
+    returns={{ type: "double", desc: "Direction (radians)." }}
+/>
+
+### State
+
+<Method
+    name="isMoving"
+    signature="boolean isMoving()"
+    description="Returns true if the player is pressing any movement keys."
+    returns={{ type: "boolean", desc: "True if moving." }}
+/>
+
+---
+
+## Rotation Proxy
+**Global Binding:** `rotation`
+
+Handles server-side rotations (aiming) and angle math.
+
+### Rotation Submission
+
+<Method
+    name="set"
+    signature="void set(float yaw, float pitch)"
+    description="Submits an instant rotation packet."
+    params={[
+        { name: "yaw", type: "float", desc: "Target yaw." },
+        { name: "pitch", type: "float", desc: "Target pitch." }
+    ]}
+/>
+
+<Method
+    name="setSmooth"
+    signature="void setSmooth(float yaw, float pitch, float speed)"
+    description="Submits a smooth rotation that turns at a limited speed per tick."
+    params={[
+        { name: "yaw", type: "float", desc: "Target yaw." },
+        { name: "pitch", type: "float", desc: "Target pitch." },
+        { name: "speed", type: "float", desc: "Degrees per tick." }
+    ]}
+/>
+
+### Calculation
+
+<Method
+    name="getRotationFromPosition"
+    signature="Vec2f getRotationFromPosition(Vec3d pos)"
+    description="Calculates yaw and pitch to face a world position."
+    params={[
+        { name: "pos", type: "Vec3d", desc: "Target position." }
+    ]}
+    returns={{ type: "Vec2f", desc: "{x: yaw, y: pitch}" }}
+/>
+
+<Method
+    name="getRotationFromBlock"
+    signature="Vec2f getRotationFromBlock(BlockPos pos, Direction face)"
+    description="Calculates rotation to face the center of a block side."
+    params={[
+        { name: "pos", type: "BlockPos", desc: "Target block." },
+        { name: "face", type: "Direction", desc: "Face to aim at." }
+    ]}
+    returns={{ type: "Vec2f", desc: "{x: yaw, y: pitch}" }}
+/>
+
+<Method
+    name="getRotationVector"
+    signature="Vec3d getRotationVector(float pitch, float yaw)"
+    description="Returns the unit look vector for the given angles."
+    params={[
+        { name: "pitch", type: "float", desc: "Pitch angle." },
+        { name: "yaw", type: "float", desc: "Yaw angle." }
+    ]}
+    returns={{ type: "Vec3d", desc: "Look vector." }}
+/>
+
+### Raycasting
+
+<Method
+    name="getRotationFromRaycastedBlock"
+    signature="RaytracedRotation getRotationFromRaycastedBlock(BlockPos pos, Direction side, ...)"
+    description="Validates if a rotation can hit a specific block face. (Advanced usage)."
+    params={[
+        { name: "pos", type: "BlockPos", desc: "Target block." },
+        { name: "side", type: "Direction", desc: "Target face." }
+    ]}
+    returns={{ type: "RaytracedRotation", desc: "Result or null." }}
+/>
+
+### Queries
+
+<Method
+    name="getRotation"
+    signature="Vec2f getRotation()"
+    description="Returns the current server-side rotation."
+    returns={{ type: "Vec2f", desc: "{x: yaw, y: pitch}" }}
+/>
+
+<Method
+    name="getRotationDifference"
+    signature="float getRotationDifference(Vec2f a, Vec2f b)"
+    description="Returns the angle difference between two rotations."
+    params={[
+        { name: "a", type: "Vec2f", desc: "First rotation." },
+        { name: "b", type: "Vec2f", desc: "Second rotation." }
+    ]}
+    returns={{ type: "float", desc: "Angle difference." }}
+/>

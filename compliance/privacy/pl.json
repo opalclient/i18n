@@ -1,0 +1,45 @@
+{
+  "title": "Polityka Prywatności",
+  "effectiveDate": "May 1, 2025",
+  "sections": [
+    {
+      "title": "1. Wstęp",
+      "content": "Niniejsza Polityka Prywatności określa praktyki dotyczące gromadzenia, wykorzystywania i udostępniania Twoich informacji za pośrednictwem strony internetowej oraz powiązanych usług świadczonych przez Opal x Terminus, dostępnych pod adresem https://opalxterminus.com."
+    },
+    {
+      "title": "2. Gromadzone dane",
+      "content": [
+        "Dane osobowe: Twoja nazwa użytkownika, adres e-mail, adres IP, user agent oraz informacje o płatnościach, jeśli zakupiłeś usługę Opal bezpośrednio.",
+        "Dane nieosobowe: Używamy plików cookies w celu poprawy komfortu korzystania z naszej strony internetowej."
+      ]
+    },
+    {
+      "title": "3. Cel gromadzenia danych",
+      "content": "Głównym celem gromadzenia danych osobowych jest identyfikacja i uwierzytelnianie użytkownika. Dzięki temu możemy bezpiecznie przyznawać dostęp do naszych usług i umożliwiać korzystanie z nich."
+    },
+    {
+      "title": "4. Udostępnianie danych",
+      "content": "Z natury rzeczy możemy udostępniać Twoje informacje zewnętrznym dostawcom usług, z których korzystamy w celu prowadzenia Opal, takim jak procesory płatności i dostawcy usług e-mail. Możemy również udostępniać Twoje informacje innym deweloperom Opal, jeśli otrzymasz dostęp do wspomnianego oprogramowania. Nie udostępniamy, nie sprzedajemy, nie wypożyczamy ani nie handlujemy Twoimi danymi osobowymi z żadnymi innymi stronami trzecimi."
+    },
+    {
+      "title": "5. Bezpieczeństwo danych osobowych",
+      "content": "Podejmujemy uzasadnione środki w celu ochrony Twoich danych osobowych przed nieautoryzowanym dostępem, wykorzystaniem lub ujawnieniem. Jednak żadna metoda transmisji przez Internet ani elektronicznego przechowywania nie jest w 100% bezpieczna i nie możemy zagwarantować całkowitego bezpieczeństwa. Możemy ujawnić Twoje informacje, jeśli wymaga tego prawo lub w odpowiedzi na nakaz sądowy lub wezwanie. Możemy również ujawnić Twoje dane w celu zbadania lub zapobiegania oszustwom, bądź w celu ochrony praw, własności lub bezpieczeństwa Opal, naszych deweloperów lub innych osób."
+    },
+    {
+      "title": "6. Przechowywanie danych",
+      "content": "Przechowujemy Twoje dane osobowe tak długo, jak jest to konieczne do świadczenia zamówionych usług lub do innych istotnych celów, takich jak wypełnianie obowiązków prawnych, rozstrzyganie sporów i egzekwowanie naszych zasad. Jeśli chcesz usunąć swoje konto, skontaktuj się z nami, korzystając z poniższego adresu e-mail wsparcia."
+    },
+    {
+      "title": "7. Prywatność dzieci",
+      "content": "Zobowiązujemy się do ochrony prywatności dzieci. Świadomie nie gromadzimy ani nie prosimy o dane osobowe od osób poniżej 13 roku życia. Jeśli masz mniej niż 13 lat, prosimy, abyś nie próbował korzystać z Opal ani nie przesyłał nam żadnych danych osobowych o sobie."
+    },
+    {
+      "title": "8. Zmiany w niniejszej polityce",
+      "content": "Od czasu do czasu możemy aktualizować niniejszą Politykę Prywatności z powiadomieniem lub bez niego. Zachęcamy do okresowego przeglądania tej polityki, aby być na bieżąco z informacjami o Twoich danych."
+    },
+    {
+      "title": "9. Kontakt",
+      "content": "Jeśli masz jakiekolwiek pytania dotyczące niniejszej Polityki Prywatności lub chcesz skorzystać ze swoich praw związanych z danymi osobowymi, skontaktuj się z nami pod adresem support@mail.opalxterminus.com. Dołożymy wszelkich starań, aby odpowiedzieć w najkrótszym możliwym terminie."
+    }
+  ]
+}

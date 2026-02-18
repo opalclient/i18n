@@ -1,0 +1,59 @@
+{
+  "title": "Regulamin",
+  "effectiveDate": "May 1, 2025",
+  "sections": [
+    {
+      "title": "1. Wprowadzenie",
+      "content": "Niniejsze regulamin (\"Regulamin\") reguluje dostęp do i korzystanie z usług świadczonych przez Opal x Terminus, dostępnych pod https://opalxterminus.com. Korzystając z usług, wyrażasz zgodę na obowiązujące warunki i rozumiesz, że jesteś odpowiedzialny za przestrzeganie lokalnych przepisów. Jeśli nie zgadzasz się z tymi warunkami, nie możesz korzystać z naszych usług."
+    },
+    {
+      "title": "2. Korzystanie z Usług",
+      "content": [
+        "Zgadzasz się korzystać z naszych usług wyłącznie w celach legalnych i zgodnie z niniejszymi warunkami.",
+        "Nie wolno Ci korzystać z usług w sposób, który mógłby wyłączyć, przeciążyć, uszkodzić lub osłabić usługę lub zakłócić korzystanie z niej przez inne osoby.",
+        "Nie wolno Ci próbować uzyskać nieautoryzowanego dostępu do żadnej usługi, systemów komputerowych lub sieci połączonych z Opalem.",
+        "Botowanie, DDoSing lub symulowanie interakcji ludzkiej z jakimkolwiek komponentem lub połączonymi usługami Opala jest ścisłe zabronione. Takie działania będą prowadziły do rozwiązania Twojego konta i dodatkowych konsekwencji.",
+        "Nieautoryzowane działania takie jak ujawnianie, popełnianie oszustw, łamanie zabezpieczeń, manipulowanie, odwracanie działania systemów, ponowne sprzedaż, ponowne dystrybucja lub udostępnianie produktów lub danych znalezionych na Opal są ścisłe zabronione. Wystąpienie w takich działaniach może prowadzić do trwałego zawieszenia Twojego konta, odwołania Twoich zakupów, żądań DMCA o usunięcie treści oraz zablokowania Twoich danych identyfikacyjnych i danych płatności w serwisach Opala i jego podmiotów zależnych."
+      ]
+    },
+    {
+    "title": "3. Licencjonowanie",
+      "content": [
+        "O ile nie stwierdzono inaczej, Opal i/lub jego licencjodawcy są właścicielem praw własności intelektualnej do wszystkich materiałów zawartych w Opal. Wszystkie prawa własności intelektualnej są zastrzeżone. Użytkownik może uzyskiwać dostęp do tych materiałów w Opal na własny użytek osobisty, z zastrzeżeniem ograniczeń określonych w niniejszym regulaminie.",
+        "Bez wyraźnej zgody Opal i/lub jego licencjodawców:",
+        "Zabrania się ponownego publikowania materiałów pochodzących z Opal.",
+        "Zabrania się redystrybucji treści pochodzących z Opal.",
+        "Zabrania się sprzedaży, wypożyczania lub udzielania sublicencji na materiały z Opal.",
+        "Zabrania się reprodukowania, powielania lub kopiowania materiałów z Opal."
+      ]
+    },
+    {
+      "title": "4. Konta Użytkowników",
+      "content": "Tworząc konto Opal, musisz przekazać nam informacje, które są dokładne, kompletne i aktualne w każdej chwili. Nieprzestrzeganie tego stanowi naruszenie Warunków Korzystania z Usług Opala, co może skutkować natychmiastowym rozwiązaniem Twojego konta w naszym serwisie."
+    },
+    {
+      "title": "5. Polityka Zwrotów",
+      "content": "Zwroty pieniędzy nie są dozwolone, chyba że wyraźnie nie określono inaczej. W przypadku próby zainicjowania fałszywego sporu płatniczego, dostęp do Twojego produktu zostanie natychmiast odwołany, a Twoje konto zostanie trwale zawieszone. Ważne jest również to, że kupując produkt na Opal, dobrowolnie rezygnujesz z prawa do rozpatrzenia płatności."
+    },
+    {
+      "title": "6. Modyfikacje Usługi i Cen",
+      "content": "Zastrzegamy sobie prawo do modyfikacji lub zakończenia, tymczasowo lub trwale, usługi (lub jej części) bez wcześniejszego powiadomienia. Ceny wszystkich usług podlegają zmianie bez wcześniejszego powiadomienia."
+    },
+    {
+      "title": "7. Zakończenie",
+      "content": "Możemy zakończyć lub zawiesić dostęp do naszej usługi natychmiast, bez wcześniejszego powiadomienia lub odpowiedzialności, z jakichkolwiek powodów, w tym bez ograniczeń, jeśli naruszasz niniejsze warunki."
+    },
+    {
+      "title": "8. Pliki cookies",
+      "content": "Stosujemy pliki cookies. Korzystając z Opal, wyrażasz zgodę na akceptację i używanie plików cookies zgodnie z naszą Polityką prywatności. Większość interaktywnych stron internetowych wykorzystuje pliki cookies, aby umożliwić nam pobieranie danych użytkownika podczas każdej wizyty. Pliki cookies są wykorzystywane przez naszą stronę w celu zabezpieczenia dostępu do niektórych jej części. Nie używamy plików cookies do żadnych innych celów."
+    },
+    {
+      "title": "9. Zmiany w regulaminie",
+      "content": "Zastrzegamy sobie prawo, według własnego uznania, do modyfikacji lub zastąpienia niniejszych warunków w dowolnym momencie."
+    },
+    {
+      "title": "10. Kontakt",
+      "content": "Jeśli masz jakiekolwiek pytania dotyczące niniejszego regulaminu, skontaktuj się z nami pod adresem e-mail: support@mail.opalxterminus.com. Dołożymy wszelkich starań, aby odpowiedzieć w najkrótszym możliwym terminie."
+    }
+  ]
+}

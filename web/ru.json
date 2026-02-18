@@ -1,0 +1,967 @@
+{
+  "nav": {
+    "home": "На главную",
+    "purchase": "Купить",
+    "discord": "Discord",
+    "dashboard": "Личный кабинет",
+    "manage": "Manage"
+  },
+  "home": {
+    "hero": {
+      "texts": [
+        {
+          "before": "Доминируй оппонентов с",
+          "after": "."
+        },
+        {
+          "before": "Настолько хороши, что конкуренты пытаются быть нами",
+          "after": "."
+        },
+        {
+          "before": "Настоящий. Лучший. Навсегда",
+          "after": "."
+        },
+        {
+          "before": "Зачем использовать копии, когда у тебя есть",
+          "after": "?"
+        },
+        {
+          "before": "Имитация - ложь. Совершентсво это -",
+          "after": "."
+        }
+      ],
+      "brand": "Opal Client",
+      "description": "Премиальная Майнкрафт мод-модификация для Fabric 1.21.10 разработанная специально для предоставления лучшего опыта использования",
+      "purchase": "Купить",
+      "learnMore": "Узнать больше"
+    },
+    "features": {
+      "title": "Почему именно Opal?",
+      "subtitle": "Благодаря нашему богатому функционалу вы больше никогда не захотите возвращаться к другому клиенту.",
+      "items": {
+        "abundant": {
+          "title": "Обилие функций",
+          "description": "Из за нашего огромного количества функций вы не почувствуете недостатка функций, особенно в визуальном плане."
+        },
+        "userFriendly": {
+          "title": "Легок для использования",
+          "description": "Opal разработан также для лёгкости использования, просто установи fabric, сам мод, и всё готово!"
+        },
+        "updates": {
+          "title": "Частые обновления",
+          "description": "Мы обновляем наш чит как можно быстрее чтобы предоставлять лучший опыт использования среди других клиентов"
+        },
+        "compatibility": {
+          "title": "Универсальная совместимость",
+          "description": "Opal был протестирован на таких ОС как Windows, macOS, и Linux."
+        },
+        "trusted": {
+          "title": "Доверен тысячами",
+          "description": "Opal разрабатывается разработчиками, которые уже работают над своим детищем не один год."
+        },
+        "quality": {
+          "title": "Премиальное качество",
+          "description": "Мы заботимся о наших пользователях, и пытаемся улучшить опыт использования к небесам."
+        }
+      }
+    },
+    "media": {
+      "title": "Медиа",
+      "subtitle": "Несколько видно сделанные нашим сообществом"
+    },
+    "cta": {
+      "title": "Подними свой опыт использования как можно выше.",
+      "button": "Купить"
+    }
+  },
+  "purchase": {
+    "header": {
+      "title": "Выбери версию",
+      "subtitle": "Получи Opal как есть, либо открой полноценный игровой опыт вместе с Termus и получи Opal бесплатно!"
+    },
+    "chinaBanner": {
+      "text": "Находитесь в Китае? Покупайте у наших официальных реселлеров.",
+      "link": "Посмотреть список"
+    },
+    "opal": {
+      "title": "Opal Client",
+      "price": "8.99",
+      "currency": "USD",
+      "description": "Незаменимая чит-модификация. Легковесная, Чистая, Необнаруживаемая.",
+      "featuresTitle": "Что включено?",
+      "features": [
+        "Opal Client (Навсегда)",
+        "Все последующие обновления",
+        "Доступ к поддержке Discord"
+      ],
+      "button": "Купить Opal",
+      "paymentMethods": "Картой, Apple Pay, Google Pay, Klarna, CashApp, WeChat Pay"
+    },
+    "terminus": {
+      "badge": "Выгодно",
+      "title": "Terminus: Minigame Edition",
+      "price": "45.00",
+      "currency": "USD",
+      "description": "Terminus: Minigame Edition. Opal Client включен.",
+      "featuresTitle": "Что включено",
+      "features": [
+        "Terminus: Minigame Edition (lifetime)",
+        "Opal Client БЕСПЛАТНО (lifetime)",
+        "Все последующие обновления",
+        "Доступ к поддержке Discord",
+        "Приоритетная поддержка"
+      ],
+      "button": "Купить Terminus набор",
+      "paymentMethods": "Картой, Apple Pay, Google Pay, Klarna, CashApp, WeChat Pay"
+    },
+    "crypto": {
+      "title": "Купить используя криптовалюту?",
+      "description": "Откройте тикет в Discord для USDT, BTC, ETH, LTC, или XMR платежей."
+    },
+    "resellers": {
+      "title": "Официальные реселлеры",
+      "description": "Купить Opal у наших доверенных реселлеров используя способы оплаты вашей страны.",
+      "visit": "Посмотреть",
+      "localized": {
+        "title": "Глобальные способы оплаты",
+        "description": "Ищите региональные цены, либо не нашли нужный способ оплаты в перечисленных выше? Взгляните на официальных реселлеров."
+      }
+    },
+    "upgrade": {
+      "title": "Уже куплен Opal?",
+      "description": "Купите Terminus за 25.99 USD. Откройте тикер в Discord чтобы получить."
+    },
+    "terms": "Совершая покупку, вы соглашаетесь с нашими Условиями обслуживания. Все продажи являются окончательными. Пожизненная гарантия (Навсегда) подразумевает срок службы самого продукта"
+  },
+  "dashboard": {
+    "title": "Личный кабинет",
+    "manage": "Manage",
+    "nav": {
+      "home": "На главную",
+      "purchase": "Купить",
+      "discord": "Discord",
+      "docs": "Документация",
+      "setup": "Установка",
+      "configs": "Конфиги",
+      "changelog": "Список изменений",
+      "activate": "Активировать",
+      "settings": "Настройки",
+      "overview": "Обзор",
+      "users": "Пользователи",
+      "network": "Сеть",
+      "forums": "Форум"
+    },
+    "overview": {
+      "title": "Обзор",
+      "userId": "ID пользователя",
+      "launch": "Запуск",
+      "launches": "Запусков всего",
+      "online": "Онлайн"
+    },
+    "news": {
+      "title": "Новости",
+      "view": "Обзор",
+      "empty": "Пока ничего, возвращайтесь попозже!"
+    },
+    "downloads": {
+      "title": "Скачать",
+      "opalClient": "Opal Client",
+      "downloadOpal": "Скачать Opal",
+      "selectRelease": "Выбрать версию",
+      "download": "Скачать",
+      "updated": "Обновлён",
+      "ownedSince": "Куплен",
+      "changelog": "Изменения"
+    },
+    "launcher": {
+      "title": "Launcher",
+      "opalLauncher": "Opal Launcher",
+      "availableSince": "Доступен с",
+      "updated": "Обновлён",
+      "changelog": "Изменения"
+    },
+    "access": {
+      "title": "Управление доступа",
+      "hwid": "Хвид",
+      "lastChanged": "Был изменён",
+      "ago": "назад",
+      "changeable": "Можно изменить раз в 30 дней",
+      "reset": "Сбросить"
+    },
+    "docs": {
+      "title": "Документация",
+      "description": "Узнай как использовать Opal на полную.",
+      "nav": {
+        "setup": "Установка",
+        "modules": "Модули"
+      }
+    },
+    "setup": {
+      "title": "Установка клиента",
+      "description": "Следуйте этим инструкциями чтобы запустить Opal.",
+      "instructions": {
+        "title": "Инструкция по установке",
+        "description": "Шаг-за-шагом инструкция.",
+        "step1": {
+          "title": "Установка лаунчера",
+          "text": "Скачайте {prismLink}, создайте {fabricLink} версию fabric для 1.21.10, и установите fabric api.",
+          "note": "Prism рекомендован, пока наш лаунчер не выпущен."
+        },
+        "step2": {
+          "title": "Скачайте Opal",
+          "text": "Скачайте Opal с {dashLink} и положите в папку mods вместе с fabric api."
+        },
+        "step3": {
+          "title": "JVM Аргументы",
+          "text": "Добавьте эти JVM аргументы чтобы запустить Opal (Профиль → Редактировать → Настройки → Java Аргументы):"
+        },
+        "step4": {
+          "title": "Запуск",
+          "text": "Запустите созданную вами версию Opal."
+        }
+      },
+      "troubleshooting": {
+        "title": "Частые проблемы",
+        "description": "Частые проблемы и вопросы, которые стоит прочитать перед обращением в поддержку.",
+        "checklist": {
+          "title": "Чеклист",
+          "items": [
+            "Следовали всем инструкциям?",
+            "Используете Prism?",
+            "Правильные ли JVM аргументы применены?",
+            "Синхронизировано ли время в системе?",
+            "Выключен ВПН?",
+            "Подключаетесь с заблокированных регионов (HK/CN)?"
+          ]
+        }
+      },
+      "commonErrors": {
+        "title": "Частые ошибки",
+        "description": "Если вы встречаетесь с одной из этих проблем, пожалуйста посмотрите возможные решения ниже.",
+        "items": [
+          {
+            "code": "Launch Error (No Code)",
+            "title": "Недостаток JVM Аргументов",
+            "description": "Это означает что вы не ввели нужные JVM Аргументы, пересмотри инструкцию по установке."
+          },
+          {
+            "code": "0x5e",
+            "title": "Несовместимый лаунчер",
+            "description": "Эта ошибка означает что вы используете неподдерживаемый лаунчер, Prism Launcher рекомендуется"
+          },
+          {
+            "code": "4e-63 / 4f-63",
+            "title": "Ошибка подключения",
+            "description": "Эти ошибки часто появляются при слабом/нестабильном интернет подключении, также их причиной могут быть P2P VPN (то есть Radmin, Hamachi). Выключите тому подобные и попробуйте снова"
+          },
+          {
+            "code": "G-26",
+            "title": "Неверный Хвид",
+            "description": "Мы не уверены что именно может вызывать это, но зачастую это исправляется сбросом хвида, попробуйте. В случае чего создайте тикет в дискорде"
+          }
+        ]
+      },
+      "mods": {
+        "title": "Моды",
+        "description": "Cовместимые и нет моды.",
+        "required": {
+          "title": "Обязательные",
+          "badge": "Должны быть"
+        },
+        "recommended": {
+          "title": "Рекомендованные",
+          "badge": "Хорошо бы иметь",
+          "sodium": "Производительность",
+          "accountSwitcher": "Внутри игровая смена аккаунтов",
+          "accountSwitcherTooltip": "Зайдите в наш дискорд сервер, после привязки аккаунта вы получите нашу кастомную версию"
+        },
+        "incompatible": {
+          "title": "Не совместимые",
+          "badge": "Не использовать"
+        },
+        "unsupportedLaunchers": {
+          "title": "Не поддерживаемы лаунчеры",
+          "badge": "Не поддерживаются",
+          "description": "Следующие лаунчеры не поддерживаются."
+        }
+      },
+      "faq": {
+        "title": "ЧЗВ",
+        "description": "Часто задаваемые вопросы.",
+        "questions": {
+          "olderVersions": {
+            "q": "Как я могу использовать более старые версии Opal'a?",
+            "a": "По этой ссылке {link}."
+          }
+        }
+      }
+    },
+    "changelog": {
+      "title": "Список изменений",
+      "description": "Узнай последнюю версию Opal'a!",
+      "opalLauncher": "Лаунчер Opal'a",
+      "opal": "Opal",
+      "launcherBadge": "лаунчер",
+      "noNotes": "Нету списка изменений для этого релиза."
+    },
+    "activate": {
+      "title": "Активировать лицензию",
+      "description": "У вас есть ключ лицензии? Введите его ниже чтобы активировать. Если же вы хотите мигрировать свою лицензию, нажмите {migrate}.",
+      "migrateBold": "Мигрировать",
+      "tabs": {
+        "redeem": "Активировать",
+        "migrate": "Мигрировать",
+        "buy": "Купить"
+      },
+      "forms": {
+        "redeem": {
+          "placeholder": "OPAL-XXXX-XXXX-XXXX"
+        },
+        "migrate": {
+          "description": "Если у вас уже есть <strong class=\"font-medium\">Opal</strong>, вы можете использовать миграцию чтобы перенести вашу лицензию в нашу новую систему. Если вы нуждаетесь в помощи, не стесняйтесь открывать тикет в дискорде.",
+          "username": "Логин",
+          "password": "Пароль"
+        },
+        "buy": {
+          "description": "Покупка <strong class=\"font-medium\">Opal</strong>. Ключ будет отправлен на вашу почту после успешной оплаты.",
+          "button": "Продолжить к оплате"
+        },
+        "continue": "Продолжить"
+      },
+      "success": {
+        "title": "Поздравляем!",
+        "description": "Вы получили Opal. <br />Добро пожаловать!",
+        "dashboard": "Перейти к личному кабинету"
+      },
+      "errors": {
+        "invalidKey": "Код не существует, или уже был применен.",
+        "invalidCredentials": "Неверные данные.",
+        "generic": "Гвоздь мне в кеды! Попробуйте попозже.",
+        "failedCheckout": "Не удалось перейти к оплате"
+      }
+    }
+  },
+  "configs": {
+    "title": "Конфиги",
+    "card": {
+      "noDescription": "Описания пока что нету",
+      "ago": "назад",
+      "edit": "Редактировать",
+      "editTitle": "Редактировать {name}",
+      "nameLabel": "Название",
+      "namePlaceholder": "Чудесный конфиг {name}",
+      "descriptionLabel": "Описание",
+      "descriptionPlaceholder": "Для чего этот конфиг? добавьте какие либо детали",
+      "saveChanges": "Сохранить изменения",
+      "copyCommand": "Команда сохранить",
+      "copiedToast": "Команда скопирована в буфер обмена!",
+      "publish": "Опубликовать",
+      "publishTitle": "Выложить ваш конфиг в общий доступ!",
+      "publishDescription": "Выберете существующий, либо создайте новый конфиг, который хотели бы выложить. Когда вы выкладываете ваш конфиг, другие смогут его увидеть.",
+      "chooseConfig": "Выберете желаемый конфиг...",
+      "publishNew": "Опубликовать как новый",
+      "clone": "Скопировать в приватные",
+      "cloneTitle": "Вы точно хотите этого?",
+      "cloneDescription": "Вы собираетесь скопировать этот конфиг в свои приватные.",
+      "cancel": "Отменить",
+      "continue": "Продолжить",
+      "delete": "Удалить",
+      "deleteTitle": "Вы точно хотите этого?",
+      "deleteDescription": "{name} ({id}) будет удален на веки вечные и все его данные. Это невозможно отменить.",
+      "changesSaved": "Изменения сохранены!"
+    }
+  },
+  "settings": {
+    "title": "Настройки",
+    "nav": {
+      "account": "Аккаунт",
+      "security": "Безопасность",
+      "connections": "Подключения"
+    },
+    "account": {
+      "title": "Аккаунт",
+      "username": {
+        "title": "Имя",
+        "description": "Это имя соеденённое с вашим аккаунтом.",
+        "toast": "Ваше имя было изменено!",
+        "cooldown": "Вы сможете изменить имя черещ {time}.",
+        "requirements": "Ваше имя должно быть от 1 до 24 символов длинной.",
+        "save": "Сохранить изменения"
+      },
+      "email": {
+        "title": "Електронная почта",
+        "description": "Это адрес електронной почты привязаной к вашему аккаунту.",
+        "footer": "Его нельзя изменить."
+      }
+    },
+    "connections": {
+      "title": "Подключения",
+      "card": {
+        "title": "Подключения",
+        "description": "Подключи свой аккаунт к другим сервисам чтобы получить дополнительные функции.",
+        "connected": "Подключено",
+        "ago": "назад",
+        "requiresSetup": "Требует настройки",
+        "notConnected": "Не подключено",
+        "disconnect": "Отключить",
+        "connect": "Подключить",
+        "connectSpotify": "Подключить Spotify",
+        "setup": "Настроить",
+        "spotify": {
+          "title": "Настроить интеграцию со Spotify",
+          "description": "Создайте своё собственное Spotify приложение чтобы включить интеграцию. Это обязательно из за ограничений Spotify API.",
+          "instructions": "Инструкция:",
+          "step1": "Перейдите по {link}",
+          "step2": "Создать новое приложение (любое имя приложение)",
+          "step3": "Добавьте этот Redirect URI в ваши настройки приложения:",
+          "copied": "Скопировано!",
+          "clientId": "Client ID",
+          "clientIdPlaceholder": "Ваше Spotify Client ID",
+          "clientSecret": "Client Secret",
+          "clientSecretPlaceholder": "Ваш Spotify Client Secret",
+          "saving": "Сохранение...",
+          "save": "Сохранить данные"
+        }
+      }
+    },
+    "security": {
+      "title": "Безопасность",
+      "password": {
+        "title": "Изменить пароль",
+        "description": "Для вашей же безопасности, мы вам рекомендуем использовать пароль который вы не используете где либо ещё.",
+        "current": "Нынешний пароль",
+        "new": "Новый пароль",
+        "requirements": "Ваш новый пароль должен быть от 6 до 72 символов вдлину.",
+        "save": "Изменить сохранения",
+        "toast": "Ваш пароль изменён!"
+      },
+      "twoFactor": {
+        "title": "Дву-факторная аутентификация",
+        "description": "Защитите свой аккаунт с помощью TOTP дву-факторной аутентификацией.",
+        "button": "Включить 2FA",
+        "footer": "Мы рекомендуем использовать доверенный аутентификатор, такой как  1Password, Google Authenticator, или Authy.",
+        "enabled": "Включена",
+        "disable": "Выключена",
+        "setup": {
+          "title": "Настроить Two-Factor Authentication",
+          "description": "Отсканируй QR код своим приложением аутентификатора (Google Authenticator, Authy, etc.)",
+          "manualEntry": "Не можете отсканировать? Введите код вручную:",
+          "verificationCode": "Код подтверждения",
+          "verify": "Подтвердить и включить",
+          "verifying": "Подтверждение...",
+          "cancel": "Отменить"
+        },
+        "backup": {
+          "title": "Сохраните свои бэлап-коды",
+          "description": "Эти коды используются когда вы потеряли свой аутентификатор, каждый код можно использовать лишь единажды.",
+          "warning": "Сохраните эти коды в надежном месте. Вы их больше не увидите.",
+          "copy": "Скопировать",
+          "copied": "Скопировано!",
+          "confirm": "Я сохранил коды"
+        },
+        "disableDialog": {
+          "title": "Выключить дву-факторную аутентификацию",
+          "description": "Введите пароль чтобы продолжить.",
+          "password": "Пароль",
+          "cancel": "Отмена",
+          "confirm": "Выключить 2FA",
+          "disabling": "Выключение..."
+        },
+        "toast": {
+          "setupFailed": "Не удалось начать настройку 2FA",
+          "enabled": "2FA успешно включена",
+          "invalidCode": "Неверный подтверждающий код",
+          "disabled": "2FA была успешно выключена",
+          "invalidPassword": "Неверный пароль",
+          "copied": "бэкап коды были скопированы",
+          "secretCopied": "Secret скопирован"
+        }
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Войти в аккаунт",
+      "description": "Пожалуйста, введите данные для входа.",
+      "email": "Електронная почта",
+      "password": "Пароль",
+      "forgotPassword": "Забыли пароль?",
+      "signIn": "Войти",
+      "noAccount": "Нету аккаунт?",
+      "signUp": "Зарегестрироваться",
+      "twoFactor": {
+        "title": "Код 2FA",
+        "back": "Назад",
+        "hint": "Введите 6 значный код с вашего 2FA приложения, или бэкап код."
+      }
+    },
+    "authorize": {
+      "title": "Авторизация приложения",
+      "request": "{app} хочет подключиться к вашему аккаунту",
+      "allow": "Разрешить",
+      "deny": "Отклонить"
+    },
+    "register": {
+      "title": "Создать аккаунт",
+      "description": "Пожалуйста, введите данные для регистрации.",
+      "username": "Логин",
+      "email": "Електронная почта",
+      "password": "Пароль",
+      "confirmPassword": "Повторите пароль",
+      "submit": "Зарегестрироваться",
+      "haveAccount": "Уже есть аккаунт?",
+      "signIn": "Войти"
+    },
+    "spotify": {
+      "connect": "Подключить Spotify"
+    }
+  },
+  "reseller": {
+    "title": "Статистика реселлерства",
+    "description": "Посмотреть статистику использований кода реселлера.",
+    "total": "Всего",
+    "used": "Использовано",
+    "available": "Доступно"
+  },
+  "network": {
+    "title": "Сеть",
+    "networkSuffix": "Сеть",
+    "nav": {
+      "overview": "Обзор",
+      "users": "Пользователи",
+      "resellers": "Реселлеры",
+      "keys": "Ключи",
+      "media": "Медиа",
+      "payments": "Способы оплаты"
+    },
+    "common": {
+      "loading": "Загрузка...",
+      "save": "Сохранить",
+      "cancel": "Отмена",
+      "delete": "Удалить",
+      "edit": "Редактировать",
+      "close": "Закрыть",
+      "confirm": "Подтвердить",
+      "noPermission": "У вас нету доступа к этому.",
+      "thisMonth": "этот месяц",
+      "remaining": "осталось",
+      "unknown": "Не известно",
+      "never": "Никогда",
+      "all": "Все",
+      "yes": "Да",
+      "no": "Нет"
+    },
+    "overview": {
+      "totalKeysGenerated": "Всего сгенерировано ключей",
+      "usersInNetwork": "Пользователей в сети",
+      "withKeysFrom": "С ключами от {count} реселлера",
+      "withKeysFromPlural": "С ключами от {count} реселлеров",
+      "mediaKeysThisMonth": "Медиа-ключи за этот месяц",
+      "amountOwed": "Сумма к оплате",
+      "networkInfo": "Информация о сети",
+      "currency": "Валюта",
+      "exchangeRate": "Курс обмена",
+      "keyPrice": "Цена ключа",
+      "mediaKeyPrefix": "Префикс медиа-ключей",
+      "yourPermissions": "Ваши права доступа",
+      "generateKeys": "Генерировать ключи",
+      "manageResellers": "Управление реселлерами",
+      "manageMedia": "Управление медиа",
+      "viewUsers": "Просмотр пользователей",
+      "resellers": "Реселлеры",
+      "noResellersYet": "В этой сети пока нет реселлеров."
+    },
+    "users": {
+      "title": "Пользователи",
+      "count": "{count} пользователь в вашей сети",
+      "countPlural": "{count} пользователей в вашей сети",
+      "noUsersYet": "В вашей сети пока нет пользователей.",
+      "noResellersFirst": "В этой сети пока нет реселлеров. Сначала добавьте реселлеров, чтобы увидеть пользователей.",
+      "searchPlaceholder": "Поиск по имени или email...",
+      "allResellers": "Все реселлеры",
+      "noMatchFilters": "Нет пользователей, соответствующих фильтрам.",
+      "never": "Никогда",
+      "table": {
+        "user": "Пользователь",
+        "reseller": "Реселлер",
+        "key": "Ключ",
+        "hwid": "Хвид",
+        "registered": "Зарегистрирован",
+        "actions": "Действия"
+      },
+      "hwid": {
+        "bound": "Привязан",
+        "notBound": "Не привязан",
+        "reset": "Сбросить",
+        "history": "история всех Хвид'ов",
+        "resetConfirm": {
+          "title": "Сбросить Хвид",
+          "description": "Вы уверены что хотите сбросить хвид этому пользователю?",
+          "confirm": "Сбросить",
+          "cancel": "Отмена"
+        },
+        "historyDialog": {
+          "title": "История Хвид'ов",
+          "description": "История хвид'ов {name}",
+          "noHistory": "Ничего не найдено.",
+          "eventSet": "Поставить хвид",
+          "eventReset": "Сбросить хвид"
+        },
+        "resetSuccess": "Сброс хвид'а успешен!",
+        "resetError": "Не удалось сбросить хвид :(."
+      },
+      "pagination": {
+        "page": "Страница {current} с {total}",
+        "previous": "Предыдущая",
+        "next": "Следующая"
+      }
+    },
+    "resellers": {
+      "title": "Resellers",
+      "count": "{count} reseller in your network",
+      "countPlural": "{count} resellers in your network",
+      "addReseller": "Add Reseller",
+      "noResellersYet": "No resellers yet. Add your first reseller to start generating keys.",
+      "viewStore": "View store",
+      "table": {
+        "reseller": "Reseller",
+        "prefix": "Prefix",
+        "keys": "Keys",
+        "users": "Users",
+        "status": "Status",
+        "created": "Created",
+        "active": "Active",
+        "inactive": "Inactive"
+      },
+      "create": {
+        "title": "Add Reseller",
+        "description": "Add a new reseller to your network. The prefix will be used for key generation.",
+        "name": "Name",
+        "namePlaceholder": "Reseller name",
+        "prefix": "Key Prefix",
+        "prefixPlaceholder": "e.g., HHKW",
+        "prefixHint": "2-10 uppercase letters/numbers. Keys will be: PREFIX-XXXXXXXXXXXX",
+        "storeUrl": "Store URL (optional)",
+        "storeUrlPlaceholder": "https://...",
+        "description_field": "Description (optional)",
+        "descriptionPlaceholder": "Description shown on public reseller page...",
+        "contactInfo": "Contact Info (optional)",
+        "contactInfoPlaceholder": "WeChat, QQ, Discord, etc.",
+        "submit": "Add Reseller",
+        "success": "Reseller created",
+        "error": "Failed to create reseller"
+      },
+      "edit": {
+        "title": "Edit Reseller",
+        "description": "Update details for {name}.",
+        "submit": "Save Changes",
+        "success": "Reseller updated",
+        "error": "Failed to update reseller"
+      },
+      "delete": {
+        "confirm": "Are you sure you want to delete \"{name}\"? This cannot be undone.",
+        "success": "Reseller deleted",
+        "error": "Failed to delete reseller"
+      }
+    },
+    "keys": {
+      "title": "Keys",
+      "count": "{count} key in your network",
+      "countPlural": "{count} keys in your network",
+      "stats": "{total} total • {used} redeemed • {unused} available",
+      "noKeysYet": "No keys yet",
+      "noResellersFirst": "No resellers in this network yet. Add resellers first to generate keys.",
+      "generateKeys": "Generate Keys",
+      "copyUnusedKeys": "Copy Unused Keys",
+      "allResellers": "All resellers",
+      "allKeys": "All keys",
+      "unusedOnly": "Unused only",
+      "usedOnly": "Used only",
+      "noMatchFilters": "No keys match your filters.",
+      "table": {
+        "key": "Key",
+        "reseller": "Reseller",
+        "status": "Status",
+        "created": "Created",
+        "redeemed": "Redeemed",
+        "used": "Used",
+        "unused": "Unused",
+        "media": "Media"
+      },
+      "copy": {
+        "single": "Key copied to clipboard",
+        "multiple": "{count} keys copied to clipboard",
+        "noUnused": "No unused keys to copy"
+      },
+      "generate": {
+        "title": "Generate Keys",
+        "description": "Generate keys for a reseller. You will be charged ${price} per key.",
+        "reseller": "Reseller",
+        "resellerPlaceholder": "Select a reseller",
+        "count": "Number of Keys",
+        "countPlaceholder": "1-100",
+        "submit": "Generate Keys",
+        "success": "Generated {count} keys - ${usd} ({local} {currency})",
+        "error": "Failed to generate keys",
+        "result": {
+          "title": "Keys Generated",
+          "description": "{count} keys have been generated. Copy them now - you won't see them again.",
+          "amountOwed": "Amount owed:",
+          "copyAll": "Copy All Keys"
+        }
+      },
+      "pagination": {
+        "page": "Page {current} of {total}",
+        "previous": "Previous",
+        "next": "Next"
+      }
+    },
+    "media": {
+      "title": "Media",
+      "count": "{count} media account in your network",
+      "countPlural": "{count} media accounts in your network",
+      "monthlyUsage": "{used}/{limit} keys used this month • {remaining} remaining",
+      "noPermission": "You don't have permission to manage media accounts.",
+      "addMedia": "Add Media",
+      "noMediaYet": "No media accounts found.",
+      "table": {
+        "name": "Name",
+        "platform": "Platform",
+        "key": "Key",
+        "status": "Status",
+        "added": "Added",
+        "active": "Active",
+        "inactive": "Inactive",
+        "noKey": "No key"
+      },
+      "create": {
+        "title": "Add Media Account",
+        "description": "Add a content creator to your network's media program.",
+        "name": "Name",
+        "namePlaceholder": "Creator name or channel",
+        "platform": "Platform",
+        "platformPlaceholder": "Select platform",
+        "platformUrl": "Channel/Profile URL",
+        "platformUrlPlaceholder": "https://youtube.com/@channel",
+        "notes": "Notes",
+        "notesPlaceholder": "Contact info, content focus, etc.",
+        "generateKey": "Generate Key",
+        "keysRemaining": "{count} media keys remaining this month",
+        "limitReached": "Monthly limit reached",
+        "submit": "Add Media",
+        "success": "Media account created",
+        "successWithKey": "Media account created! Key copied: {key}",
+        "error": "Failed to create media account"
+      },
+      "edit": {
+        "title": "Edit Media Account",
+        "description": "Update media account details.",
+        "submit": "Save Changes",
+        "success": "Media account updated",
+        "error": "Failed to update media account"
+      },
+      "delete": {
+        "confirm": "Delete media account \"{name}\"?",
+        "success": "Media account deleted",
+        "error": "Failed to delete media account"
+      },
+      "generateKey": {
+        "confirm": "Generate a key for \"{name}\"?",
+        "success": "Key generated and copied: {code}",
+        "error": "Failed to generate key"
+      },
+      "actions": {
+        "generateKey": "Generate Key",
+        "edit": "Edit",
+        "delete": "Delete"
+      }
+    },
+    "payments": {
+      "title": "Payments",
+      "noPermission": "You don't have permission to view payments.",
+      "balanceOwed": "Balance Owed",
+      "youOwe": "outstanding balance",
+      "overpaid": "credit balance",
+      "settled": "all settled",
+      "totalCharges": "Total Charges",
+      "keysGenerated": "keys generated",
+      "paymentsReceived": "Payments Received",
+      "payments": "payments",
+      "keyPrice": "Key Price",
+      "perKeyGenerated": "per key generated",
+      "noPaymentsYet": "No payment records yet. Records are created when keys are generated.",
+      "table": {
+        "type": "Type",
+        "generatedBy": "Generated By",
+        "keys": "Keys",
+        "usdAmount": "USD Amount",
+        "localAmount": "Local Amount",
+        "date": "Date",
+        "charge": "Charge",
+        "payment": "Payment"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "Opal × Terminus. Все права зарезервированы.",
+    "terms": "Условия предосталвения услуг",
+    "privacy": "Политика конфидинцеальности"
+  },
+  "banner": {
+    "text": "Распродажа: Используй промокод HOLIDAY10 для 10% скидки до 31 декабря"
+  },
+  "forums": {
+    "warningTitle": "Проверить на известные баги",
+    "warning": "Перед созданием баг репорта, убедитесь что он еще не был обжалован. Одинаковые баг репорты задерживают исправление.",
+    "roadmap": {
+      "title": "Планы",
+      "searchPlaceholder": "Поиск по планам...",
+      "allCategories": "Все категории",
+      "empty": "Пусто",
+      "planned": "Запланировано",
+      "inProgress": "В процессе",
+      "done": "Готово"
+    },
+    "suggestions": {
+      "title": "Предложения",
+      "new": "Предложить...",
+      "searchPlaceholder": "Поиск предложений...",
+      "allStatuses": "Все статусы",
+      "pending": "Ожидает",
+      "approved": "Одобрено",
+      "denied": "Отклонено",
+      "empty": "Ничего не найдено.",
+      "dialog": {
+        "title": "Предложить функцию",
+        "titleLabel": "Название",
+        "titlePlaceholder": "Короткое название",
+        "contentLabel": "Описание",
+        "contentPlaceholder": "Опишите своё предложение...",
+        "submit": "Отправить",
+        "submitting": "Отправление...",
+        "success": "Предложение отправлено"
+      }
+    },
+    "nav": {
+      "roadmap": "Планы",
+      "suggestions": "Предложения",
+      "bugs": "Баг репорты",
+      "changelog": "Список изменений"
+    },
+    "bugs": {
+      "title": "Баг репорты",
+      "new": "Обжаловать баг",
+      "searchPlaceholder": "Поиск по багам...",
+      "allStatuses": "Все статусы",
+      "open": "Открыт",
+      "closed": "Закрыт",
+      "invalid": "Неверен",
+      "empty": "Ничего не найдено",
+      "noItems": "Ничего не обжаловано.",
+      "version": "Версия",
+      "steps": "Шаги",
+      "dialog": {
+        "title": "Обжаловать баг",
+        "titleLabel": "Название",
+        "titlePlaceholder": "название баг репорта",
+        "versionLabel": "Версия клиента",
+        "descriptionLabel": "Описаное",
+        "descriptionPlaceholder": "Что произошлои?",
+        "stepsLabel": "Этапы воспроизведения",
+        "stepsPlaceholder": "1. Перейти... 2. Нажать...",
+        "submit": "Отправить",
+        "submitting": "Отправление...",
+        "success": "Баг репорт отправлен"
+      }
+    }
+  },
+  "manage": {
+    "roadmap": {
+      "title": "Планы",
+      "searchPlaceholder": "Поиск по планам...",
+      "filterStatus": "Отфильтровать за статусом",
+      "allStatuses": "Все статусы",
+      "addItem": "Добавить",
+      "editItem": "Отредактировать",
+      "createItem": "Создать",
+      "titleLabel": "Название",
+      "descriptionLabel": "Описание",
+      "categoryLabel": "Клиент",
+      "categoryPlaceholder": "Клиент",
+      "typeLabel": "Тип",
+      "feature": "Функция",
+      "bug": "Баг",
+      "statusLabel": "Статус",
+      "planned": "Запланировано",
+      "inProgress": "В процессе",
+      "done": "Готово",
+      "save": "Сохранить",
+      "saving": "Сохранение...",
+      "table": {
+        "title": "Название",
+        "category": "Категория",
+        "type": "Тип",
+        "status": "Статус",
+        "actions": "Действия",
+        "empty": "Ничего не найдено"
+      },
+      "toast": {
+        "updated": "Обновлено",
+        "created": "Создано",
+        "deleted": "Удалено"
+      },
+      "confirmDelete": "Уверены?"
+    },
+    "suggestions": {
+      "title": "Предложения",
+      "searchPlaceholder": "Поиск по предложениям...",
+      "filterStatus": "Отфильтровать за статусом",
+      "allStatuses": "Все статусы",
+      "pending": "Ожидает",
+      "approved": "Одобрено",
+      "denied": "Отклонено",
+      "table": {
+        "content": "Контент",
+        "author": "Автор",
+        "votes": "Голосы",
+        "status": "Статус",
+        "created": "Создано",
+        "actions": "Действия",
+        "empty": "Не найдено"
+      },
+      "toast": {
+        "approved": "Предложение одобрено & койны выданы",
+        "denied": "Предложение отклонено",
+        "deleted": "Предложение удалено"
+      },
+      "confirmDeny": "Отклонить это предложение?",
+      "confirmDelete": "Вы уверены? Это невозможно обратить вспять."
+    },
+    "bugs": {
+      "title": "Баг репорты",
+      "searchPlaceholder": "Поиск по баг репортам...",
+      "filterStatus": "Поиск по баг репортам",
+      "allStatuses": "все статусы",
+      "open": "Открыт",
+      "closed": "Закрыт",
+      "invalid": "Неверен",
+      "table": {
+        "issue": "Проблема",
+        "author": "Автор",
+        "version": "Версия",
+        "status": "Статус",
+        "created": "Создано",
+        "actions": "Действия",
+        "empty": "Не найдено"
+      },
+      "toast": {
+        "closed": "Баг репорт закрыт.",
+        "invalid": "Баг репорт помечен как неверный.",
+        "deleted": "Баг репорт был удален."
+      },
+      "confirmClose": "Закрыть этот баг репорт?",
+      "confirmInvalid": "Пометить как неверный?",
+      "confirmDelete": "Вы точно уверены? Это нельзя обратить вспять."
+    }
+  }
+}
