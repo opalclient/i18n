@@ -2,9 +2,88 @@
   "nav": {
     "home": "Home",
     "purchase": "Purchase",
+    "branding": "Branding",
     "discord": "Discord",
     "dashboard": "Dashboard",
     "manage": "Manage"
+  },
+  "branding": {
+    "meta": {
+      "title": "Branding",
+      "description": "Official Opal Client brand assets, logos, and color palette for press and creative use."
+    },
+    "hero": {
+      "eyebrow": "Press Kit",
+      "title": "Opal Client Brand",
+      "description": "Official brand assets, logos, and color palette. Free to use for press, fan sites, and creative projects — please follow our guidelines."
+    },
+    "guidelines": {
+      "title": "Usage Guidelines",
+      "do": {
+        "title": "Do",
+        "items": [
+          "Use official assets from this page",
+          "Maintain aspect ratio when resizing",
+          "Use on contrasting backgrounds",
+          "Credit Opal Client where applicable"
+        ]
+      },
+      "dont": {
+        "title": "Don't",
+        "items": [
+          "Alter or distort the logo",
+          "Use to imply endorsement without permission",
+          "Use on visually similar backgrounds",
+          "Recreate using unofficial assets"
+        ]
+      }
+    },
+    "logos": {
+      "title": "Logo Assets",
+      "description": "Available in dark, light, and icon-only variants.",
+      "download": "Download SVG",
+      "items": {
+        "dark": {
+          "name": "Logo – Dark Background",
+          "description": "Primary logo for use on dark backgrounds"
+        },
+        "light": {
+          "name": "Logo – Light Background",
+          "description": "Primary logo for use on light backgrounds"
+        },
+        "wordmark_dark": {
+          "name": "Wordmark – Dark Background",
+          "description": "Horizontal wordmark for use on dark backgrounds"
+        },
+        "wordmark_light": {
+          "name": "Wordmark – Light Background",
+          "description": "Horizontal wordmark for use on light backgrounds"
+        },
+        "icon": {
+          "name": "Icon Only",
+          "description": "Standalone icon mark for avatars and favicons"
+        }
+      }
+    },
+    "colors": {
+      "title": "Color Palette",
+      "description": "In-client theme colors used across the Opal experience.",
+      "primary": "Primary",
+      "secondary": "Secondary",
+      "copy": "Copy hex",
+      "copied": "Copied!"
+    },
+    "about": {
+      "title": "About Opal Client",
+      "description": "A premium Minecraft utility mod built for the best experience possible. Opal currently supports Fabric for Minecraft 1.21.10, providing a smooth and enjoyable experience on both 1.8 and latest-version servers.",
+      "slogans": [
+        "Dominate the game with Opal Client.",
+        "So good, competitors pretend they're Opal Client.",
+        "The original. The best. Always Opal Client.",
+        "Why settle for copies when you have Opal Client.",
+        "Imitation is flattery. Excellence is Opal Client."
+      ]
+    }
   },
   "home": {
     "hero": {
