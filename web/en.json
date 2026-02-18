@@ -757,7 +757,7 @@
     "text": "Holiday Sale: Use code HOLIDAY10 for 10% off until Dec 31st"
   },
   "forums": {
-    "warningTitle": "Check for known bugs",
+    "warningTitle": "Check for known bugs. This is NOT for launch issues or support!",
     "warning": "Before creating a report, please verify if the bug has already been reported. Duplicate reports delay fixes.",
     "roadmap": {
       "title": "Roadmap",
