@@ -3,6 +3,30 @@
 # ============================================================
 category.combat.name=Combat
 
+# Anti Bot
+module.anti_bot.name=Anti Bot
+module.anti_bot.description=Additional bot detection checks for targeting.
+module.anti_bot.basic_checks.name=Basic Checks
+module.anti_bot.tablist.name=Tablist
+module.anti_bot.no_gamemode.name=No GameMode
+module.anti_bot.no_properties.name=No Properties
+module.anti_bot.illegal_pitch.name=Illegal Pitch
+module.anti_bot.illegal_health.name=Illegal Health
+module.anti_bot.fake_entity_id.name=Fake Entity ID
+module.anti_bot.duplicate_name.name=Duplicate Name
+module.anti_bot.invalid_ground.name=Invalid Ground
+module.anti_bot.invalid_ground.enabled.name=Enabled
+module.anti_bot.invalid_ground.threshold.name=Threshold
+module.anti_bot.not_swung.name=Not Swung
+module.anti_bot.not_swung.enabled.name=Enabled
+module.anti_bot.not_swung.min_age.name=Min Age
+module.anti_bot.always_in_radius.name=Always In Radius
+module.anti_bot.always_in_radius.enabled.name=Enabled
+module.anti_bot.always_in_radius.range.name=Range
+module.anti_bot.latency_timing.name=Latency Timing
+module.anti_bot.latency_timing.enabled.name=Enabled
+module.anti_bot.latency_timing.threshold_ms.name=Threshold MS
+
 # Aim Assist
 module.aim_assist.name=瞄准辅助
 module.aim_assist.description=辅助你的旋转以瞄准目标.
