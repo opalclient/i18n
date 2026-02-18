@@ -1,0 +1,125 @@
+<PageHeader
+  title="Client Setup"
+  description="Follow these instructions to get Opal running on your machine."
+/>
+
+<SetupGrid>
+<MainContent>
+
+<SetupCard icon="settings" title="Setup Instructions" description="Step-by-step guide to installation.">
+<Steps>
+
+<Step number={1} title="Launcher Setup">
+Download [Prism Launcher](https://prismlauncher.org/download/), setup a new [Fabric](https://fabricmc.net/) profile for 1.21.10, and install the Fabric API mod.
+
+<Note>Prism is recommended until our custom launcher releases, but not required.</Note>
+</Step>
+
+<Step number={2} title="Download Opal">
+Download Opal from [/dash](/dash) and place it in your mods folder alongside Fabric API.
+</Step>
+
+<Step number={3} title="JVM Arguments">
+Add the following JVM arguments to your launch profile (Profile → Edit → Settings → Java Arguments):
+
+<JvmArgs>
+{`-XX:+DisableAttachMechanism
+--add-opens java.base/java.nio.file.spi=ALL-UNNAMED
+--add-opens java.base/java.lang=ALL-UNNAMED
+--add-opens java.base/java.lang.reflect=ALL-UNNAMED
+--add-opens java.base/jdk.internal.loader=ALL-UNNAMED
+--add-opens java.base/sun.security.ssl=ALL-UNNAMED
+--add-opens java.management/sun.management=ALL-UNNAMED`}
+</JvmArgs>
+</Step>
+
+<Step number={4} title="Launch">
+Launch Opal. You will be prompted to sign in with your Opal account.
+</Step>
+
+</Steps>
+</SetupCard>
+
+<SetupCard icon="help" title="Troubleshooting" description="Common issues and things to check before asking for help." contentClassName="grid gap-6 md:grid-cols-2">
+<ChecklistSection title="Checklist">
+<Checklist>
+<ChecklistItem>Followed setup instructions exactly?</ChecklistItem>
+<ChecklistItem>Using Prism Launcher?</ChecklistItem>
+<ChecklistItem>Correct JVM arguments applied?</ChecklistItem>
+<ChecklistItem>System time synced?</ChecklistItem>
+<ChecklistItem>VPN disabled/changed location?</ChecklistItem>
+<ChecklistItem>Connecting from blocked region (HK/CN)?</ChecklistItem>
+</Checklist>
+</ChecklistSection>
+</SetupCard>
+
+<SetupCard icon="alert" title="Common Errors" description="If you are encountering any of these errors, please check the following solutions.">
+<ErrorList>
+<ErrorItem code="Launch Error (No Code)" title="Missing Java Arguments">
+This indicates that the required JVM arguments are missing from your launcher profile.
+</ErrorItem>
+
+<ErrorItem code="0x5e" title="Incompatible Launcher">
+This error means the Java arguments are missing. This often happens when using an incompatible launcher.
+</ErrorItem>
+
+<ErrorItem code="4e-63 / 4f-63" title="Connection Issue">
+These errors typically indicate a weak or unstable internet connection, interference from a P2P VPN, or a blocked connection due to firewall restrictions (such as those found in China and Russia. Using a VPN or proxy with a stealth protocol such as VLESS, will fix this issue. 
+
+<ErrorItem code="G-26" title="HWID Mismatch">
+Usually resetting your HWID fixes this issue. You can request this in a support ticket if needed.
+</ErrorItem>
+</ErrorList>
+</SetupCard>
+
+<SetupCard icon="faq" title="FAQ" description="Frequently asked questions.">
+<FAQList>
+<FAQItem question="How can I use Opal on older versions servers?">
+By using [ViaFabricPlus](https://modrinth.com/mod/viafabricplus).
+</FAQItem>
+</FAQList>
+</SetupCard>
+
+</MainContent>
+<Sidebar>
+
+<SetupCard icon="puzzle" title="Mods" description="Compatible and incompatible mods.">
+<ModSection title="Required" badge="Must Have" badgeColor="amber">
+<ModList>
+<ModLink href="https://modrinth.com/mod/fabric-api/versions?g=1.21.10">Fabric API</ModLink>
+</ModList>
+</ModSection>
+
+<ModSeparator />
+
+<ModSection title="Recommended" badge="Good to Have" badgeColor="emerald">
+<ModList>
+<ModLink href="https://modrinth.com/mod/modmenu/versions?g=1.21.10">Mod Menu</ModLink>
+<ModLink href="https://modrinth.com/mod/sodium/versions?g=1.21.10&l=fabric">Sodium</ModLink>
+<ModNote>Performance</ModNote>
+</ModList>
+</ModSection>
+
+<ModSeparator />
+
+<ModSection title="Incompatible" badge="Do Not Use" badgeColor="red">
+<ModList>
+<IncompatibleMod>Lithium</IncompatibleMod>
+<IncompatibleMod>Animatium</IncompatibleMod>
+</ModList>
+</ModSection>
+
+<ModSeparator />
+
+<ModSection title="Unsupported Launchers" badge="Not Supported" badgeColor="red" description="The following launchers are not supported. Please use our official launcher or a compatible alternative.">
+<ModList>
+<IncompatibleMod>Modrinth</IncompatibleMod>
+<IncompatibleMod>HMCL</IncompatibleMod>
+<IncompatibleMod>Lunar</IncompatibleMod>
+<IncompatibleMod>Feather</IncompatibleMod>
+</ModList>
+</ModSection>
+</SetupCard>
+
+</Sidebar>
+</SetupGrid>
