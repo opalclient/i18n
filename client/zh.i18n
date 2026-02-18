@@ -50,6 +50,7 @@ module.kill_aura.require_weapon.name=Require Weapon
 module.kill_aura.override_raycast.name=Override Raycast
 module.kill_aura.tick_lookahead.name=Tick Lookahead
 module.kill_aura.fov.name=FOV
+module.kill_aura.teams.name=Team Check
 module.kill_aura.visuals.name=Visuals
 module.kill_aura.requirements.name=Requirements
 
