@@ -118,6 +118,17 @@
       "title": "Pay with Crypto?",
       "description": "Open a ticket in Discord for USDT, BTC, ETH, LTC, or XMR payments."
     },
+    "cryptoPayments": {
+      "title": "Crypto Payments",
+      "description": "Automatic delivery via Litecoin or Bitcoin. Your key is generated on receipt.",
+      "ltc": "Litecoin (LTC)",
+      "btc": "Bitcoin (BTC)"
+    },
+    "alternativeMethods": {
+      "title": "Alternative Methods",
+      "description": "Pay with Monero (XMR), Ethereum, or localized payment methods.",
+      "ticket": "Ticket (XMR / Other)"
+    },
     "resellers": {
       "title": "Official Resellers",
       "description": "Purchase Opal from our trusted partners for localized payment methods and support.",
@@ -246,7 +257,7 @@
           "title": "How to pay:",
           "step1": "Send {symbol} to the address above",
           "step2": "Wait for blockchain confirmation (usually 10-30 minutes)",
-          "step3": "Your license key will be sent to your email automatically"
+          "step3": "Your license key will be delivered to your email. This can take up to 2 hours."
         },
         "viewExplorer": "View on Block Explorer",
         "back": "Back to Activate",
