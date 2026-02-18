@@ -754,7 +754,11 @@
     "privacy": "Privacy Policy"
   },
   "banner": {
-    "text": "Holiday Sale: Use code HOLIDAY10 for 10% off until Dec 31st"
+    "presets": {
+      "christmas": "Holiday Sale: Use code HOLIDAY10 for 10% off until Dec 31st",
+      "new_year": "New Year Sale: Use code NEWYEAR10 for 10% off until Jan 7th",
+      "lunar_new_year": "Lunar New Year Sale: Use code LUNAR10 for 10% off until Mar 3rd"
+    }
   },
   "forums": {
     "warningTitle": "Check for known bugs. This is NOT for launch issues or support!",
