@@ -13,9 +13,8 @@
       "description": "Official Opal Client brand assets, logos, and color palette for press and creative use."
     },
     "hero": {
-      "eyebrow": "Press Kit",
       "title": "Opal Client Brand",
-      "description": "Official brand assets, logos, and color palette. Free to use for press, fan sites, and creative projects — please follow our guidelines."
+      "description": "Official brand assets, logos, and color palette for media, resellers, and press. Please follow our guidelines when using these assets."
     },
     "guidelines": {
       "title": "Usage Guidelines",
@@ -43,21 +42,17 @@
       "description": "Available in dark, light, and icon-only variants.",
       "download": "Download SVG",
       "items": {
-        "dark": {
-          "name": "Logo – Dark Background",
-          "description": "Primary logo for use on dark backgrounds"
-        },
-        "light": {
-          "name": "Logo – Light Background",
-          "description": "Primary logo for use on light backgrounds"
-        },
-        "wordmark_dark": {
-          "name": "Wordmark – Dark Background",
-          "description": "Horizontal wordmark for use on dark backgrounds"
+        "full_dark": {
+          "name": "Logo — Dark Background",
+          "description": "Full logo with built-in dark background card"
         },
         "wordmark_light": {
-          "name": "Wordmark – Light Background",
+          "name": "Wordmark — Light Background",
           "description": "Horizontal wordmark for use on light backgrounds"
+        },
+        "wordmark_dark": {
+          "name": "Wordmark — Dark Background",
+          "description": "Horizontal wordmark for use on dark backgrounds"
         },
         "icon": {
           "name": "Icon Only",
@@ -72,17 +67,6 @@
       "secondary": "Secondary",
       "copy": "Copy hex",
       "copied": "Copied!"
-    },
-    "about": {
-      "title": "About Opal Client",
-      "description": "A premium Minecraft utility mod built for the best experience possible. Opal currently supports Fabric for Minecraft 1.21.10, providing a smooth and enjoyable experience on both 1.8 and latest-version servers.",
-      "slogans": [
-        "Dominate the game with Opal Client.",
-        "So good, competitors pretend they're Opal Client.",
-        "The original. The best. Always Opal Client.",
-        "Why settle for copies when you have Opal Client.",
-        "Imitation is flattery. Excellence is Opal Client."
-      ]
     }
   },
   "home": {
