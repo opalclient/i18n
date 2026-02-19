@@ -1,0 +1,174 @@
+# Module Settings
+
+Scripts can define settings that appear in the ClickGUI identically to native module settings. All settings must be defined inside the `registerModule` callback, before any `module.on(...)` calls.
+
+```javascript
+script.registerModule({ name: "MyModule", description: "..." }, (module) => {
+    module.addBool("Enabled", true);
+    module.addNumber("Speed", 1.0, 0.1, 5.0, 0.1);
+    module.addMode("Mode", ["Vanilla", "NCP"]);
+    module.addGroup("Options", ["Speed", "Mode"]);
+
+    module.on("preGameTick", () => {
+        if (!module.getBool("Enabled")) return;
+        const speed = module.getNumber("Speed");
+        const mode = module.getMode("Mode");
+    });
+});
+```
+
+---
+
+## Defining Settings
+
+<Method
+    name="addBool"
+    signature="void addBool(String name, boolean defaultValue)"
+    description="Registers a boolean toggle setting. Appears as a switch in the ClickGUI."
+    params={[
+        { name: "name", type: "String", desc: "The display name of the setting." },
+        { name: "defaultValue", type: "boolean", desc: "The default on/off state." }
+    ]}
+/>
+
+<Method
+    name="addNumber"
+    signature="void addNumber(String name, double defaultValue, double min, double max, double step)"
+    description="Registers a numeric slider setting."
+    params={[
+        { name: "name", type: "String", desc: "The display name of the setting." },
+        { name: "defaultValue", type: "double", desc: "The default value." },
+        { name: "min", type: "double", desc: "The minimum allowed value." },
+        { name: "max", type: "double", desc: "The maximum allowed value." },
+        { name: "step", type: "double", desc: "The slider increment step." }
+    ]}
+/>
+
+<Method
+    name="addMode"
+    signature="void addMode(String name, String[] options)"
+    description="Registers a dropdown mode selector. Right-click to expand, click an option to select it."
+    params={[
+        { name: "name", type: "String", desc: "The display name of the setting." },
+        { name: "options", type: "String[]", desc: "An array of option strings. The first option is selected by default." }
+    ]}
+/>
+
+<Method
+    name="addGroup"
+    signature="void addGroup(String name, String[] settingNames)"
+    description="Groups previously defined settings under a collapsible header in the ClickGUI. The named settings are removed from the top-level list and nested inside the group."
+    params={[
+        { name: "name", type: "String", desc: "The group header display name." },
+        { name: "settingNames", type: "String[]", desc: "An array of setting names to include. Each must match a previously defined setting exactly." }
+    ]}
+/>
+
+<Callout type="warning">
+    Settings must be defined before `module.on(...)` calls. `addGroup` must be called after all settings it references have been defined.
+</Callout>
+
+---
+
+## Reading Settings
+
+<Method
+    name="getBool"
+    signature="boolean getBool(String name)"
+    description="Returns the current value of a boolean setting."
+    params={[
+        { name: "name", type: "String", desc: "The setting name." }
+    ]}
+    returns={{ type: "boolean", desc: "The current value, or false if the setting does not exist." }}
+/>
+
+<Method
+    name="getNumber"
+    signature="double getNumber(String name)"
+    description="Returns the current value of a numeric setting."
+    params={[
+        { name: "name", type: "String", desc: "The setting name." }
+    ]}
+    returns={{ type: "double", desc: "The current value, or 0.0 if the setting does not exist." }}
+/>
+
+<Method
+    name="getMode"
+    signature="String getMode(String name)"
+    description="Returns the currently selected option of a mode setting as a string."
+    params={[
+        { name: "name", type: "String", desc: "The setting name." }
+    ]}
+    returns={{ type: "String", desc: "The selected option string, or an empty string if the setting does not exist." }}
+/>
+
+<Method
+    name="isModeEqual"
+    signature="boolean isModeEqual(String name, String option)"
+    description="Checks whether a mode setting is currently set to the given option. Case-insensitive."
+    params={[
+        { name: "name", type: "String", desc: "The setting name." },
+        { name: "option", type: "String", desc: "The option to compare against." }
+    ]}
+    returns={{ type: "boolean", desc: "True if the current mode matches the option." }}
+/>
+
+---
+
+## Writing Settings
+
+<Method
+    name="setBool"
+    signature="void setBool(String name, boolean value)"
+    description="Programmatically sets the value of a boolean setting."
+    params={[
+        { name: "name", type: "String", desc: "The setting name." },
+        { name: "value", type: "boolean", desc: "The new value." }
+    ]}
+/>
+
+<Method
+    name="setNumber"
+    signature="void setNumber(String name, double value)"
+    description="Programmatically sets the value of a numeric setting."
+    params={[
+        { name: "name", type: "String", desc: "The setting name." },
+        { name: "value", type: "double", desc: "The new value." }
+    ]}
+/>
+
+---
+
+## Full Example
+
+```javascript
+const script = registerScript({
+    name: "Example",
+    version: "1.0",
+    authors: ["trq"]
+});
+
+script.registerModule({
+    name: "Example",
+    description: "Demonstrates all setting types"
+}, (module) => {
+
+    module.addBool("Active", true);
+    module.addNumber("Range", 3.0, 1.0, 6.0, 0.1);
+    module.addMode("Mode", ["Fast", "Normal", "Slow"]);
+    module.addGroup("Behaviour", ["Range", "Mode"]);
+
+    module.on("preGameTick", () => {
+        if (!module.getBool("Active")) return;
+
+        const range = module.getNumber("Range");
+
+        if (module.isModeEqual("Mode", "Fast")) {
+            // fast logic
+        } else if (module.isModeEqual("Mode", "Normal")) {
+            // normal logic
+        }
+    });
+});
+```
+
