@@ -2,20 +2,66 @@
 # Combat
 # ============================================================
 
+# Anti Bot
+module.anti_bot.name=Anti Bot
+module.anti_bot.description=Additional bot detection checks for targeting.
+module.anti_bot.basic_checks.name=Basic Checks
+module.anti_bot.tablist.name=Tablist
+module.anti_bot.no_gamemode.name=No GameMode
+module.anti_bot.no_properties.name=No Properties
+module.anti_bot.illegal_pitch.name=Illegal Pitch
+module.anti_bot.illegal_health.name=Illegal Health
+module.anti_bot.fake_entity_id.name=Fake Entity ID
+module.anti_bot.duplicate_name.name=Duplicate Name
+module.anti_bot.invalid_ground.name=Invalid Ground
+module.anti_bot.invalid_ground.enabled.name=Enabled
+module.anti_bot.invalid_ground.threshold.name=Threshold
+module.anti_bot.not_swung.name=Not Swung
+module.anti_bot.not_swung.enabled.name=Enabled
+module.anti_bot.not_swung.min_age.name=Min Age
+module.anti_bot.always_in_radius.name=Always In Radius
+module.anti_bot.always_in_radius.enabled.name=Enabled
+module.anti_bot.always_in_radius.range.name=Range
+module.anti_bot.latency_timing.name=Latency Timing
+module.anti_bot.latency_timing.enabled.name=Enabled
+module.anti_bot.latency_timing.threshold_ms.name=Threshold MS
+
 # Aim Assist
 module.aim_assist.name=Aim Assist
-module.aim_assist.description=Assists your rotations to aim at entities.
+module.aim_assist.description=Assists your aim towards nearby targets with legit-style corrections.
 module.aim_assist.mode.name=Mode
+module.aim_assist.silent.name=Silent
+module.aim_assist.targeting.name=Targeting
+module.aim_assist.body_part.name=Body Part
 module.aim_assist.fov.name=FOV
 module.aim_assist.range.name=Range
 module.aim_assist.speed.name=Speed
-module.aim_assist.draw_fov.name=Draw FOV
+module.aim_assist.magnet.name=Magnet
+module.aim_assist.visible_smoothing.name=Visible Smoothing
+module.aim_assist.smoothing.name=Smoothing
+module.aim_assist.max_rotation/tick.name=Max Rotation/Tick
+module.aim_assist.curve.name=Curve
+module.aim_assist.curve_smoothing.name=Curve Smoothing
+module.aim_assist.acceleration.name=Acceleration
+module.aim_assist.randomization.name=Randomization
+module.aim_assist.speed_variance.name=Speed Variance
+module.aim_assist.yaw_jitter.name=Yaw Jitter
+module.aim_assist.pitch_jitter.name=Pitch Jitter
+module.aim_assist.overshoot.name=Overshoot
+module.aim_assist.adaptive.name=Adaptive
+module.aim_assist.max_strength.name=Max Strength
+module.aim_assist.adaptive_sensitivity.name=Adaptive Sensitivity
+module.aim_assist.sensitivity.name=Sensitivity
+module.aim_assist.sens_multiplier.name=Sens Multiplier
+module.aim_assist.activation_fov.name=Activation FOV
+module.aim_assist.scale_with_distance.name=Scale With Distance
+module.aim_assist.requirements.name=Requirements
 module.aim_assist.require_click.name=Require Click
 module.aim_assist.require_weapon.name=Require Weapon
-module.aim_assist.horizontal_only.name=Horizontal Only
 module.aim_assist.visibility_check.name=Visibility Check
-module.aim_assist.targeting.name=Targeting
-module.aim_assist.requirements.name=Requirements
+module.aim_assist.horizontal_only.name=Horizontal Only
+module.aim_assist.draw_fov.name=Draw FOV
+module.aim_assist.targets.name=Targets
 
 # Auto Clicker
 module.auto_clicker.name=Auto Clicker
@@ -34,7 +80,6 @@ module.auto_clicker.mouse_buttons.name=Mouse Buttons
 module.auto_clicker.require_pressed.name=Require Pressed
 module.auto_clicker.weapons_only.name=Weapons Only
 module.auto_clicker.block_hit.name=Block Hit
-module.auto_clicker.break_blocks.name=Break Blocks
 module.auto_clicker.requirements.name=Requirements
 
 # Kill Aura
@@ -49,6 +94,7 @@ module.kill_aura.require_weapon.name=Require Weapon
 module.kill_aura.override_raycast.name=Override Raycast
 module.kill_aura.tick_lookahead.name=Tick Lookahead
 module.kill_aura.fov.name=FOV
+module.kill_aura.teams.name=Team Check
 module.kill_aura.visuals.name=Visuals
 module.kill_aura.requirements.name=Requirements
 
