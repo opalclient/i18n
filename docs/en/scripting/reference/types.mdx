@@ -1,87 +1,84 @@
-# Shared Types
+---
+title: Types
+description: Script-safe wrapper types for Minecraft objects
+---
 
-These types are used throughout the scripting API as parameters and return values. Each one is a script-safe wrapper that exposes stable method names — **do not access `.x` / `.y` fields directly**, as those are remapped to intermediary names at runtime.
+# Types
+
+These types are exposed as globals in every script. They wrap underlying Minecraft objects to provide stable, non-intermediary method names that work correctly at runtime under Fabric mappings.
 
 ---
 
 ## BlockPos
 
-**Global constructor:** `new BlockPos(x, y, z)`
+Represents an integer block position in the world. Bound as `BlockPos` so you can construct one with `new BlockPos(x, y, z)`.
 
-Represents a block coordinate. Returned by `player.getBlockPosition()` and world query methods. Can also be constructed by scripts.
+```js
+const pos = player.getBlockPosition(); // returns BlockPos
+const below = new BlockPos(pos.getX(), pos.getY() - 1, pos.getZ());
+```
 
-<Method
-    name="getX"
-    signature="int getX()"
-    description="Returns the X coordinate."
-    returns={{ type: "int", desc: "X coordinate." }}
-/>
-
-<Method
-    name="getY"
-    signature="int getY()"
-    description="Returns the Y coordinate."
-    returns={{ type: "int", desc: "Y coordinate." }}
-/>
-
-<Method
-    name="getZ"
-    signature="int getZ()"
-    description="Returns the Z coordinate."
-    returns={{ type: "int", desc: "Z coordinate." }}
-/>
-
-<Method
-    name="offset"
-    signature="BlockPos offset(Direction direction)"
-    description="Returns a new BlockPos offset by one block in the given direction."
-    params={[
-        { name: "direction", type: "Direction", desc: "The direction to offset toward." }
-    ]}
-    returns={{ type: "BlockPos", desc: "The offset position." }}
-    example="const below = pos.offset(side.getOpposite());"
-/>
+| Method | Returns | Description |
+|---|---|---|
+| `getX()` | `int` | X coordinate |
+| `getY()` | `int` | Y coordinate |
+| `getZ()` | `int` | Z coordinate |
+| `offset(direction)` | `BlockPos` | Returns a new `BlockPos` shifted one block in the given `Direction` |
 
 ---
 
 ## Vec2f
 
-**Global constructor:** `new Vec2f(yaw, pitch)`
+Represents a 2D float vector (yaw/pitch pair). Bound as `Vec2f` so you can construct one with `new Vec2f(yaw, pitch)`.
 
-Represents a yaw/pitch rotation pair in degrees. Returned by all `rotation.*` methods. Can also be constructed by scripts to pass as a priority rotation.
+```js
+const rot = rotation.getRotation(); // returns Vec2f
+client.print("Yaw: " + rot.getYaw() + "  Pitch: " + rot.getPitch());
+```
 
-<Method
-    name="getYaw"
-    signature="float getYaw()"
-    description="Returns the yaw (horizontal rotation) in degrees."
-    returns={{ type: "float", desc: "Yaw in degrees." }}
-/>
-
-<Method
-    name="getPitch"
-    signature="float getPitch()"
-    description="Returns the pitch (vertical rotation) in degrees."
-    returns={{ type: "float", desc: "Pitch in degrees." }}
-    example={`const rot = rotation.getRotation();\nrotation.set(rot.getYaw(), rot.getPitch());`}
-/>
+| Method | Returns | Description |
+|---|---|---|
+| `getYaw()` | `float` | The X component (yaw in degrees) |
+| `getPitch()` | `float` | The Y component (pitch in degrees) |
 
 ---
 
 ## Direction
 
-**No constructor** — instances are received from `world.getAdjacentDirections(pos)`. Represents one of the six cardinal block faces.
+Represents a cardinal or vertical facing direction. You never construct one directly — they come from `world.getAdjacentDirections()`.
 
-<Method
-    name="getOpposite"
-    signature="Direction getOpposite()"
-    description="Returns the direction directly opposite (e.g. NORTH → SOUTH, UP → DOWN)."
-    returns={{ type: "Direction", desc: "The opposite direction." }}
-/>
+```js
+const dirs = world.getAdjacentDirections(below); // returns List<Direction>
+const side = dirs.get(0);
+const opp  = side.getOpposite();
+```
 
-<Method
-    name="getName"
-    signature="String getName()"
-    description="Returns the lowercase name of the direction."
-    returns={{ type: "String", desc: "e.g. \"north\", \"up\"." }}
-    example={`const sides = world.getAdjacentDirections(pos);\nconst side = sides.get(0);\nclient.print(side.getName()); // "north"`}
-/>
+| Method | Returns | Description |
+|---|---|---|
+| `getOpposite()` | `Direction` | The direction directly opposite this one |
+| `getName()` | `String` | Lowercase name, e.g. `"north"`, `"up"`, `"down"` |
+
+---
+
+## ScriptRaytracedRotation
+
+Returned by `rotation.getRotationFromRaycastedBlock()` and `rotation.getRotationFromRaycastedEntity()`. Contains the yaw/pitch to aim at the target **and** the hit result needed to place/interact with the block.
+
+```js
+const raytrace = rotation.getRotationFromRaycastedBlock(
+    neighbor,
+    side.getOpposite(),
+    rotation.getRotation(),
+    player.getEyePosition()
+);
+if (raytrace === null) return;
+
+rotation.set(raytrace.getYaw(), raytrace.getPitch());
+mc.interactionManager.interactBlock(MAIN_HAND, raytrace.getHitResult());
+```
+
+| Method | Returns | Description |
+|---|---|---|
+| `getYaw()` | `float` | Yaw angle in degrees to look at the target |
+| `getPitch()` | `float` | Pitch angle in degrees to look at the target |
+| `getHitResult()` | `HitResult` | Raw hit result to pass to `mc.interactionManager.interactBlock()` |
