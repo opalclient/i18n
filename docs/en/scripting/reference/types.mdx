@@ -1,14 +1,14 @@
-# Types Reference
+# Shared Types
 
-Common types returned and accepted by script proxy methods.
+These types are used throughout the scripting API as parameters and return values. Each one is a script-safe wrapper that exposes stable method names — **do not access `.x` / `.y` fields directly**, as those are remapped to intermediary names at runtime.
 
 ---
 
 ## BlockPos
 
-`BlockPos` is a script-safe wrapper around Minecraft's block position.  
-Construct one directly: `new BlockPos(x, y, z)`.  
-All proxy methods that accept or return block positions use this type.
+**Global constructor:** `new BlockPos(x, y, z)`
+
+Represents a block coordinate. Returned by `player.getBlockPosition()` and world query methods. Can also be constructed by scripts.
 
 <Method
     name="getX"
@@ -34,93 +34,54 @@ All proxy methods that accept or return block positions use this type.
 <Method
     name="offset"
     signature="BlockPos offset(Direction direction)"
-    description="Returns a new BlockPos shifted one block in the given direction."
+    description="Returns a new BlockPos offset by one block in the given direction."
     params={[
         { name: "direction", type: "Direction", desc: "The direction to offset toward." }
     ]}
     returns={{ type: "BlockPos", desc: "The offset position." }}
+    example="const below = pos.offset(side.getOpposite());"
 />
 
-### Example
+---
 
-```js
-const pos = player.getBlockPosition();
-const below = new BlockPos(pos.getX(), pos.getY() - 1, pos.getZ());
-```
+## Vec2f
+
+**Global constructor:** `new Vec2f(yaw, pitch)`
+
+Represents a yaw/pitch rotation pair in degrees. Returned by all `rotation.*` methods. Can also be constructed by scripts to pass as a priority rotation.
+
+<Method
+    name="getYaw"
+    signature="float getYaw()"
+    description="Returns the yaw (horizontal rotation) in degrees."
+    returns={{ type: "float", desc: "Yaw in degrees." }}
+/>
+
+<Method
+    name="getPitch"
+    signature="float getPitch()"
+    description="Returns the pitch (vertical rotation) in degrees."
+    returns={{ type: "float", desc: "Pitch in degrees." }}
+    example={`const rot = rotation.getRotation();\nrotation.set(rot.getYaw(), rot.getPitch());`}
+/>
 
 ---
 
 ## Direction
 
-`Direction` is a script-safe wrapper around Minecraft's directional enum.  
-You do not construct directions directly — they are returned from proxy methods
-such as `world.getAdjacentDirections(pos)`.
+**No constructor** — instances are received from `world.getAdjacentDirections(pos)`. Represents one of the six cardinal block faces.
 
 <Method
     name="getOpposite"
     signature="Direction getOpposite()"
-    description="Returns the direction pointing the opposite way (e.g. NORTH → SOUTH, UP → DOWN)."
+    description="Returns the direction directly opposite (e.g. NORTH → SOUTH, UP → DOWN)."
     returns={{ type: "Direction", desc: "The opposite direction." }}
 />
 
 <Method
     name="getName"
     signature="String getName()"
-    description="Returns the lowercase name of this direction (e.g. 'north', 'up')."
-    returns={{ type: "String", desc: "Direction name." }}
+    description="Returns the lowercase name of the direction."
+    returns={{ type: "String", desc: "e.g. \"north\", \"up\"." }}
+    example={`const sides = world.getAdjacentDirections(pos);\nconst side = sides.get(0);\nclient.print(side.getName()); // "north"`}
 />
-
-### Example
-
-```js
-const directions = world.getAdjacentDirections(below);
-const side = directions.get(0);     // ScriptDirection
-const opposite = side.getOpposite();
-const neighbor = below.offset(side);
-```
-
----
-
-## Vec3d
-
-A 3D double-precision vector. Returned by position methods on `player`, `rotation`, and `esp`.  
-Fields `x`, `y`, `z` are accessible directly.
-
----
-
-## Vec2f
-
-A 2D float vector used for yaw/pitch rotations (`x` = yaw, `y` = pitch).  
-Returned by `rotation.getRotation()`, `rotation.getRotationFromPosition()`, etc.  
-Fields `x`, `y` are accessible directly.
-
----
-
-## RaytracedRotation
-
-Returned by `rotation.getRotationFromRaycastedBlock()` and `rotation.getRotationFromRaycastedEntity()`.
-
-<Method
-    name="rotation"
-    signature="Vec2f rotation()"
-    description="Returns the computed rotation (yaw, pitch) to aim at the target face."
-    returns={{ type: "Vec2f", desc: "x = yaw, y = pitch." }}
-/>
-
-<Method
-    name="hitResult"
-    signature="BlockHitResult hitResult()"
-    description="Returns the block hit result for use with interactionManager.interactBlock()."
-    returns={{ type: "BlockHitResult", desc: "The hit result." }}
-/>
-
-### Example
-
-```js
-const raytrace = rotation.getRotationFromRaycastedBlock(neighbor, opposite, rotation.getRotation(), player.getEyePosition());
-if (raytrace !== null) {
-    const rot = raytrace.rotation();
-    rotation.set(rot.x, rot.y);
-    mc.interactionManager.interactBlock(mc.player, MAIN_HAND, raytrace.hitResult());
-}
-```
