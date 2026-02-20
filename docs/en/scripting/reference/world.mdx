@@ -1,345 +1,133 @@
-# World & Entity Proxies
+---
+title: Player & World
+description: player and world proxy API reference
+---
 
-These proxies handle world queries, player status, and entity searching.
+# Player & World
 
 ---
 
-## Player Proxy
+## `player` — PlayerProxy
 
-**Global Binding:** `player`
-
-Checks local player status, combat state, and environment.
+Exposes local player state, position, health, combat utilities, and actions.
 
 ### Position
 
-<Method
-    name="getEyePosition"
-    signature="Vec3d getEyePosition()"
-    description="Returns the camera position (Vec3d)."
-    returns={{ type: "Vec3d", desc: "Eye position." }}
-/>
+| Method | Returns | Description |
+|---|---|---|
+| `getBlockPosition()` | `BlockPos` | Floored block coordinates the player is standing in |
+| `getPosition()` | `Vec3d` | Eye position in world space |
+| `getEyePosition()` | `Vec3d` | Eye position in world space |
+| `getVelocity()` | `Vec3d` | Current velocity vector |
+| `getBoundingBox()` | `Box` | Player's axis-aligned bounding box |
+| `getStandingEyeHeight()` | `float` | Eye height above feet |
 
-<Method
-    name="getPosition"
-    signature="Vec3d getPosition()"
-    description="Returns the player's position (Vec3d)."
-    returns={{ type: "Vec3d", desc: "Player position." }}
-/>
+### Rotation
 
-<Method
-    name="getBlockPosition"
-    signature="BlockPos getBlockPosition()"
-    description="Returns the block coordinates of the player as a BlockPos."
-    returns={{ type: "BlockPos", desc: "Block position. Use getX/getY/getZ — do not access .x/.y/.z directly." }}
-    example={`const pos = player.getBlockPosition();\nconst below = new BlockPos(pos.getX(), pos.getY() - 1, pos.getZ());`}
-/>
+| Method | Returns | Description |
+|---|---|---|
+| `getYaw()` | `float` | Current yaw in degrees |
+| `getPitch()` | `float` | Current pitch in degrees |
 
-<Method
-    name="getVelocity"
-    signature="Vec3d getVelocity()"
-    description="Returns the player's velocity (Vec3d)."
-    returns={{ type: "Vec3d", desc: "Velocity vector." }}
-/>
+### State
 
-<Method
-    name="getHealth"
-    signature="float getHealth()"
-    description="Returns current health points (0-20)."
-    returns={{ type: "float", desc: "Health." }}
-/>
+| Method | Returns | Description |
+|---|---|---|
+| `isOnGround()` | `boolean` | Whether the player is on the ground |
+| `isInAir()` | `boolean` | Whether the player is airborne |
+| `getAirTicks()` | `int` | Ticks spent in the air continuously |
+| `getGroundTicks()` | `int` | Ticks spent on the ground continuously |
+| `isSneaking()` | `boolean` | Whether the player is sneaking |
+| `isSprinting()` | `boolean` | Whether the player is sprinting |
+| `isUsingItem()` | `boolean` | Whether the player is eating, blocking, drawing a bow, etc. |
+| `getFallDistance()` | `double` | Current fall distance in blocks |
 
-<Method
-    name="getMaxHealth"
-    signature="float getMaxHealth()"
-    description="Returns maximum health points."
-    returns={{ type: "float", desc: "Max health." }}
-/>
+### Health
 
-### State Queries
+| Method | Returns | Description |
+|---|---|---|
+| `getHealth()` | `float` | Current health points |
+| `getMaxHealth()` | `float` | Maximum health points |
+| `getAbsorption()` | `float` | Absorption (golden hearts) amount |
 
-<Method
-    name="isOnGround"
-    signature="boolean isOnGround()"
-    description="Returns true if the player is standing on a solid block."
-    returns={{ type: "boolean", desc: "True if grounded." }}
-/>
+### Combat
 
-<Method
-    name="isInAir"
-    signature="boolean isInAir()"
-    description="Returns true if the player is not on the ground."
-    returns={{ type: "boolean", desc: "True if airborne." }}
-/>
+| Method | Returns | Description |
+|---|---|---|
+| `canCrit()` | `boolean` | Whether the next attack will be a critical hit |
+| `getAttackDamage()` | `double` | Main-hand attack damage |
+| `getEntityInteractionRange()` | `double` | Maximum entity attack range |
+| `isHoldingWeapon()` | `boolean` | Whether the player holds a sword, axe, or pickaxe |
+| `getDistanceToEntity(entity)` | `double` | Box-to-box distance to the given entity |
+| `getClosestPoint(entity)` | `Vec3d` | Closest bounding-box point on an entity from the player's eye |
 
-<Method
-    name="getAirTicks"
-    signature="int getAirTicks()"
-    description="Returns the number of ticks the player has been airborne."
-    returns={{ type: "int", desc: "Air ticks." }}
-/>
+### Bounding box checks
 
-<Method
-    name="getGroundTicks"
-    signature="int getGroundTicks()"
-    description="Returns the number of ticks the player has been grounded."
-    returns={{ type: "int", desc: "Ground ticks." }}
-/>
+| Method | Returns | Description |
+|---|---|---|
+| `isBoxEmpty(dx, dy, dz)` | `boolean` | Whether an offset of the player's box has no collision |
+| `isBoxEmptyBelow(dy)` | `boolean` | Whether the space below the player (at `dy`) is empty |
 
-<Method
-    name="isSneaking"
-    signature="boolean isSneaking()"
-    description="Returns true if the player is sneaking (Shift)."
-    returns={{ type: "boolean", desc: "True if sneaking." }}
-/>
+### Actions
 
-<Method
-    name="isSprinting"
-    signature="boolean isSprinting()"
-    description="Returns true if the player is sprinting."
-    returns={{ type: "boolean", desc: "True if sprinting." }}
-/>
+| Method | Returns | Description |
+|---|---|---|
+| `swingHand(hand)` | `void` | Plays the hand swing animation. Use `MAIN_HAND` or `OFF_HAND`. |
 
-<Method
-    name="isUsingItem"
-    signature="boolean isUsingItem()"
-    description="Returns true if the player is eating, drinking, or blocking."
-    returns={{ type: "boolean", desc: "True if using item." }}
-/>
-
-### Combat Utilities
-
-<Method
-    name="canCrit"
-    signature="boolean canCrit()"
-    description="Returns true if the player is falling and not on the ground (critical hit condition)."
-    returns={{ type: "boolean", desc: "True if can crit." }}
-/>
-
-<Method
-    name="getAttackDamage"
-    signature="double getAttackDamage()"
-    description="Returns the damage of the currently held item."
-    returns={{ type: "double", desc: "Attack damage." }}
-/>
-
-<Method
-    name="getEntityInteractionRange"
-    signature="double getEntityInteractionRange()"
-    description="Returns the maximum reach distance for attacking entities."
-    returns={{ type: "double", desc: "Reach distance." }}
-/>
-
-<Method
-    name="isHoldingWeapon"
-    signature="boolean isHoldingWeapon()"
-    description="Returns true if holding a Sword, Axe, or Pickaxe."
-    returns={{ type: "boolean", desc: "True if armed." }}
-/>
+```js
+player.swingHand(MAIN_HAND);
+```
 
 ---
 
-## World Proxy
+## `world` — WorldProxy
 
-**Global Binding:** `world`
+Provides block queries, adjacent direction lookups, and entity searches.
 
-Queries blocks, iterates entities, and checks world properties.
+### Block queries
 
-### Block Queries
+| Method | Returns | Description |
+|---|---|---|
+| `isReplaceable(blockPos)` | `boolean` | Whether the block at the given position can be replaced (air, fluid, grass, etc.) |
+| `isSolid(blockPos)` | `boolean` | Whether the block at the given position is solid |
+| `hasAdjacentBlock(blockPos)` | `boolean` | Whether any face-adjacent block is solid and placeable-against |
+| `getAdjacentDirections(blockPos)` | `List<Direction>` | List of directions where a solid neighbour exists (can be empty) |
 
-<Method
-    name="isAir"
-    signature="boolean isAir(BlockPos pos)"
-    description="Returns true if the block at pos is air."
-    params={[
-        { name: "pos", type: "BlockPos", desc: "Block position." }
-    ]}
-    returns={{ type: "boolean", desc: "True if air." }}
-/>
+```js
+const below = new BlockPos(pos.getX(), pos.getY() - 1, pos.getZ());
 
-<Method
-    name="isReplaceable"
-    signature="boolean isReplaceable(BlockPos pos)"
-    description="Returns true if the block can be built inside (e.g. grass, snow, water)."
-    params={[
-        { name: "pos", type: "BlockPos", desc: "Block position." }
-    ]}
-    returns={{ type: "boolean", desc: "True if replaceable." }}
-/>
+if (!world.isReplaceable(below)) return;
 
-<Method
-    name="isSolid"
-    signature="boolean isSolid(BlockPos pos)"
-    description="Returns true if the block has a collision box."
-    params={[
-        { name: "pos", type: "BlockPos", desc: "Block position." }
-    ]}
-    returns={{ type: "boolean", desc: "True if solid." }}
-/>
+const dirs = world.getAdjacentDirections(below);
+if (dirs.isEmpty()) return;
 
-<Method
-    name="getBlockName"
-    signature="String getBlockName(BlockPos pos)"
-    description="Returns the localized name of the block."
-    params={[
-        { name: "pos", type: "BlockPos", desc: "Block position." }
-    ]}
-    returns={{ type: "String", desc: "Block name." }}
-/>
+const side = dirs.get(0);
+const neighbor = below.offset(side);
+```
 
-<Method
-    name="getBlockState"
-    signature="BlockState getBlockState(BlockPos pos)"
-    description="Returns the raw BlockState object."
-    params={[
-        { name: "pos", type: "BlockPos", desc: "Block position." }
-    ]}
-    returns={{ type: "BlockState", desc: "Block state." }}
-/>
+### Entity queries
 
-<Method
-    name="getAdjacentDirections"
-    signature="List getAdjacentDirections(BlockPos pos)"
-    description="Returns a list of the six cardinal directions adjacent to the given position as Direction wrappers. Useful for iterating block faces."
-    params={[
-        { name: "pos", type: "BlockPos", desc: "Block position." }
-    ]}
-    returns={{ type: "List<Direction>", desc: "Six Direction values." }}
-    example={`const sides = world.getAdjacentDirections(below);\nfor (let i = 0; i < sides.size(); i++) {\n    const face = sides.get(i);\n    client.print(face.getName());\n}`}
-/>
-
-<Method
-    name="hasAdjacentBlock"
-    signature="boolean hasAdjacentBlock(BlockPos pos)"
-    description="Returns true if any of the six adjacent positions to pos contains a solid block."
-    params={[
-        { name: "pos", type: "BlockPos", desc: "Block position." }
-    ]}
-    returns={{ type: "boolean", desc: "True if a solid neighbor exists." }}
-/>
-
-### Entity Queries
-
-<Method
-    name="getEntities"
-    signature="Iterable getEntities()"
-    description="Returns an iterable of all loaded entities in render distance."
-    returns={{ type: "Iterable", desc: "Entities." }}
-/>
-
-<Method
-    name="getLivingEntitiesInRange"
-    signature="List getLivingEntitiesInRange(double radius)"
-    description="Returns a list of all living entities (mobs, players) within radius blocks."
-    params={[
-        { name: "radius", type: "double", desc: "Search radius." }
-    ]}
-    returns={{ type: "List", desc: "Living entities." }}
-/>
-
-### World Info
-
-<Method
-    name="getTime"
-    signature="long getTime()"
-    description="Returns the total world time in ticks."
-    returns={{ type: "long", desc: "World time." }}
-/>
-
-<Method
-    name="getTimeOfDay"
-    signature="long getTimeOfDay()"
-    description="Returns the time of day (0-24000)."
-    returns={{ type: "long", desc: "Time of day." }}
-/>
-
-<Method
-    name="getDimension"
-    signature="String getDimension()"
-    description="Returns the dimension ID (e.g. 'minecraft:overworld')."
-    returns={{ type: "String", desc: "Dimension ID." }}
-/>
+| Method | Returns | Description |
+|---|---|---|
+| `getNearbyEntities(range)` | `List<Entity>` | All entities within `range` blocks of the player |
+| `getNearbyPlayers(range)` | `List<PlayerEntity>` | Nearby players only, excluding self |
+| `getNearbyLivingEntities(range)` | `List<LivingEntity>` | Nearby living entities (mobs + players), excluding self |
 
 ---
 
-## ESP Proxy
+## ESP Proxy — `esp`
 
-**Global Binding:** `esp`
+Provides 3D-to-2D screen projection for custom ESP overlays.
 
-Helper for projecting 3D world coordinates to 2D screen space for custom overlays.
+| Method | Returns | Description |
+|---|---|---|
+| `project(x, y, z)` | `double[2]` or `null` | Screen `[x, y]` for the given world position, or `null` if behind the camera |
+| `getEntityScreenPos(entity)` | `double[2]` or `null` | Screen position of an entity's origin |
+| `isOnScreen(x, y, z)` | `boolean` | Whether a world position projects within the visible viewport |
 
-### Entity Projection
-
-<Method
-    name="getEntityBox2D"
-    signature="Vector4d getEntityBox2D(LivingEntity entity, float tickDelta)"
-    description="Projects an entity's bounding box to screen coordinates."
-    params={[
-        { name: "entity", type: "LivingEntity", desc: "Target entity." },
-        { name: "tickDelta", type: "float", desc: "Interpolation factor." }
-    ]}
-    returns={{ type: "Vector4d", desc: "{x, y, z(width), w(height)} or null." }}
-/>
-
-<Method
-    name="isEntityOnScreen"
-    signature="boolean isEntityOnScreen(LivingEntity entity, float tickDelta)"
-    description="Returns true if the entity is visible on screen."
-    params={[
-        { name: "entity", type: "LivingEntity", desc: "Target entity." },
-        { name: "tickDelta", type: "float", desc: "Interpolation factor." }
-    ]}
-    returns={{ type: "boolean", desc: "True if visible." }}
-/>
-
-### Point Projection
-
-<Method
-    name="project"
-    signature="Vector3d project(double x, double y, double z, float tickDelta)"
-    description="Projects a single 3D point to screen coordinates."
-    params={[
-        { name: "x", type: "double", desc: "World X." },
-        { name: "y", type: "double", desc: "World Y." },
-        { name: "z", type: "double", desc: "World Z." },
-        { name: "tickDelta", type: "float", desc: "Interpolation factor." }
-    ]}
-    returns={{ type: "Vector3d", desc: "{x, y, z(depth)} or null." }}
-/>
-
-<Method
-    name="isOnScreen"
-    signature="boolean isOnScreen(double x, double y, double z, float tickDelta)"
-    description="Returns true if the point projects to a visible screen location."
-    params={[
-        { name: "x", type: "double", desc: "World X." },
-        { name: "y", type: "double", desc: "World Y." },
-        { name: "z", type: "double", desc: "World Z." },
-        { name: "tickDelta", type: "float", desc: "Interpolation factor." }
-    ]}
-    returns={{ type: "boolean", desc: "True if visible." }}
-/>
-
-### Interpolation
-
-<Method
-    name="getInterpolatedPosition"
-    signature="Vec3d getInterpolatedPosition(Entity entity, float tickDelta)"
-    description="Returns the smoothed render position of an entity."
-    params={[
-        { name: "entity", type: "Entity", desc: "Target entity." },
-        { name: "tickDelta", type: "float", desc: "Interpolation factor." }
-    ]}
-    returns={{ type: "Vec3d", desc: "Interpolated position." }}
-/>
-
-<Method
-    name="lerp"
-    signature="double lerp(double start, double end, double delta)"
-    description="Linearly interpolates between two values."
-    params={[
-        { name: "start", type: "double", desc: "Start value." },
-        { name: "end", type: "double", desc: "End value." },
-        { name: "delta", type: "double", desc: "Factor (0-1)." }
-    ]}
-    returns={{ type: "double", desc: "Interpolated value." }}
-/>
+```js
+const pos = esp.getEntityScreenPos(target);
+if (pos !== null) {
+    renderer.text("productsans-bold", "target", pos[0], pos[1], 8, 0xFFFFFFFF);
+}
+```
