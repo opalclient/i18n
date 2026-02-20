@@ -1,0 +1,126 @@
+# Types Reference
+
+Common types returned and accepted by script proxy methods.
+
+---
+
+## BlockPos
+
+`BlockPos` is a script-safe wrapper around Minecraft's block position.  
+Construct one directly: `new BlockPos(x, y, z)`.  
+All proxy methods that accept or return block positions use this type.
+
+<Method
+    name="getX"
+    signature="int getX()"
+    description="Returns the X coordinate."
+    returns={{ type: "int", desc: "X coordinate." }}
+/>
+
+<Method
+    name="getY"
+    signature="int getY()"
+    description="Returns the Y coordinate."
+    returns={{ type: "int", desc: "Y coordinate." }}
+/>
+
+<Method
+    name="getZ"
+    signature="int getZ()"
+    description="Returns the Z coordinate."
+    returns={{ type: "int", desc: "Z coordinate." }}
+/>
+
+<Method
+    name="offset"
+    signature="BlockPos offset(Direction direction)"
+    description="Returns a new BlockPos shifted one block in the given direction."
+    params={[
+        { name: "direction", type: "Direction", desc: "The direction to offset toward." }
+    ]}
+    returns={{ type: "BlockPos", desc: "The offset position." }}
+/>
+
+### Example
+
+```js
+const pos = player.getBlockPosition();
+const below = new BlockPos(pos.getX(), pos.getY() - 1, pos.getZ());
+```
+
+---
+
+## Direction
+
+`Direction` is a script-safe wrapper around Minecraft's directional enum.  
+You do not construct directions directly — they are returned from proxy methods
+such as `world.getAdjacentDirections(pos)`.
+
+<Method
+    name="getOpposite"
+    signature="Direction getOpposite()"
+    description="Returns the direction pointing the opposite way (e.g. NORTH → SOUTH, UP → DOWN)."
+    returns={{ type: "Direction", desc: "The opposite direction." }}
+/>
+
+<Method
+    name="getName"
+    signature="String getName()"
+    description="Returns the lowercase name of this direction (e.g. 'north', 'up')."
+    returns={{ type: "String", desc: "Direction name." }}
+/>
+
+### Example
+
+```js
+const directions = world.getAdjacentDirections(below);
+const side = directions.get(0);     // ScriptDirection
+const opposite = side.getOpposite();
+const neighbor = below.offset(side);
+```
+
+---
+
+## Vec3d
+
+A 3D double-precision vector. Returned by position methods on `player`, `rotation`, and `esp`.  
+Fields `x`, `y`, `z` are accessible directly.
+
+---
+
+## Vec2f
+
+A 2D float vector used for yaw/pitch rotations (`x` = yaw, `y` = pitch).  
+Returned by `rotation.getRotation()`, `rotation.getRotationFromPosition()`, etc.  
+Fields `x`, `y` are accessible directly.
+
+---
+
+## RaytracedRotation
+
+Returned by `rotation.getRotationFromRaycastedBlock()` and `rotation.getRotationFromRaycastedEntity()`.
+
+<Method
+    name="rotation"
+    signature="Vec2f rotation()"
+    description="Returns the computed rotation (yaw, pitch) to aim at the target face."
+    returns={{ type: "Vec2f", desc: "x = yaw, y = pitch." }}
+/>
+
+<Method
+    name="hitResult"
+    signature="BlockHitResult hitResult()"
+    description="Returns the block hit result for use with interactionManager.interactBlock()."
+    returns={{ type: "BlockHitResult", desc: "The hit result." }}
+/>
+
+### Example
+
+```js
+const raytrace = rotation.getRotationFromRaycastedBlock(neighbor, opposite, rotation.getRotation(), player.getEyePosition());
+if (raytrace !== null) {
+    const rot = raytrace.rotation();
+    rotation.set(rot.x, rot.y);
+    mc.interactionManager.interactBlock(mc.player, MAIN_HAND, raytrace.hitResult());
+}
+```
