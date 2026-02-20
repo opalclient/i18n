@@ -1,0 +1,82 @@
+---
+title: mc & Interaction
+description: mc global proxy and interaction manager API reference
+---
+
+# mc & Interaction
+
+The `mc` global is a proxy over `MinecraftClient`. It exposes the player and world references for null-guard checks, and routes all interaction calls through safe wrappers with stable, non-intermediary method names.
+
+> **Do not call `mc.player.someMethod()` from scripts.** Fabric's intermediary mappings rename player/world methods at runtime — those calls will fail. Use the dedicated `player` and `world` proxy globals for all method calls. `mc.player` and `mc.world` are only for null checks.
+
+```js
+if (mc.player === null || mc.world === null) return;
+```
+
+---
+
+## `mc` — MinecraftProxy
+
+| Property / Method | Returns | Description |
+|---|---|---|
+| `player` | `ClientPlayerEntity \| null` | Null-check only. Use the `player` global for method calls. |
+| `world` | `ClientWorld \| null` | Null-check only. Use the `world` global for method calls. |
+| `interactionManager` | `InteractionManagerProxy` | Block and entity interaction (see below). |
+
+---
+
+## `mc.interactionManager` — InteractionManagerProxy
+
+Wraps `ClientPlayerInteractionManager`. The local player is injected automatically — you never pass `mc.player` as an argument.
+
+### Block interaction
+
+| Method | Returns | Description |
+|---|---|---|
+| `interactBlock(hand, hitResult)` | `void` | Right-clicks a block face. `hitResult` comes from `raytrace.getHitResult()`. |
+| `updateBlockBreakingProgress(blockPos, direction)` | `boolean` | Advances block-breaking progress on the given face. Returns `true` if progress updated. |
+| `cancelBlockBreaking()` | `void` | Cancels any in-progress block break. |
+| `isBreakingBlock()` | `boolean` | Whether a block is currently being broken. |
+
+```js
+// Place a block (Scaffold pattern)
+const raytrace = rotation.getRotationFromRaycastedBlock(
+    neighbor,
+    side.getOpposite(),
+    rotation.getRotation(),
+    player.getEyePosition()
+);
+if (raytrace === null) return;
+
+rotation.set(raytrace.getYaw(), raytrace.getPitch());
+mc.interactionManager.interactBlock(MAIN_HAND, raytrace.getHitResult());
+player.swingHand(MAIN_HAND);
+```
+
+### Entity interaction
+
+| Method | Returns | Description |
+|---|---|---|
+| `attackEntity(entity)` | `void` | Attacks the given entity with the local player's main hand. |
+| `interactItem(hand)` | `void` | Right-click use without targeting a block or entity (e.g. throwing a pearl). |
+| `stopUsingItem()` | `void` | Stops the current item use (release bow, stop eating). |
+
+```js
+// Attack closest entity (KillAura pattern)
+const targets = world.getNearbyLivingEntities(5.0);
+if (!targets.isEmpty()) {
+    mc.interactionManager.attackEntity(targets.get(0));
+    player.swingHand(MAIN_HAND);
+}
+```
+
+---
+
+## Hand constants
+
+Two `Hand` enum values are injected as globals so you don't need to import the Java class:
+
+| Constant | Description |
+|---|---|
+| `MAIN_HAND` | Player's main hand |
+| `OFF_HAND` | Player's off hand |
