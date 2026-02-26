@@ -1,0 +1,162 @@
+# Module Proxy
+
+**Global Binding:** `modules`
+
+Provides dedicated access to the client's module system. Allows scripts to query module state, toggle modules, and enumerate modules by category.
+
+<Callout type="info">
+    All module lookups are case-insensitive. Methods return safe defaults (false, null, or empty arrays) if the requested module does not exist.
+</Callout>
+
+---
+
+## State Queries
+
+<Method
+    name="exists"
+    signature="boolean exists(String id)"
+    description="Checks whether a module with the given name is registered."
+    params={[
+        { name: "id", type: "String", desc: "The module display name." }
+    ]}
+    returns={{ type: "boolean", desc: "True if the module exists." }}
+/>
+
+<Method
+    name="isEnabled"
+    signature="boolean isEnabled(String id)"
+    description="Checks if a specific module is currently enabled."
+    params={[
+        { name: "id", type: "String", desc: "The module display name." }
+    ]}
+    returns={{ type: "boolean", desc: "True if enabled, false if disabled or not found." }}
+/>
+
+<Method
+    name="setEnabled"
+    signature="void setEnabled(String id, boolean enabled)"
+    description="Enables or disables a module by name. No-ops if the module does not exist."
+    params={[
+        { name: "id", type: "String", desc: "The module display name." },
+        { name: "enabled", type: "boolean", desc: "True to enable, false to disable." }
+    ]}
+/>
+
+<Method
+    name="toggle"
+    signature="void toggle(String id)"
+    description="Toggles a module on or off. Triggers the same notification as a keybind toggle. No-ops if the module does not exist."
+    params={[
+        { name: "id", type: "String", desc: "The module display name." }
+    ]}
+/>
+
+---
+
+## Module Metadata
+
+<Method
+    name="getCategory"
+    signature="String getCategory(String id)"
+    description="Returns the category name of a module (e.g. 'Combat', 'Movement', 'Visual')."
+    params={[
+        { name: "id", type: "String", desc: "The module display name." }
+    ]}
+    returns={{ type: "String", desc: "Category name, or null if not found." }}
+/>
+
+<Method
+    name="getSuffix"
+    signature="String getSuffix(String id)"
+    description="Returns the module's arraylist suffix, which typically indicates the active mode."
+    params={[
+        { name: "id", type: "String", desc: "The module display name." }
+    ]}
+    returns={{ type: "String", desc: "Suffix string, or null if the module has no suffix." }}
+/>
+
+<Method
+    name="isVisible"
+    signature="boolean isVisible(String id)"
+    description="Checks whether the module is visible in the arraylist/HUD."
+    params={[
+        { name: "id", type: "String", desc: "The module display name." }
+    ]}
+    returns={{ type: "boolean", desc: "True if visible." }}
+/>
+
+<Method
+    name="setVisible"
+    signature="void setVisible(String id, boolean visible)"
+    description="Sets whether a module should appear in the arraylist/HUD."
+    params={[
+        { name: "id", type: "String", desc: "The module display name." },
+        { name: "visible", type: "boolean", desc: "True to show, false to hide." }
+    ]}
+/>
+
+---
+
+## Listing
+
+<Method
+    name="listAll"
+    signature="String[] listAll()"
+    description="Returns the display names of all registered modules (native and script)."
+    returns={{ type: "String[]", desc: "Array of module names." }}
+/>
+
+<Method
+    name="listCategory"
+    signature="String[] listCategory(String category)"
+    description="Returns the display names of all modules in a specific category. Category name is case-insensitive."
+    params={[
+        { name: "category", type: "String", desc: "Category name: 'Combat', 'Movement', 'Visual', 'World', 'Utility', or 'Scripts'." }
+    ]}
+    returns={{ type: "String[]", desc: "Array of module names, or empty array if the category is invalid." }}
+/>
+
+<Method
+    name="listEnabled"
+    signature="String[] listEnabled()"
+    description="Returns the display names of all currently enabled modules."
+    returns={{ type: "String[]", desc: "Array of enabled module names." }}
+/>
+
+---
+
+## Example
+
+```javascript
+const script = registerScript({
+    name: "ModuleWatcher",
+    version: "1.0.0",
+    authors: ["dev"]
+});
+
+script.registerModule({
+    name: "StatusOverlay",
+    description: "Displays combat module status"
+}, (module) => {
+    module.on("preGameTick", () => {
+        // Check if a specific module is on
+        if (modules.isEnabled("KillAura")) {
+            const suffix = modules.getSuffix("KillAura");
+            client.print("KillAura active [" + suffix + "]");
+        }
+
+        // List all enabled combat modules
+        const combat = modules.listCategory("Combat");
+        for (let i = 0; i < combat.length; i++) {
+            if (modules.isEnabled(combat[i])) {
+                client.print("  " + combat[i] + " ON");
+            }
+        }
+    });
+
+    module.on("enable", () => {
+        client.print("Total modules: " + modules.listAll().length);
+        client.print("Currently enabled: " + modules.listEnabled().length);
+    });
+});
+```
