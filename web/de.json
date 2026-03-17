@@ -2,9 +2,72 @@
   "nav": {
     "home": "Startseite",
     "purchase": "Erwerben",
+    "branding": "Branding",
     "discord": "Discord",
     "dashboard": "Hauptmenü",
     "manage": "Verwalten"
+  },
+  "branding": {
+    "meta": {
+      "title": "Branding",
+      "description": "Offizielle Opal Client Markenelemente, Logos und Farbpalette für Presse und kreative Nutzung."
+    },
+    "hero": {
+      "title": "Opal Client Marke",
+      "description": "Offizielle Markenelemente, Logos und Farbpalette für Medien, Reseller und Presse. Bitte folge unseren Richtlinien bei der Verwendung dieser Elemente."
+    },
+    "guidelines": {
+      "title": "Nutzungsrichtlinien",
+      "do": {
+        "title": "Erlaubt",
+        "items": [
+          "Offizielle Elemente von dieser Seite verwenden",
+          "Seitenverhältnis beim Skalieren beibehalten",
+          "Auf kontrastierenden Hintergründen verwenden",
+          "Opal Client dort nennen, wo es angebracht ist"
+        ]
+      },
+      "dont": {
+        "title": "Verboten",
+        "items": [
+          "Logo verändern oder verzerren",
+          "Für implizierte Unterstützung ohne Erlaubnis verwenden",
+          "Auf visuell ähnlichen Hintergründen verwenden",
+          "Mit inoffiziellen Elementen nachbauen"
+        ]
+      }
+    },
+    "logos": {
+      "title": "Logo-Elemente",
+      "description": "Verfügbar in dunkler, heller und Icon-only Variante.",
+      "download": "SVG herunterladen",
+      "items": {
+        "full_dark": {
+          "name": "Logo — Dunkler Hintergrund",
+          "description": "Vollständiges Logo mit integrierter dunkler Hintergrundkarte"
+        },
+        "wordmark_light": {
+          "name": "Wortmarke — Heller Hintergrund",
+          "description": "Horizontale Wortmarke für helle Hintergründe"
+        },
+        "wordmark_dark": {
+          "name": "Wortmarke — Dunkler Hintergrund",
+          "description": "Horizontale Wortmarke für dunkle Hintergründe"
+        },
+        "icon": {
+          "name": "Nur Icon",
+          "description": "Eigenständiges Icon für Avatare und Favicons"
+        }
+      }
+    },
+    "colors": {
+      "title": "Farbpalette",
+      "description": "Im-Client Designfarben, die im Opal-Erlebnis verwendet werden.",
+      "primary": "Primär",
+      "secondary": "Sekundär",
+      "copy": "Hex kopieren",
+      "copied": "Kopiert!"
+    }
   },
   "home": {
     "hero": {
@@ -126,6 +189,17 @@
         "title": "Globale Zahlungsmöglickeiten",
         "description": "Suchen Sie nach regionalen Preisen oder bestimmten Zahlungsmethoden, die oben nicht aufgeführt sind? Unsere offiziellen Reseller können ihnen helfen."
       }
+    },
+    "cryptoPayments": {
+      "title": "Crypto Zahlungen",
+      "description": "Automatische Lieferung über Litecoin oder Bitcoin. Dein Key wird bei Eingang generiert.",
+      "ltc": "Litecoin (LTC)",
+      "btc": "Bitcoin (BTC)"
+    },
+    "alternativeMethods": {
+      "title": "Alternative Zahlungsmethoden",
+      "description": "Zahle mit Monero (XMR), Ethereum oder lokalen Zahlungsmethoden.",
+      "ticket": "Ticket (XMR / Andere)"
     },
     "upgrade": {
       "title": "Bereits Opal User?",
@@ -327,6 +401,50 @@
           "button": "Weiter zur Kasse"
         },
         "continue": "Weiter"
+      },
+      "crypto": {
+        "title": "Zahle mit {chain}",
+        "subtitle": "Scanne den QR-Code oder sende {symbol} an die Adresse unten",
+        "completed": "Zahlung abgeschlossen!",
+        "confirming": "Zahlung wird bestätigt...",
+        "detected": "Zahlung erkannt",
+        "waiting": "Warte auf Zahlung",
+        "price": "Preis: $8.99 USD",
+        "address": "Zahlungsadresse",
+        "copied": "Adresse in Zwischenablage kopiert!",
+        "copyFailed": "Adresse konnte nicht kopiert werden",
+        "instructions": {
+          "title": "So zahlst du:",
+          "step1": "Sende {symbol} an die obige Adresse",
+          "step2": "Warte auf Blockchain-Bestätigung (normalerweise 10-30 Minuten)",
+          "step3": "Dein Lizenzschlüssel wird an deine E-Mail gesendet. Dies kann bis zu 2 Stunden dauern."
+        },
+        "viewExplorer": "Im Block Explorer anzeigen",
+        "back": "Zurück zur Aktivierung",
+        "statusDetected": "Transaktion erkannt, warte auf Bestätigungen...",
+        "statusConfirmed": "Transaktion wird bestätigt...",
+        "statusCompleted": "Zahlung bestätigt! Weiterleitung zum Dashboard...",
+        "success": {
+          "title": "Zahlung bestätigt!",
+          "description": "Deine Lizenz wurde aktiviert. Überprüfe deine E-Mail für Details."
+        },
+        "errors": {
+          "failedToGenerate": "Zahlungsadresse konnte nicht generiert werden",
+          "invalidEmail": "Bitte gib eine gültige E-Mail-Adresse ein",
+          "serviceUnavailable": "Crypto-Zahlungen sind vorübergehend nicht verfügbar"
+        },
+        "ltcName": "Litecoin",
+        "btcName": "Bitcoin",
+        "paymentConfirmed": "Zahlung bestätigt!",
+        "keyInstructions": "Dein Lizenzschlüssel ist bereit. Wir haben ihn auch an deine E-Mail gesendet.",
+        "yourLicenseKey": "Lizenzschlüssel",
+        "copyKey": "Schlüssel kopieren",
+        "keyCopied": "Lizenzschlüssel kopiert!",
+        "goToDashboard": "Zum Dashboard",
+        "accessTip": "Du kannst jetzt den Client von deinem Dashboard herunterladen.",
+        "paymentErrorTitle": "Zahlungsfehler",
+        "tryAgain": "Erneut versuchen",
+        "goBack": "Zurück"
       },
       "success": {
         "title": "Kongratulation!",
@@ -802,6 +920,56 @@
       }
     }
   },
+  "cloud": {
+    "title": "Cloud"
+  },
+  "relations": {
+    "title": "Beziehungen",
+    "add": {
+      "button": "Beziehung hinzufügen",
+      "title": "Beziehung hinzufügen",
+      "description": "Füge einen Freund oder Feind zu deiner Liste hinzu. Das beeinflusst wie sie im Spiel angezeigt werden.",
+      "type": "Beziehungstyp",
+      "user_type": "Nutzertyp",
+      "submit": "Beziehung hinzufügen",
+      "submitting": "Hinzufügen...",
+      "success": "Beziehung erfolgreich hinzugefügt",
+      "error": "Beziehung konnte nicht hinzugefügt werden"
+    },
+    "types": {
+      "friend": "Freund",
+      "enemy": "Feind",
+      "opal": "Opal Nutzer",
+      "minecraft": "Minecraft"
+    },
+    "inputs": {
+      "minecraft_placeholder": "Notch",
+      "opal_placeholder": "Nutzername",
+      "minecraft_label": "Nutzername / UUID",
+      "opal_label": "Config Nutzername"
+    },
+    "list": {
+      "empty": "Keine Beziehungen gefunden. Füge Freunde oder Feinde hinzu!",
+      "remove_success": "Beziehung entfernt",
+      "remove_error": "Beziehung konnte nicht entfernt werden",
+      "unknown": "Unbekannt"
+    },
+    "errors": {
+      "opal_not_found": "Opal Nutzer nicht gefunden",
+      "self_add": "Du kannst dich nicht selbst hinzufügen",
+      "minecraft_not_found": "Minecraft Nutzer nicht gefunden",
+      "exists": "Beziehung existiert bereits"
+    }
+  },
+  "inbox": {
+    "title": "Posteingang",
+    "unread": "ungelesene Benachrichtigung",
+    "allRead": "Alles gelesen",
+    "markAllRead": "Alle als gelesen markieren",
+    "clearAll": "Alle löschen",
+    "empty": "Keine Benachrichtigungen",
+    "emptyDescription": "Wenn du Benachrichtigungen bekommst, erscheinen sie hier"
+  },
   "footer": {
     "copyright": "Opal × Terminus. Alle Rechte vorbehalten.",
     "terms": "Terms of Service",
@@ -830,7 +998,28 @@
       "pending": "Ausstehend",
       "approved": "Genehmigt",
       "denied": "Abgelehnt",
+      "planned": "Geplant",
       "empty": "Es wurden keine Vorschläge gefunden, die zu deinen Filtern passen.",
+      "noItems": "Noch keine Vorschläge",
+      "detailTitle": "Vorschlag Details",
+      "discussion": "Diskussion",
+      "officialResponse": "Offizielle Antwort",
+      "devResponseLabel": "Entwickler Antwort",
+      "devResponsePlaceholder": "Füge eine offizielle Antwort hinzu...",
+      "saveResponse": "Antwort speichern",
+      "discussionLocked": "Diskussion ist für diesen Vorschlag geschlossen.",
+      "noComments": "Noch keine Kommentare. Sei der Erste!",
+      "addComment": "Kommentar hinzufügen",
+      "commentPlaceholder": "Teile deine Gedanken...",
+      "postComment": "Kommentar posten",
+      "replyPlaceholder": "Schreibe eine Antwort...",
+      "post": "Posten",
+      "cancel": "Abbrechen",
+      "sortBy": "Sortieren nach",
+      "sortDefault": "Standard",
+      "sortVotes": "Meiste Stimmen",
+      "sortNewest": "Neueste",
+      "sortOldest": "Älteste",
       "dialog": {
         "title": "Schalg ein Feature vor",
         "titleLabel": "Titel",
@@ -857,9 +1046,28 @@
       "closed": "Geschlossen",
       "invalid": "Invalid",
       "empty": "Keine Fehlerberichte gefunden, die zu deinen Filtern passen.",
-      "noItems": "Es wurden bisher keine Fehler gemeldet.",
-      "version": "Version",
-      "steps": "Schritte",
+      "noItems": "Bisher keine Fehler gemeldet.",
+      "version": "Client Version",
+      "steps": "Reproduktionsschritte",
+      "description": "Beschreibung",
+      "detailTitle": "Fehlerberichts-Details",
+      "discussion": "Diskussion",
+      "officialResponse": "Offizielle Antwort",
+      "devResponseLabel": "Entwickler Antwort",
+      "devResponsePlaceholder": "Füge eine offizielle Antwort hinzu...",
+      "saveResponse": "Antwort speichern",
+      "discussionLocked": "Diskussion ist für diesen Fehlerbericht geschlossen.",
+      "noComments": "Noch keine Kommentare. Sei der Erste!",
+      "addComment": "Kommentar hinzufügen",
+      "commentPlaceholder": "Teile deine Gedanken...",
+      "postComment": "Kommentar posten",
+      "replyPlaceholder": "Schreibe eine Antwort...",
+      "post": "Posten",
+      "cancel": "Abbrechen",
+      "sortBy": "Sortieren nach",
+      "sortDefault": "Standard",
+      "sortNewest": "Neueste",
+      "sortOldest": "Älteste",
       "dialog": {
         "title": "Melde einen Fehler",
         "titleLabel": "Issue Überschrift",

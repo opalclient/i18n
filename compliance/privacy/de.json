@@ -1,0 +1,45 @@
+{
+  "title": "Datenschutzerklärung",
+  "effectiveDate": "1. Mai 2025",
+  "sections": [
+    {
+      "title": "1. Einleitung",
+      "content": "Diese Datenschutzerklärung beschreibt die Praktiken bezüglich der Erhebung, Nutzung und Weitergabe deiner Informationen über die Website und zugehörige Dienste von Opal x Terminus, zugänglich unter https://opalxterminus.com."
+    },
+    {
+      "title": "2. Erhobene Informationen",
+      "content": [
+        "Persönliche Daten: Dein Benutzername, E-Mail-Adresse, IP-Adresse, User-Agent und Zahlungsinformationen, wenn du einen Opal-Dienst direkt erworben hast.",
+        "Nicht-persönliche Daten: Wir verwenden Cookies, um dein Erlebnis auf unserer Website zu verbessern."
+      ]
+    },
+    {
+      "title": "3. Zweck der Datenerhebung",
+      "content": "Der Hauptzweck der Erhebung persönlicher Daten ist die Nutzeridentifikation und Authentifizierung. Dadurch können wir dir sicher Zugang zu unseren Diensten gewähren."
+    },
+    {
+      "title": "4. Datenweitergabe",
+      "content": "Wir können deine Informationen mit Drittanbieter-Dienstleistern teilen, die wir zum Betrieb von Opal nutzen, wie Zahlungsabwickler und E-Mail-Dienstleister. Wir können deine Informationen auch mit anderen Entwicklern von Opal teilen, wenn du Zugang zu dieser Software erhältst. Wir geben deine persönlichen Informationen nicht an andere Dritte weiter, verkaufen, vermieten oder handeln damit."
+    },
+    {
+      "title": "5. Sicherheit persönlicher Informationen",
+      "content": "Wir treffen angemessene Maßnahmen zum Schutz deiner persönlichen Informationen vor unbefugtem Zugriff, Nutzung oder Offenlegung. Keine Übertragungsmethode über das Internet oder elektronische Speicherung ist jedoch 100% sicher, und wir können absolute Sicherheit nicht garantieren. Wir können deine Informationen offenlegen, wenn dies gesetzlich vorgeschrieben ist oder auf gerichtliche Anordnung. Wir können deine Informationen auch zur Untersuchung oder Verhinderung von Betrug oder zum Schutz der Rechte, des Eigentums oder der Sicherheit von Opal, unseren Entwicklern oder anderen offenlegen."
+    },
+    {
+      "title": "6. Datenspeicherung",
+      "content": "Wir speichern deine persönlichen Informationen so lange, wie es zur Bereitstellung der von dir angeforderten Dienste erforderlich ist, oder für andere wesentliche Zwecke wie die Einhaltung gesetzlicher Verpflichtungen, Streitbeilegung und Durchsetzung unserer Richtlinien. Wenn du dein Konto löschen möchtest, kontaktiere uns bitte über die unten aufgeführte Support-E-Mail."
+    },
+    {
+      "title": "7. Datenschutz von Kindern",
+      "content": "Wir setzen uns für den Schutz der Privatsphäre von Kindern ein. Wir erheben wissentlich keine persönlichen Informationen von Personen unter 13 Jahren. Wenn du unter 13 bist, versuche bitte nicht, Opal zu nutzen oder persönliche Informationen über dich zu senden."
+    },
+    {
+      "title": "8. Änderungen dieser Richtlinie",
+      "content": "Von Zeit zu Zeit können wir diese Datenschutzerklärung mit oder ohne Vorankündigung aktualisieren. Wir empfehlen dir, diese Richtlinie regelmäßig zu überprüfen."
+    },
+    {
+      "title": "9. Kontakt",
+      "content": "Wenn du Fragen zu dieser Datenschutzerklärung hast oder deine Rechte bezüglich deiner persönlichen Daten ausüben möchtest, kontaktiere uns unter support@mail.opalxterminus.com. Wir werden uns so schnell wie möglich bei dir melden."
+    }
+  ]
+}
