@@ -1,0 +1,1068 @@
+{
+  "nav": {
+    "home": "Início",
+    "purchase": "Comprar",
+    "branding": "Marca",
+    "discord": "Discord",
+    "dashboard": "Painel",
+    "manage": "Gerenciar"
+  },
+  "branding": {
+    "meta": {
+      "title": "Marca",
+      "description": "Recursos oficiais da marca Opal Client, logotipos e paleta de cores para imprensa e uso criativo."
+    },
+    "hero": {
+      "title": "Marca Opal Client",
+      "description": "Recursos oficiais da marca, logotipos e paleta de cores para mídia, revendedores e imprensa. Por favor, siga nossas diretrizes ao usar esses recursos."
+    },
+    "guidelines": {
+      "title": "Diretrizes de Uso",
+      "do": {
+        "title": "Faça",
+        "items": [
+          "Use recursos oficiais desta página",
+          "Mantenha a proporção ao redimensionar",
+          "Use em fundos contrastantes",
+          "Credite Opal Client onde aplicável"
+        ]
+      },
+      "dont": {
+        "title": "Não faça",
+        "items": [
+          "Alterar ou distorcer o logotipo",
+          "Usar para implicar endosso sem permissão",
+          "Usar em fundos visualmente semelhantes",
+          "Recriar usando recursos não oficiais"
+        ]
+      }
+    },
+    "logos": {
+      "title": "Recursos do Logotipo",
+      "description": "Disponível em variantes escura, clara e apenas ícone.",
+      "download": "Baixar SVG",
+      "items": {
+        "full_dark": {
+          "name": "Logotipo — Fundo Escuro",
+          "description": "Logotipo completo com cartão de fundo escuro embutido"
+        },
+        "wordmark_light": {
+          "name": "Marca textual — Fundo Claro",
+          "description": "Marca textual horizontal para uso em fundos claros"
+        },
+        "wordmark_dark": {
+          "name": "Marca textual — Fundo Escuro",
+          "description": "Marca textual horizontal para uso em fundos escuros"
+        },
+        "icon": {
+          "name": "Ícone Apenas",
+          "description": "Marca de ícone autônoma para avatares e favoritos"
+        }
+      }
+    },
+    "colors": {
+      "title": "Paleta de Cores",
+      "description": "Cores do tema no cliente usadas na experiência Opal.",
+      "primary": "Primária",
+      "secondary": "Secundária",
+      "copy": "Copiar código hexadecimal",
+      "copied": "Copiado!"
+    }
+  },
+  "home": {
+    "hero": {
+      "texts": [
+        {
+          "before": "Domine o jogo com",
+          "after": "."
+        },
+        {
+          "before": "Tão bom que os concorrentes fingem ser",
+          "after": "."
+        },
+        {
+          "before": "O original. O melhor. Sempre",
+          "after": "."
+        },
+        {
+          "before": "Por que se contentar com cópias quando você tem",
+          "after": "?"
+        },
+        {
+          "before": "A imitação é elogio. A excelência é",
+          "after": "."
+        }
+      ],
+      "brand": "Opal Client",
+      "description": "Um mod utilitário premium do Minecraft criado para a melhor experiência possível. O Opal atualmente suporta Fabric para Minecraft 1.21.10, proporcionando uma experiência suave e agradável tanto em servidores 1.8 quanto nas versões mais recentes.",
+      "purchase": "Comprar",
+      "learnMore": "Saiba mais"
+    },
+    "features": {
+      "title": "Por que escolher o Opal?",
+      "subtitle": "Com nosso conjunto abundante de recursos, você nunca vai querer voltar a outro cliente.",
+      "items": {
+        "abundant": {
+          "title": "Repleto de recursos",
+          "description": "O Opal tem um número vasto de módulos com uma variedade de opções de personalização."
+        },
+        "userFriendly": {
+          "title": "Amigável",
+          "description": "O Opal é projetado para ser simples e fácil de usar. Basta instalar e você está pronto!"
+        },
+        "updates": {
+          "title": "Atualizações consistentes",
+          "description": "Entregamos atualizações frequentes para ajudá-lo a se manter no topo com novos recursos."
+        },
+        "compatibility": {
+          "title": "Compatibilidade universal",
+          "description": "O Opal foi testado quanto à compatibilidade no Windows, macOS e Linux."
+        },
+        "trusted": {
+          "title": "Confiado por milhares",
+          "description": "O Opal é desenvolvido por desenvolvedores líderes que trabalharam em clientes por anos."
+        },
+        "quality": {
+          "title": "Qualidade premium",
+          "description": "Nos preocupamos com nossos usuários e nos esforçamos para tornar nosso cliente o melhor possível."
+        }
+      }
+    },
+    "media": {
+      "title": "Mídia",
+      "subtitle": "Confira alguns vídeos feitos pela nossa comunidade!"
+    },
+    "cta": {
+      "title": "Eleve sua experiência no Minecraft. Sua jornada começa aqui.",
+      "button": "Compre agora"
+    }
+  },
+  "purchase": {
+    "header": {
+      "title": "Escolha sua Edição",
+      "subtitle": "Obtenha o Opal individualmente ou desbloqueie a experiência completa com o Terminus e obtenha o Opal incluído gratuitamente."
+    },
+    "chinaBanner": {
+      "text": "Você está na China? Compre de nossos revendedores oficiais para obter melhor suporte e opções de pagamento.",
+      "link": "Ver Revendedores"
+    },
+    "opal": {
+      "title": "Opal Client",
+      "price": "8.99",
+      "currency": "USD",
+      "description": "O cliente utilitário híbrido essencial do Minecraft. Limpo, leve e imperceptível.",
+      "featuresTitle": "O que está incluído",
+      "features": [
+        "Opal Client (vitalício)",
+        "Todas as futuras atualizações",
+        "Acesso ao suporte Discord"
+      ],
+      "button": "Comprar Opal",
+      "paymentMethods": "Cartão, Apple Pay, Google Pay, Klarna, CashApp, WeChat Pay"
+    },
+    "terminus": {
+      "badge": "Melhor Valor",
+      "title": "Terminus: Edição Minigame",
+      "price": "45.00",
+      "currency": "USD",
+      "description": "O cliente definitivo de minigames. Inclui Opal Client gratuito vitalício.",
+      "featuresTitle": "O que está incluído",
+      "features": [
+        "Terminus: Edição Minigame (vitalício)",
+        "Opal Client incluído GRATUITAMENTE (vitalício)",
+        "Todas as futuras atualizações",
+        "Acesso ao suporte Discord",
+        "Suporte prioritário"
+      ],
+      "button": "Comprar Pacote Terminus",
+      "paymentMethods": "Cartão, Apple Pay, Google Pay, Klarna, CashApp, WeChat Pay"
+    },
+    "crypto": {
+      "title": "Pagar com Cripto?",
+      "description": "Abra um ticket no Discord para pagamentos em USDT, BTC, ETH, LTC ou XMR."
+    },
+    "cryptoPayments": {
+      "title": "Pagamentos em Cripto",
+      "description": "Entrega automática via Litecoin ou Bitcoin. Sua chave é gerada no recebimento.",
+      "ltc": "Litecoin (LTC)",
+      "btc": "Bitcoin (BTC)"
+    },
+    "alternativeMethods": {
+      "title": "Métodos Alternativos",
+      "description": "Pague com Monero (XMR), Ethereum ou métodos de pagamento localizados.",
+      "ticket": "Ticket (XMR / Outro)"
+    },
+    "resellers": {
+      "title": "Revendedores Oficiais",
+      "description": "Compre o Opal de nossos parceiros confiáveis para métodos de pagamento localizados e suporte.",
+      "visit": "Visitar Loja",
+      "localized": {
+        "title": "Métodos de Pagamento Globais",
+        "description": "Procurando preços regionais ou métodos de pagamento específicos não listados acima? Nossos revendedores oficiais podem ajudar."
+      }
+    },
+    "upgrade": {
+      "title": "Usuário Existente do Opal?",
+      "description": "Atualize para o Terminus por apenas 25,99 USD. Abra um ticket para reivindicar."
+    },
+    "terms": "Ao comprar, você concorda com nossos Termos de Serviço. Todas as vendas são finais. Vitalício significa pelo tempo de vida do produto."
+  },
+  "dashboard": {
+    "title": "Painel",
+    "manage": "Gerenciar",
+    "nav": {
+      "home": "Início",
+      "purchase": "Comprar",
+      "discord": "Discord",
+      "docs": "Documentação",
+      "setup": "Configuração",
+      "configs": "Configurações",
+      "changelog": "Registro de alterações",
+      "activate": "Ativar",
+      "settings": "Configurações",
+      "overview": "Visão geral",
+      "users": "Usuários",
+      "network": "Rede",
+      "forums": "Fóruns"
+    },
+    "overview": {
+      "title": "Visão geral",
+      "userId": "ID do Usuário",
+      "launch": "Iniciar",
+      "launches": "Inícios",
+      "online": "Online"
+    },
+    "news": {
+      "title": "Notícias",
+      "view": "Ver",
+      "empty": "Ainda não há nada aqui. Volte mais tarde!"
+    },
+    "downloads": {
+      "title": "Downloads",
+      "opalClient": "Opal Client",
+      "downloadOpal": "Baixar Opal",
+      "selectRelease": "Selecione uma versão",
+      "download": "Baixar",
+      "updated": "Atualizado",
+      "ownedSince": "Proprietário desde",
+      "changelog": "Registro de alterações"
+    },
+    "launcher": {
+      "title": "Lançador",
+      "opalLauncher": "Opal Launcher",
+      "availableSince": "Disponível desde",
+      "updated": "Atualizado",
+      "changelog": "Registro de alterações"
+    },
+    "access": {
+      "title": "Controle de Acesso",
+      "hwid": "ID de Hardware",
+      "lastChanged": "Última alteração",
+      "ago": "atrás",
+      "changeable": "Alterável a cada 30 dias",
+      "reset": "Redefinir"
+    },
+    "docs": {
+      "title": "Documentação",
+      "description": "Aprenda como usar o Opal ao máximo.",
+      "nav": {
+        "setup": "Configuração",
+        "modules": "Módulos"
+      }
+    },
+    "changelog": {
+      "title": "Registro de alterações",
+      "description": "Descubra o que há de novo na versão mais recente do Opal!",
+      "opalLauncher": "Opal Launcher",
+      "opal": "Opal",
+      "launcherBadge": "lançador",
+      "noNotes": "Nenhum registro de alterações está disponível para esta versão."
+    },
+    "activate": {
+      "title": "Ativar Licença",
+      "description": "Tem uma chave de ativação? Digite-a abaixo para resgatá-la. Se desejar migrar seu acesso ao cliente, clique em {migrate} em vez disso.",
+      "migrateBold": "Migrar",
+      "tabs": {
+        "redeem": "Resgatar",
+        "migrate": "Migrar",
+        "buy": "Comprar"
+      },
+      "forms": {
+        "redeem": {
+          "placeholder": "OPAL-XXXX-XXXX-XXXX"
+        },
+        "migrate": {
+          "description": "Se você já possui <strong class=\"font-medium\">Opal</strong>, pode usar isso para transferir seu acesso para nosso novo sistema. Se precisar de ajuda, abra um ticket.",
+          "username": "Nome de usuário",
+          "password": "Senha"
+        },
+        "buy": {
+          "description": "Compre <strong class=\"font-medium\">Opal</strong>. Uma chave será enviada para seu e-mail após uma compra bem-sucedida.",
+          "button": "Continuar para o Checkout"
+        },
+        "continue": "Continuar"
+      },
+      "crypto": {
+        "title": "Pagar com {chain}",
+        "subtitle": "Escaneie o código QR ou envie {symbol} para o endereço abaixo",
+        "completed": "Pagamento Concluído!",
+        "confirming": "Confirmando Pagamento...",
+        "detected": "Pagamento Detectado",
+        "waiting": "Aguardando Pagamento",
+        "price": "Preço: $8.99 USD",
+        "address": "Endereço de Pagamento",
+        "copied": "Endereço copiado para a área de transferência!",
+        "copyFailed": "Falha ao copiar endereço",
+        "instructions": {
+          "title": "Como pagar:",
+          "step1": "Envie {symbol} para o endereço acima",
+          "step2": "Aguarde a confirmação do blockchain (geralmente 10-30 minutos)",
+          "step3": "Sua chave de licença será entregue no seu e-mail. Isso pode levar até 2 horas."
+        },
+        "viewExplorer": "Ver no Explorador de Blocos",
+        "back": "Voltar para Ativar",
+        "statusDetected": "Transação detectada, aguardando confirmações...",
+        "statusConfirmed": "Confirmando transação...",
+        "statusCompleted": "Pagamento confirmado! Redirecionando para seu painel...",
+        "success": {
+          "title": "Pagamento Confirmado!",
+          "description": "Sua licença foi ativada. Verifique seu e-mail para detalhes."
+        },
+        "errors": {
+          "failedToGenerate": "Falha ao gerar endereço de pagamento",
+          "invalidEmail": "Por favor, insira um endereço de e-mail válido",
+          "serviceUnavailable": "Pagamentos cripto estão temporariamente indisponíveis"
+        },
+        "ltcName": "Litecoin",
+        "btcName": "Bitcoin",
+        "paymentConfirmed": "Pagamento Confirmado!",
+        "keyInstructions": "Sua chave de licença está pronta. Também a enviamos para seu e-mail.",
+        "yourLicenseKey": "Chave de Licença",
+        "copyKey": "Copiar Chave",
+        "keyCopied": "Chave de licença copiada!",
+        "goToDashboard": "Ir para Painel",
+        "accessTip": "Agora você pode baixar o cliente do seu painel.",
+        "paymentErrorTitle": "Erro de Pagamento",
+        "tryAgain": "Tentar Novamente",
+        "goBack": "Voltar"
+      },
+      "success": {
+        "title": "Parabéns!",
+        "description": "Você recebeu acesso ao Opal. <br />Bem-vindo a bordo!",
+        "dashboard": "Ir para painel"
+      },
+      "errors": {
+        "invalidKey": "Código não existe ou já foi resgatado.",
+        "invalidCredentials": "Credenciais inválidas.",
+        "generic": "Alguma coisa deu errado. Por favor, tente novamente mais tarde.",
+        "failedCheckout": "Falha ao iniciar checkout"
+      }
+    }
+  },
+  "configs": {
+    "title": "Configurações Públicas",
+    "card": {
+      "noDescription": "Nenhuma descrição fornecida",
+      "ago": "atrás",
+      "edit": "Editar",
+      "editTitle": "Editar {name}",
+      "nameLabel": "Nome",
+      "namePlaceholder": "configuração incrível de {name}",
+      "descriptionLabel": "Descrição",
+      "descriptionPlaceholder": "Para que serve esta configuração? Adicione quaisquer notas que deseje compartilhar.",
+      "saveChanges": "Salvar alterações",
+      "copyCommand": "Copiar comando de carregamento",
+      "copiedToast": "Comando copiado para a área de transferência!",
+      "publish": "Publicar",
+      "publishTitle": "Torne sua configuração pública!",
+      "publishDescription": "Selecione uma configuração pública existente para atualizar ou publique sua configuração como nova. Quando você publica uma configuração, outros usuários poderão visualizá-la.",
+      "chooseConfig": "Escolha uma configuração para publicar...",
+      "publishNew": "Publicar como nova configuração",
+      "clone": "Clonar para configurações privadas",
+      "cloneTitle": "Você tem certeza absoluta?",
+      "cloneDescription": "Você está prestes a clonar esta configuração para suas configurações privadas.",
+      "cancel": "Cancelar",
+      "continue": "Continuar",
+      "delete": "Excluir",
+      "deleteTitle": "Você tem certeza absoluta?",
+      "deleteDescription": "{name} ({id}) será excluído permanentemente junto com todos os dados associados. Esta ação é irreversível.",
+      "changesSaved": "Alterações salvas!"
+    }
+  },
+  "settings": {
+    "title": "Configurações",
+    "nav": {
+      "account": "Conta",
+      "security": "Segurança",
+      "connections": "Conexões"
+    },
+    "account": {
+      "title": "Conta",
+      "username": {
+        "title": "Nome de usuário",
+        "description": "Este é o nome de usuário associado à sua conta.",
+        "toast": "Seu nome de usuário foi alterado!",
+        "cooldown": "Seu nome de usuário pode ser alterado novamente em {time}.",
+        "requirements": "Seu nome de usuário deve ter entre 1 e 24 caracteres.",
+        "save": "Salvar alterações"
+      },
+      "email": {
+        "title": "Endereço de e-mail",
+        "description": "Este é o endereço de e-mail vinculado à sua conta.",
+        "footer": "Seu endereço de e-mail não é alterável."
+      }
+    },
+    "connections": {
+      "title": "Conexões",
+      "card": {
+        "title": "Conexões",
+        "description": "Vincule sua conta a serviços de terceiros para acessar recursos adicionais.",
+        "connected": "Conectado",
+        "ago": "atrás",
+        "requiresSetup": "Requer configuração",
+        "notConnected": "Não conectado",
+        "disconnect": "Desconectar",
+        "connect": "Conectar",
+        "connectSpotify": "Conectar Spotify",
+        "setup": "Configurar",
+        "spotify": {
+          "title": "Configurar Integração Spotify",
+          "description": "Crie seu próprio aplicativo Spotify para habilitar a integração. Isso é necessário devido aos limites da API do Spotify.",
+          "instructions": "Instruções:",
+          "step1": "Vá para {link}",
+          "step2": "Crie um novo aplicativo (qualquer nome/descrição)",
+          "step3": "Adicione este URI de redirecionamento às configurações do seu aplicativo:",
+          "copied": "Copiado!",
+          "clientId": "ID do Cliente",
+          "clientIdPlaceholder": "Seu ID de Cliente Spotify",
+          "clientSecret": "Segredo do Cliente",
+          "clientSecretPlaceholder": "Seu Segredo de Cliente Spotify",
+          "saving": "Salvando...",
+          "save": "Salvar Credenciais"
+        }
+      }
+    },
+    "security": {
+      "title": "Segurança",
+      "password": {
+        "title": "Alterar senha",
+        "description": "Para sua segurança, recomendamos fortemente que você escolha uma senha forte que não use em nenhum outro lugar.",
+        "current": "Senha atual",
+        "new": "Nova senha",
+        "requirements": "Sua nova senha deve ter entre 6 e 72 caracteres.",
+        "save": "Salvar alterações",
+        "toast": "Sua senha foi alterada!"
+      },
+      "twoFactor": {
+        "title": "Autenticação de dois fatores",
+        "description": "Proteja sua conta com autenticação de dois fatores TOTP.",
+        "button": "Ativar 2FA",
+        "footer": "Recomendamos usar um autenticador confiável para 2FA, como 1Password, Google Authenticator ou Authy.",
+        "enabled": "Ativado",
+        "disable": "Desativar",
+        "setup": {
+          "title": "Configurar Autenticação de Dois Fatores",
+          "description": "Escaneie o código QR com seu aplicativo autenticador (Google Authenticator, Authy, etc.)",
+          "manualEntry": "Não consegue escanear? Digite este código manualmente:",
+          "verificationCode": "Código de Verificação",
+          "verify": "Verificar e Ativar",
+          "verifying": "Verificando...",
+          "cancel": "Cancelar"
+        },
+        "backup": {
+          "title": "Salve seus Códigos de Backup",
+          "description": "Esses códigos podem ser usados para acessar sua conta se perder seu autenticador. Cada código só pode ser usado uma vez.",
+          "warning": "Guarde esses códigos em um local seguro. Eles não serão mostrados novamente.",
+          "copy": "Copiar Todos os Códigos",
+          "copied": "Copiado!"
+        },
+        "disableDialog": {
+          "title": "Desativar Autenticação de Dois Fatores",
+          "description": "Digite sua senha para confirmar. Isso tornará sua conta menos segura.",
+          "password": "Senha",
+          "cancel": "Cancelar",
+          "confirm": "Desativar 2FA",
+          "disabling": "Desativando..."
+        },
+        "toast": {
+          "setupFailed": "Falha ao iniciar configuração de 2FA",
+          "enabled": "2FA ativado com sucesso",
+          "invalidCode": "Código de verificação inválido",
+          "disabled": "2FA foi desativado",
+          "invalidPassword": "Senha inválida",
+          "copied": "Códigos de backup copiados",
+          "secretCopied": "Segredo copiado"
+        }
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Entre em sua conta",
+      "description": "Por favor, digite suas credenciais para continuar.",
+      "email": "Endereço de e-mail",
+      "password": "Senha",
+      "forgotPassword": "Esqueceu sua senha?",
+      "signIn": "Entrar",
+      "noAccount": "Não tem uma conta?",
+      "signUp": "Inscrever-se",
+      "twoFactor": {
+        "title": "Código de Dois Fatores",
+        "back": "Voltar",
+        "hint": "Digite o código de 6 dígitos do seu aplicativo autenticador ou um código de backup."
+      }
+    },
+    "authorize": {
+      "title": "Autorizar Aplicativo",
+      "request": "{app} deseja conectar-se à sua conta",
+      "allow": "Permitir",
+      "deny": "Negar"
+    },
+    "register": {
+      "title": "Criar uma conta",
+      "description": "Por favor, digite suas informações para se inscrever.",
+      "username": "Nome de usuário",
+      "email": "E-mail",
+      "password": "Senha",
+      "confirmPassword": "Confirmar Senha",
+      "submit": "Inscrever-se",
+      "haveAccount": "Já tem uma conta?",
+      "signIn": "Entrar"
+    },
+    "spotify": {
+      "connect": "Conectar Spotify"
+    }
+  },
+  "reseller": {
+    "title": "Estatísticas do Revendedor",
+    "description": "Ver estatísticas-chave de uso para cada prefixo de revendedor.",
+    "total": "Total",
+    "used": "Usado",
+    "available": "Disponível"
+  },
+  "network": {
+    "title": "Rede",
+    "networkSuffix": "Rede",
+    "nav": {
+      "overview": "Visão geral",
+      "users": "Usuários",
+      "resellers": "Revendedores",
+      "keys": "Chaves",
+      "media": "Mídia",
+      "payments": "Pagamentos"
+    },
+    "common": {
+      "loading": "Carregando...",
+      "save": "Salvar",
+      "cancel": "Cancelar",
+      "delete": "Excluir",
+      "edit": "Editar",
+      "close": "Fechar",
+      "confirm": "Confirmar",
+      "noPermission": "Você não tem permissão para acessar isso.",
+      "thisMonth": "este mês",
+      "remaining": "restante",
+      "unknown": "Desconhecido",
+      "never": "Nunca",
+      "all": "Todos",
+      "yes": "Sim",
+      "no": "Não"
+    },
+    "overview": {
+      "totalKeysGenerated": "Total de Chaves Geradas",
+      "usersInNetwork": "Usuários na Rede",
+      "withKeysFrom": "Com chaves de {count} revendedor",
+      "withKeysFromPlural": "Com chaves de {count} revendedores",
+      "mediaKeysThisMonth": "Chaves de Mídia Este Mês",
+      "amountOwed": "Valor Devido",
+      "networkInfo": "Informações da Rede",
+      "currency": "Moeda",
+      "exchangeRate": "Taxa de Câmbio",
+      "keyPrice": "Preço da Chave",
+      "mediaKeyPrefix": "Prefixo da Chave de Mídia",
+      "yourPermissions": "Suas Permissões",
+      "generateKeys": "Gerar Chaves",
+      "manageResellers": "Gerenciar Revendedores",
+      "manageMedia": "Gerenciar Mídia",
+      "viewUsers": "Ver Usuários",
+      "resellers": "Revendedores",
+      "noResellersYet": "Nenhum revendedor nesta rede ainda."
+    },
+    "users": {
+      "title": "Usuários",
+      "count": "{count} usuário em sua rede",
+      "countPlural": "{count} usuários em sua rede",
+      "noUsersYet": "Nenhum usuário encontrado em sua rede ainda.",
+      "noResellersFirst": "Nenhum revendedor nesta rede ainda. Adicione revendedores primeiro para ver usuários.",
+      "searchPlaceholder": "Pesquisar por nome ou e-mail...",
+      "allResellers": "Todos os revendedores",
+      "noMatchFilters": "Nenhum usuário corresponde aos seus filtros.",
+      "never": "Nunca",
+      "table": {
+        "user": "Usuário",
+        "reseller": "Revendedor",
+        "key": "Chave",
+        "hwid": "HWID",
+        "registered": "Registrado",
+        "actions": "Ações"
+      },
+      "hwid": {
+        "bound": "Vinculado",
+        "notBound": "Não vinculado",
+        "reset": "Redefinir HWID",
+        "history": "Histórico HWID",
+        "resetConfirm": {
+          "title": "Redefinir ID de Hardware",
+          "description": "Tem certeza de que deseja redefinir o ID de hardware para {name}? Eles precisarão se reautenticar em seu próximo login.",
+          "confirm": "Redefinir HWID",
+          "cancel": "Cancelar"
+        },
+        "historyDialog": {
+          "title": "Histórico HWID",
+          "description": "Alterações de ID de hardware para {name}",
+          "noHistory": "Nenhuma alteração de HWID registrada.",
+          "eventSet": "HWID Definido",
+          "eventReset": "HWID Redefinido"
+        },
+        "resetSuccess": "ID de hardware redefinido com sucesso!",
+        "resetError": "Falha ao redefinir ID de hardware."
+      },
+      "pagination": {
+        "page": "Página {current} de {total}",
+        "previous": "Anterior",
+        "next": "Próximo"
+      }
+    },
+    "resellers": {
+      "title": "Revendedores",
+      "count": "{count} revendedor em sua rede",
+      "countPlural": "{count} revendedores em sua rede",
+      "addReseller": "Adicionar Revendedor",
+      "noResellersYet": "Nenhum revendedor ainda. Adicione seu primeiro revendedor para começar a gerar chaves.",
+      "viewStore": "Ver loja",
+      "table": {
+        "reseller": "Revendedor",
+        "prefix": "Prefixo",
+        "keys": "Chaves",
+        "users": "Usuários",
+        "status": "Status",
+        "created": "Criado",
+        "active": "Ativo",
+        "inactive": "Inativo"
+      },
+      "create": {
+        "title": "Adicionar Revendedor",
+        "description": "Adicione um novo revendedor à sua rede. O prefixo será usado para geração de chaves.",
+        "name": "Nome",
+        "namePlaceholder": "Nome do revendedor",
+        "prefix": "Prefixo da Chave",
+        "prefixPlaceholder": "ex. HHKW",
+        "prefixHint": "2-10 letras maiúsculas/números. As chaves serão: PREFIX-XXXXXXXXXXXX",
+        "storeUrl": "URL da Loja (opcional)",
+        "storeUrlPlaceholder": "https://...",
+        "description_field": "Descrição (opcional)",
+        "descriptionPlaceholder": "Descrição mostrada na página pública do revendedor...",
+        "contactInfo": "Informações de Contato (opcional)",
+        "contactInfoPlaceholder": "WeChat, QQ, Discord, etc.",
+        "submit": "Adicionar Revendedor",
+        "success": "Revendedor criado",
+        "error": "Falha ao criar revendedor"
+      },
+      "edit": {
+        "title": "Editar Revendedor",
+        "description": "Atualizar detalhes para {name}.",
+        "submit": "Salvar Alterações",
+        "success": "Revendedor atualizado",
+        "error": "Falha ao atualizar revendedor"
+      },
+      "delete": {
+        "confirm": "Tem certeza de que deseja excluir \"{name}\"? Isso não pode ser desfeito.",
+        "success": "Revendedor excluído",
+        "error": "Falha ao excluir revendedor"
+      }
+    },
+    "keys": {
+      "title": "Chaves",
+      "count": "{count} chave em sua rede",
+      "countPlural": "{count} chaves em sua rede",
+      "stats": "{total} total • {used} resgatado • {unused} disponível",
+      "noKeysYet": "Nenhuma chave ainda",
+      "noResellersFirst": "Nenhum revendedor nesta rede ainda. Adicione revendedores primeiro para gerar chaves.",
+      "generateKeys": "Gerar Chaves",
+      "copyUnusedKeys": "Copiar Chaves Não Utilizadas",
+      "allResellers": "Todos os revendedores",
+      "allKeys": "Todas as chaves",
+      "unusedOnly": "Somente não utilizadas",
+      "usedOnly": "Somente utilizadas",
+      "noMatchFilters": "Nenhuma chave corresponde aos seus filtros.",
+      "table": {
+        "key": "Chave",
+        "reseller": "Revendedor",
+        "status": "Status",
+        "created": "Criado",
+        "redeemed": "Resgatado",
+        "used": "Usado",
+        "unused": "Não utilizado",
+        "media": "Mídia"
+      },
+      "copy": {
+        "single": "Chave copiada para a área de transferência",
+        "multiple": "{count} chaves copiadas para a área de transferência",
+        "noUnused": "Nenhuma chave não utilizada para copiar"
+      },
+      "generate": {
+        "title": "Gerar Chaves",
+        "description": "Gerar chaves para um revendedor. Você será cobrado ${price} por chave.",
+        "reseller": "Revendedor",
+        "resellerPlaceholder": "Selecione um revendedor",
+        "count": "Número de Chaves",
+        "countPlaceholder": "1-100",
+        "submit": "Gerar Chaves",
+        "success": "Gerado {count} chaves - ${usd} ({local} {currency})",
+        "error": "Falha ao gerar chaves",
+        "result": {
+          "title": "Chaves Geradas",
+          "description": "{count} chaves foram geradas. Copie-as agora - você não as verá novamente.",
+          "amountOwed": "Valor devido:",
+          "copyAll": "Copiar Todas as Chaves"
+        }
+      },
+      "pagination": {
+        "page": "Página {current} de {total}",
+        "previous": "Anterior",
+        "next": "Próximo"
+      }
+    },
+    "media": {
+      "title": "Mídia",
+      "count": "{count} conta de mídia em sua rede",
+      "countPlural": "{count} contas de mídia em sua rede",
+      "monthlyUsage": "{used}/{limit} chaves usadas este mês • {remaining} restantes",
+      "noPermission": "Você não tem permissão para gerenciar contas de mídia.",
+      "addMedia": "Adicionar Mídia",
+      "noMediaYet": "Nenhuma conta de mídia encontrada.",
+      "table": {
+        "name": "Nome",
+        "platform": "Plataforma",
+        "key": "Chave",
+        "status": "Status",
+        "added": "Adicionado",
+        "active": "Ativo",
+        "inactive": "Inativo",
+        "noKey": "Sem chave"
+      },
+      "create": {
+        "title": "Adicionar Conta de Mídia",
+        "description": "Adicione um criador de conteúdo ao programa de mídia da sua rede.",
+        "name": "Nome",
+        "namePlaceholder": "Nome do criador ou canal",
+        "platform": "Plataforma",
+        "platformPlaceholder": "Selecione plataforma",
+        "platformUrl": "URL do Canal/Perfil",
+        "platformUrlPlaceholder": "https://youtube.com/@canal",
+        "notes": "Notas",
+        "notesPlaceholder": "Informações de contato, foco do conteúdo, etc.",
+        "generateKey": "Gerar Chave",
+        "keysRemaining": "{count} chaves de mídia restantes este mês",
+        "limitReached": "Limite mensal atingido",
+        "submit": "Adicionar Mídia",
+        "success": "Conta de mídia criada",
+        "successWithKey": "Conta de mídia criada! Chave copiada: {key}",
+        "error": "Falha ao criar conta de mídia"
+      },
+      "edit": {
+        "title": "Editar Conta de Mídia",
+        "description": "Atualizar detalhes da conta de mídia.",
+        "submit": "Salvar Alterações",
+        "success": "Conta de mídia atualizada",
+        "error": "Falha ao atualizar conta de mídia"
+      },
+      "delete": {
+        "confirm": "Excluir conta de mídia \"{name}\"?",
+        "success": "Conta de mídia excluída",
+        "error": "Falha ao excluir conta de mídia"
+      },
+      "generateKey": {
+        "confirm": "Gerar uma chave para \"{name}\"?",
+        "success": "Chave gerada e copiada: {code}",
+        "error": "Falha ao gerar chave"
+      },
+      "actions": {
+        "generateKey": "Gerar Chave",
+        "edit": "Editar",
+        "delete": "Excluir"
+      }
+    },
+    "payments": {
+      "title": "Pagamentos",
+      "noPermission": "Você não tem permissão para ver pagamentos.",
+      "balanceOwed": "Saldo Devido",
+      "youOwe": "saldo pendente",
+      "overpaid": "saldo de crédito",
+      "settled": "tudo resolvido",
+      "totalCharges": "Cobranças Totais",
+      "keysGenerated": "chaves geradas",
+      "paymentsReceived": "Pagamentos Recebidos",
+      "payments": "pagamentos",
+      "keyPrice": "Preço da Chave",
+      "perKeyGenerated": "por chave gerada",
+      "noPaymentsYet": "Nenhum registro de pagamento ainda. Os registros são criados quando as chaves são geradas."
+    }
+  },
+  "footer": {
+    "copyright": "Opal × Terminus. Todos os direitos reservados.",
+    "terms": "Termos de Serviço",
+    "privacy": "Política de Privacidade"
+  },
+  "banner": {
+    "presets": {
+      "christmas": "Venda de Férias: Use o código HOLIDAY10 para 10% de desconto até 31 de dezembro",
+      "new_year": "Venda de Ano Novo: Use o código NEWYEAR10 para 10% de desconto até 7 de janeiro",
+      "lunar_new_year": "Venda de Ano Lunar: Use o código LUNAR10 para 10% de desconto até 3 de março"
+    }
+  },
+  "forums": {
+    "warningTitle": "Verifique bugs conhecidos. Isto NÃO é para problemas de inicialização ou suporte!",
+    "warning": "Antes de criar um relatório, verifique se o bug já foi relatado. Relatórios duplicados atrasam correções.",
+    "roadmap": {
+      "title": "Roteiro",
+      "searchPlaceholder": "Pesquisar roteiro...",
+      "allCategories": "Todas as Categorias",
+      "empty": "Nenhum item",
+      "planned": "Planejado",
+      "inProgress": "Em Andamento",
+      "done": "Concluído"
+    },
+    "suggestions": {
+      "title": "Sugestões",
+      "new": "Nova Sugestão",
+      "searchPlaceholder": "Pesquisar sugestões...",
+      "allStatuses": "Todos os Status",
+      "pending": "Pendente",
+      "approved": "Aprovado",
+      "denied": "Negado",
+      "planned": "Planejado",
+      "empty": "Nenhuma sugestão encontrada correspondendo aos seus filtros.",
+      "noItems": "Nenhuma sugestão ainda",
+      "detailTitle": "Detalhes da Sugestão",
+      "discussion": "Discussão",
+      "officialResponse": "Resposta Oficial",
+      "devResponseLabel": "Resposta do Desenvolvedor",
+      "devResponsePlaceholder": "Adicionar uma resposta oficial...",
+      "saveResponse": "Salvar Resposta",
+      "discussionLocked": "A discussão está fechada para esta sugestão.",
+      "noComments": "Nenhum comentário ainda. Seja o primeiro a compartilhar seus pensamentos.",
+      "addComment": "Adicionar um comentário",
+      "commentPlaceholder": "Compartilhe seus pensamentos...",
+      "postComment": "Publicar Comentário",
+      "replyPlaceholder": "Escrever uma resposta...",
+      "post": "Publicar",
+      "cancel": "Cancelar",
+      "sortBy": "Ordenar por",
+      "sortDefault": "Padrão",
+      "sortVotes": "Mais Votos",
+      "sortNewest": "Mais Recentes",
+      "sortOldest": "Mais Antigos",
+      "dialog": {
+        "title": "Sugerir um Recurso",
+        "titleLabel": "Título",
+        "titlePlaceholder": "Descreva brevemente sua sugestão",
+        "contentLabel": "Descrição",
+        "contentPlaceholder": "Forneça detalhes sobre sua sugestão",
+        "submit": "Enviar",
+        "submitting": "Enviando...",
+        "success": "Sugestão enviada com sucesso"
+      }
+    },
+    "nav": {
+      "roadmap": "Roteiro",
+      "suggestions": "Sugestões",
+      "bugs": "Relatórios de Bugs",
+      "changelog": "Registro de alterações"
+    },
+    "bugs": {
+      "title": "Relatórios de Bugs",
+      "new": "Reportar Bug",
+      "searchPlaceholder": "Pesquisar bugs...",
+      "allStatuses": "Todos os Status",
+      "open": "Aberto",
+      "closed": "Fechado",
+      "invalid": "Inválido",
+      "empty": "Nenhum relatório de bug encontrado correspondendo aos seus filtros.",
+      "noItems": "Nenhum bug relatado ainda.",
+      "version": "Versão do Cliente",
+      "steps": "Etapas de Reprodução",
+      "description": "Descrição",
+      "detailTitle": "Detalhes do Relatório de Bug",
+      "discussion": "Discussão",
+      "officialResponse": "Resposta Oficial",
+      "devResponseLabel": "Resposta do Desenvolvedor",
+      "devResponsePlaceholder": "Adicionar uma resposta oficial...",
+      "saveResponse": "Salvar Resposta",
+      "discussionLocked": "A discussão está fechada para este relatório de bug.",
+      "noComments": "Nenhum comentário ainda. Seja o primeiro a compartilhar seus pensamentos.",
+      "addComment": "Adicionar um comentário",
+      "commentPlaceholder": "Compartilhe seus pensamentos...",
+      "postComment": "Publicar Comentário",
+      "replyPlaceholder": "Escrever uma resposta...",
+      "post": "Publicar",
+      "cancel": "Cancelar",
+      "sortBy": "Ordenar por",
+      "sortDefault": "Padrão",
+      "sortNewest": "Mais Recentes",
+      "sortOldest": "Mais Antigos",
+      "dialog": {
+        "title": "Reportar um Bug",
+        "titleLabel": "Título do Problema",
+        "titlePlaceholder": "Breve resumo",
+        "versionLabel": "Versão do Cliente",
+        "descriptionLabel": "Descrição",
+        "descriptionPlaceholder": "O que aconteceu?",
+        "stepsLabel": "Etapas de Reprodução",
+        "stepsPlaceholder": "1. Vá para...\n2. Clique...",
+        "submit": "Enviar Relatório",
+        "submitting": "Enviando...",
+        "success": "Relatório de bug enviado"
+      }
+    }
+  },
+  "manage": {
+    "roadmap": {
+      "title": "Roteiro",
+      "searchPlaceholder": "Pesquisar roteiro...",
+      "filterStatus": "Filtrar por status",
+      "allStatuses": "Todos os Status",
+      "addItem": "Adicionar Item",
+      "editItem": "Editar Item",
+      "createItem": "Criar Item",
+      "titleLabel": "Título",
+      "descriptionLabel": "Descrição",
+      "categoryLabel": "Categoria",
+      "categoryPlaceholder": "ex. Cliente",
+      "typeLabel": "Tipo",
+      "feature": "Recurso",
+      "bug": "Bug",
+      "statusLabel": "Status",
+      "planned": "Planejado",
+      "inProgress": "Em Andamento",
+      "done": "Concluído",
+      "save": "Salvar",
+      "saving": "Salvando...",
+      "table": {
+        "title": "Título",
+        "category": "Categoria",
+        "type": "Tipo",
+        "status": "Status",
+        "actions": "Ações",
+        "empty": "Nenhum item encontrado"
+      },
+      "toast": {
+        "updated": "Item atualizado",
+        "created": "Item criado",
+        "deleted": "Item excluído"
+      },
+      "confirmDelete": "Tem certeza?"
+    },
+    "suggestions": {
+      "title": "Sugestões",
+      "searchPlaceholder": "Pesquisar sugestões...",
+      "filterStatus": "Filtrar por status",
+      "allStatuses": "Todos os Status",
+      "pending": "Pendente",
+      "approved": "Aprovado",
+      "denied": "Negado",
+      "table": {
+        "content": "Conteúdo",
+        "author": "Autor",
+        "votes": "Votos",
+        "status": "Status",
+        "created": "Criado",
+        "actions": "Ações",
+        "empty": "Nenhuma sugestão encontrada"
+      },
+      "toast": {
+        "approved": "Sugestão aprovada e moedas recompensadas",
+        "denied": "Sugestão negada",
+        "deleted": "Sugestão excluída"
+      },
+      "confirmDeny": "Negar esta sugestão?",
+      "confirmDelete": "Tem certeza absoluta? Isso excluirá a sugestão permanentemente."
+    },
+    "bugs": {
+      "title": "Relatórios de Bugs",
+      "searchPlaceholder": "Pesquisar relatórios de bugs...",
+      "filterStatus": "Filtrar por status",
+      "allStatuses": "Todos os Status",
+      "open": "Aberto",
+      "closed": "Fechado",
+      "invalid": "Inválido",
+      "table": {
+        "issue": "Problema",
+        "author": "Autor",
+        "version": "Versão",
+        "status": "Status",
+        "created": "Criado",
+        "actions": "Ações",
+        "empty": "Nenhum relatório de bug encontrado"
+      },
+      "toast": {
+        "closed": "Relatório de bug fechado",
+        "invalid": "Relatório de bug marcado como inválido",
+        "deleted": "Relatório de bug excluído"
+      },
+      "confirmClose": "Fechar este relatório de bug?",
+      "confirmInvalid": "Marcar como inválido?",
+      "confirmDelete": "Tem certeza absoluta? Isso excluirá o relatório de bug permanentemente."
+    }
+  },
+  "cloud": {
+    "title": "Nuvem"
+  },
+  "relations": {
+    "title": "Relações",
+    "add": {
+      "button": "Adicionar Relação",
+      "title": "Adicionar Relação",
+      "description": "Adicione um amigo ou inimigo à sua lista. Isso afetará como eles aparecem no jogo.",
+      "type": "Tipo de Relação",
+      "user_type": "Tipo de Usuário",
+      "submit": "Adicionar Relação",
+      "submitting": "Adicionando...",
+      "success": "Relação adicionada com sucesso",
+      "error": "Falha ao adicionar relação"
+    },
+    "types": {
+      "friend": "Amigo",
+      "enemy": "Inimigo",
+      "opal": "Usuário Opal",
+      "minecraft": "Minecraft"
+    },
+    "inputs": {
+      "minecraft_placeholder": "Notch",
+      "opal_placeholder": "nome de usuário",
+      "minecraft_label": "Nome de Usuário / UUID",
+      "opal_label": "Nome de Usuário da Configuração"
+    },
+    "list": {
+      "empty": "Nenhuma relação encontrada. Adicione alguns amigos ou inimigos para começar!",
+      "remove_success": "Relação removida",
+      "remove_error": "Falha ao remover relação",
+      "unknown": "Desconhecido"
+    },
+    "errors": {
+      "opal_not_found": "Usuário Opal não encontrado",
+      "self_add": "Não é possível adicionar a si mesmo",
+      "minecraft_not_found": "Usuário Minecraft não encontrado",
+      "exists": "Relação já existe"
+    }
+  },
+  "inbox": {
+    "title": "Caixa de Entrada",
+    "unread": "notificação não lida",
+    "allRead": "Tudo lido",
+    "markAllRead": "Marcar tudo como lido",
+    "clearAll": "Limpar tudo",
+    "empty": "Nenhuma notificação",
+    "emptyDescription": "Quando você receber notificações, elas aparecerão aqui"
+  }
+}
