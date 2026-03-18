@@ -1041,7 +1041,7 @@
       "minecraft_placeholder": "Notch",
       "opal_placeholder": "nom d'utilisateur",
       "minecraft_label": "Nom d'utilisateur / UUID",
-      "opal_label": "Nom d'utilisateur de configuration"
+      "opal_label": "Nom d'utilisateur de la configuration"
     },
     "list": {
       "empty": "Aucune relation trouvée. Ajoutez quelques amis ou ennemis pour commencer !",
