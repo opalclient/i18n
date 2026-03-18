@@ -712,7 +712,7 @@
       },
       "generate": {
         "title": "Générer des clés",
-        "description": "Générer des clés pour un revendeur. Vous serez facturé {price}$ par clé.",
+        "description": "Générer des clés pour un revendeur. Vous serez facturé ${price} par clé.",
         "reseller": "Revendeur",
         "resellerPlaceholder": "Sélectionnez un revendeur",
         "count": "Nombre de clés",
