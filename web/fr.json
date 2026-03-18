@@ -280,7 +280,7 @@
     },
     "activate": {
       "title": "Activer la licence",
-      "description": "Avez-vous une clé d'activation ? Entrez-la ci-dessous pour l'échanger. Si vous souhaitez migrer votre accès client, cliquez sur {migrate} à la place.",
+      "description": "Avez-vous une clé d'activation ? Entrez-la ci-dessous pour l'utiliser. Si vous souhaitez migrer votre accès client, cliquez sur {migrate} à la place.",
       "migrateBold": "Migrer",
       "tabs": {
         "redeem": "Échanger",
