@@ -6,7 +6,7 @@ The engine provides a sandboxed environment with access to specific Java classes
 
 ## Anatomy of a Script
 
-Every script entry point must register itself using `registerScript`. This returns a handle used to register specific modules.
+Every script entry point must register itself using `registerScript`. This returns a handle used to register a module.
 
 ```javascript
 const script = registerScript({
@@ -19,31 +19,129 @@ script.registerModule({
     name: "AutoGreeter",
     description: "Automatically greets players"
 }, (module) => {
-    // Module logic goes here
     module.on("enable", () => {
         client.print("Module enabled!");
+    });
+
+    module.on("disable", () => {
+        client.print("Module disabled!");
     });
 });
 ```
 
+Save as a `.js` file in your `scripts/` folder, then use `.script reload` in-game to load it. Your module appears in the ClickGUI alongside native modules.
+
+## Module Settings
+
+Scripts can define settings that appear in the ClickGUI identically to native module settings. All settings must be defined inside the `registerModule` callback, before any `module.on(...)` calls.
+
+```javascript
+script.registerModule({ name: "MyModule", description: "..." }, (module) => {
+    module.addBool("Enabled", true);
+    module.addNumber("Speed", 1.0, 0.1, 5.0, 0.1);
+    module.addMode("Mode", ["Vanilla", "NCP"]);
+    module.addGroup("Options", ["Speed", "Mode"]);
+
+    module.on("preGameTick", () => {
+        if (!module.getBool("Enabled")) return;
+        const speed = module.getNumber("Speed");
+        const mode = module.getMode("Mode");
+    });
+});
+```
+
+### Setting Types
+
+**Boolean (Toggle)**
+```javascript
+module.addBool("Auto Sprint", true);
+module.getBool("Auto Sprint");          // true or false
+module.setBool("Auto Sprint", false);
+```
+
+**Number (Slider)**
+```javascript
+module.addNumber("Reach", 3.1, 3.0, 6.0, 0.1);
+//                name    default min  max  step
+module.getNumber("Reach");              // 3.1
+module.setNumber("Reach", 3.3);
+```
+
+**Mode (Dropdown)**
+```javascript
+module.addMode("Mode", ["Silent", "Normal", "Fast"]);
+module.getMode("Mode");                 // "Silent"
+module.isModeEqual("Mode", "silent");   // true (case-insensitive)
+```
+
+**Group (Collapsible)**
+```javascript
+module.addBool("Show ESP", true);
+module.addNumber("ESP Range", 64, 1, 128, 1);
+module.addGroup("ESP Settings", ["Show ESP", "ESP Range"]);
+```
+
+<Callout type="warning">
+    Settings must be defined before `module.on(...)` calls. `addGroup` must be called after all settings it references have been defined.
+</Callout>
+
+Settings are **automatically saved** to your config. They persist across restarts and reloads.
+
 ## Java Interop
 
-Specific Java classes are exposed globally for use in your scripts. You do not need to import these.
+Specific Java classes are exposed globally. You do not need to import these.
 
 | Class | Description |
 | :--- | :--- |
 | `Vec3d` | `net.minecraft.util.math.Vec3d` |
 | `Vec3i` | `net.minecraft.util.math.Vec3i` |
-| `BlockPos` | `net.minecraft.util.math.BlockPos` |
+| `BlockPos` | `net.minecraft.util.math.BlockPos` (wrapped as `ScriptBlockPos`) |
 | `MathHelper` | `net.minecraft.util.math.MathHelper` |
 | `Color` | `java.awt.Color` |
-| `mc` | The raw `MinecraftClient` instance. |
+| `MAIN_HAND` / `OFF_HAND` | Hand enum constants |
 
 <Callout type="warning">
-    Accessing properties on `mc` requires knowledge of the underlying Minecraft source mappings (intermediary/mojang). Whenever possible, use the provided Proxy objects (e.g., `player`, `world`) instead of raw `mc` calls.
+    Accessing properties directly on `mc.player` or `mc.world` requires knowledge of Fabric's intermediary mappings — those calls will fail at runtime. Use the provided proxy globals (`player`, `world`, `inventory`, etc.) for all method calls. Use `mc.player` and `mc.world` only for null checks.
 </Callout>
 
-### Enums
-Standard enum constants are available as global variables:
-*   `MAIN_HAND`
-*   `OFF_HAND`
+## Available Globals
+
+| Global | Description |
+|--------|-------------|
+| `client` | Chat output, module access, screen info, theme colors |
+| `player` | Position, health, combat, movement state |
+| `movement` | Speed manipulation, direction calculations |
+| `rotation` | Rotation math, smooth aiming, FOV checks |
+| `world` | Blocks, entities, time, dimension |
+| `inventory` | Slots, items, searching, silent switching |
+| `renderer` | 2D shapes, text, gradients, paths (NanoVG) |
+| `overlay` | Dynamic Island HUD creation |
+| `esp` | 3D to 2D projection for ESP rendering |
+| `modules` | Query, toggle, and list all modules |
+| `notification` | Toast notifications (success, error, warn, info) |
+| `mc` | Null-safe access to Minecraft player/world/interactionManager |
+
+See the **API Reference** pages for full method documentation.
+
+## Commands
+
+| Command | Description |
+|---------|-------------|
+| `.script reload` | Reload all scripts from disk |
+| `.script list` | Show loaded scripts and their modules |
+| `.script info <name>` | View script details (version, authors, settings) |
+| `.script enable <name>` | Enable a script module |
+| `.script disable <name>` | Disable a script module |
+| `.script upload <name>` | Upload local script to your private cloud |
+| `.script download <name>` | Download a private script from cloud |
+| `.script cloud list` | List your cloud scripts |
+| `.script cloud delete <name>` | Delete a cloud script |
+
+## Tips
+
+- **Null check `mc.player`** before accessing player data — it's null in menus
+- **Use `renderScreen` for HUD** — renderer methods only work during render events
+- **Use `preGameTick` for logic** — runs every tick (20 times/second)
+- Each script is **isolated** — scripts can't interfere with each other
+- **Hot reload** with `.script reload` — no restart needed
+- Max script size: **100KB**
