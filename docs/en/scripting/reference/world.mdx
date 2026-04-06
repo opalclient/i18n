@@ -1,96 +1,28 @@
+# World & ESP
 
-
-# Player & World
-
----
-
-## `player` — PlayerProxy
-
-Exposes local player state, position, health, combat utilities, and actions.
-
-### Position
-
-| Method | Returns | Description |
-|---|---|---|
-| `getBlockPosition()` | `BlockPos` | Floored block coordinates the player is standing in |
-| `getPosition()` | `Vec3d` | Eye position in world space |
-| `getEyePosition()` | `Vec3d` | Eye position in world space |
-| `getVelocity()` | `Vec3d` | Current velocity vector |
-| `getBoundingBox()` | `Box` | Player's axis-aligned bounding box |
-| `getStandingEyeHeight()` | `float` | Eye height above feet |
-
-### Rotation
-
-| Method | Returns | Description |
-|---|---|---|
-| `getYaw()` | `float` | Current yaw in degrees |
-| `getPitch()` | `float` | Current pitch in degrees |
-
-### State
-
-| Method | Returns | Description |
-|---|---|---|
-| `isOnGround()` | `boolean` | Whether the player is on the ground |
-| `isInAir()` | `boolean` | Whether the player is airborne |
-| `getAirTicks()` | `int` | Ticks spent in the air continuously |
-| `getGroundTicks()` | `int` | Ticks spent on the ground continuously |
-| `isSneaking()` | `boolean` | Whether the player is sneaking |
-| `isSprinting()` | `boolean` | Whether the player is sprinting |
-| `isUsingItem()` | `boolean` | Whether the player is eating, blocking, drawing a bow, etc. |
-| `getFallDistance()` | `double` | Current fall distance in blocks |
-
-### Health
-
-| Method | Returns | Description |
-|---|---|---|
-| `getHealth()` | `float` | Current health points |
-| `getMaxHealth()` | `float` | Maximum health points |
-| `getAbsorption()` | `float` | Absorption (golden hearts) amount |
-
-### Combat
-
-| Method | Returns | Description |
-|---|---|---|
-| `canCrit()` | `boolean` | Whether the next attack will be a critical hit |
-| `getAttackDamage()` | `double` | Main-hand attack damage |
-| `getEntityInteractionRange()` | `double` | Maximum entity attack range |
-| `isHoldingWeapon()` | `boolean` | Whether the player holds a sword, axe, or pickaxe |
-| `getDistanceToEntity(entity)` | `double` | Box-to-box distance to the given entity |
-| `getClosestPoint(entity)` | `Vec3d` | Closest bounding-box point on an entity from the player's eye |
-
-### Bounding box checks
-
-| Method | Returns | Description |
-|---|---|---|
-| `isBoxEmpty(dx, dy, dz)` | `boolean` | Whether an offset of the player's box has no collision |
-| `isBoxEmptyBelow(dy)` | `boolean` | Whether the space below the player (at `dy`) is empty |
-
-### Actions
-
-| Method | Returns | Description |
-|---|---|---|
-| `swingHand(hand)` | `void` | Plays the hand swing animation. Use `MAIN_HAND` or `OFF_HAND`. |
-
-```js
-player.swingHand(MAIN_HAND);
-```
+Block queries, entity access, world info, 3D projection, and wrapper types.
 
 ---
 
-## `world` — WorldProxy
+## World Proxy
+**Global Binding:** `world`
 
-Provides block queries, adjacent direction lookups, and entity searches.
+### Block Queries
 
-### Block queries
+<Method name="isAir" signature="boolean isAir(BlockPos pos)" description="Whether the block at the given position is air." params={[{ name: "pos", type: "BlockPos", desc: "Block position." }]} returns={{ type: "boolean", desc: "True if air." }} />
+<Method name="isReplaceable" signature="boolean isReplaceable(BlockPos pos)" description="Whether the block can be replaced (air, fluid, grass, etc.)." params={[{ name: "pos", type: "BlockPos", desc: "Block position." }]} returns={{ type: "boolean", desc: "True if replaceable." }} />
+<Method name="isSolid" signature="boolean isSolid(BlockPos pos)" description="Whether the block is solid." params={[{ name: "pos", type: "BlockPos", desc: "Block position." }]} returns={{ type: "boolean", desc: "True if solid." }} />
+<Method name="getBlockName" signature="String getBlockName(BlockPos pos)" description="Returns the localized display name of the block." params={[{ name: "pos", type: "BlockPos", desc: "Block position." }]} returns={{ type: "String", desc: "Block name." }} />
+<Method name="getBlockState" signature="BlockState getBlockState(BlockPos pos)" description="Returns the raw BlockState object." params={[{ name: "pos", type: "BlockPos", desc: "Block position." }]} returns={{ type: "BlockState", desc: "Block state." }} />
+<Method name="getBlock" signature="Block getBlock(BlockPos pos)" description="Returns the Block type object." params={[{ name: "pos", type: "BlockPos", desc: "Block position." }]} returns={{ type: "Block", desc: "Block." }} />
+<Method name="getBlockHardness" signature="float getBlockHardness(BlockPos pos)" description="Returns the breaking hardness. -1 means unbreakable (bedrock)." params={[{ name: "pos", type: "BlockPos", desc: "Block position." }]} returns={{ type: "float", desc: "Hardness." }} />
 
-| Method | Returns | Description |
-|---|---|---|
-| `isReplaceable(blockPos)` | `boolean` | Whether the block at the given position can be replaced (air, fluid, grass, etc.) |
-| `isSolid(blockPos)` | `boolean` | Whether the block at the given position is solid |
-| `hasAdjacentBlock(blockPos)` | `boolean` | Whether any face-adjacent block is solid and placeable-against |
-| `getAdjacentDirections(blockPos)` | `List<Direction>` | List of directions where a solid neighbour exists (can be empty) |
+### Block Helpers
 
-```js
+<Method name="hasAdjacentBlock" signature="boolean hasAdjacentBlock(BlockPos pos)" description="Whether any face-adjacent block is solid (placeable-against)." params={[{ name: "pos", type: "BlockPos", desc: "Block position." }]} returns={{ type: "boolean", desc: "True if has neighbor." }} />
+<Method name="getAdjacentDirections" signature="List&lt;Direction&gt; getAdjacentDirections(BlockPos pos)" description="Returns directions where a solid neighbour exists. Can be empty." params={[{ name: "pos", type: "BlockPos", desc: "Block position." }]} returns={{ type: "List<Direction>", desc: "List of ScriptDirection." }} />
+
+```javascript
 const below = new BlockPos(pos.getX(), pos.getY() - 1, pos.getZ());
 
 if (!world.isReplaceable(below)) return;
@@ -102,29 +34,152 @@ const side = dirs.get(0);
 const neighbor = below.offset(side);
 ```
 
-### Entity queries
+### Entity Queries
 
-| Method | Returns | Description |
-|---|---|---|
-| `getNearbyEntities(range)` | `List<Entity>` | All entities within `range` blocks of the player |
-| `getNearbyPlayers(range)` | `List<PlayerEntity>` | Nearby players only, excluding self |
-| `getNearbyLivingEntities(range)` | `List<LivingEntity>` | Nearby living entities (mobs + players), excluding self |
+<Method name="getEntities" signature="Iterable getEntities()" description="Returns all entities in the world." returns={{ type: "Iterable", desc: "All entities." }} />
+<Method name="getLivingEntitiesInRange" signature="List&lt;LivingEntity&gt; getLivingEntitiesInRange(double radius)" description="Returns living entities (mobs + players) within radius of the player, excluding self." params={[{ name: "radius", type: "double", desc: "Search radius in blocks." }]} returns={{ type: "List<LivingEntity>", desc: "Nearby living entities." }} />
+
+```javascript
+// Attack closest entity
+const targets = world.getLivingEntitiesInRange(5.0);
+if (!targets.isEmpty()) {
+    mc.interactionManager.attackEntity(targets.get(0));
+    player.swingHand(MAIN_HAND);
+}
+```
+
+### World Info
+
+<Method name="getTime" signature="long getTime()" description="Returns world time in ticks." returns={{ type: "long", desc: "World ticks." }} />
+<Method name="getTimeOfDay" signature="long getTimeOfDay()" description="Time of day: 0=sunrise, 6000=noon, 12000=sunset, 18000=midnight." returns={{ type: "long", desc: "Time of day." }} />
+<Method name="getDimension" signature="String getDimension()" description="Returns the dimension identifier." returns={{ type: "String", desc: "e.g., 'minecraft:overworld'." }} />
 
 ---
 
-## ESP Proxy — `esp`
+## ESP Proxy
+**Global Binding:** `esp`
 
-Provides 3D-to-2D screen projection for custom ESP overlays.
+3D-to-2D screen projection for custom ESP overlays.
+
+<Callout type="info">
+    All ESP methods require a `tickDelta` parameter for smooth interpolation. Get it from `client.getTickDelta()`.
+</Callout>
+
+### Projection
+
+<Method name="getEntityBox2D" signature="Vector4d getEntityBox2D(Entity entity, float tickDelta)" description="Projects an entity's 3D bounding box onto the screen. Returns a Vector4d with x, y, width (z), height (w). Returns null if behind camera." params={[{ name: "entity", type: "Entity", desc: "Target entity." }, { name: "tickDelta", type: "float", desc: "Partial tick." }]} returns={{ type: "Vector4d | null", desc: "Screen box {x, y, z=width, w=height}." }} />
+
+<Method name="project" signature="Vector3d project(double worldX, double worldY, double worldZ, float tickDelta)" description="Projects a world point onto the screen. Returns null if behind camera." params={[{ name: "worldX/Y/Z", type: "double", desc: "World coordinates." }, { name: "tickDelta", type: "float", desc: "Partial tick." }]} returns={{ type: "Vector3d | null", desc: "{screenX, screenY, depth}." }} />
+
+<Method name="projectVec" signature="Vector3d projectVec(Vec3d pos, float tickDelta)" description="Projects a Vec3d onto the screen." params={[{ name: "pos", type: "Vec3d", desc: "World position." }, { name: "tickDelta", type: "float", desc: "Partial tick." }]} returns={{ type: "Vector3d | null", desc: "{screenX, screenY, depth}." }} />
+
+### Interpolation
+
+<Method name="getInterpolatedPosition" signature="Vec3d getInterpolatedPosition(Entity entity, float tickDelta)" description="Returns smooth entity position at the current partial tick." params={[{ name: "entity", type: "Entity", desc: "Entity." }, { name: "tickDelta", type: "float", desc: "Partial tick." }]} returns={{ type: "Vec3d", desc: "Interpolated position." }} />
+
+<Method name="lerp" signature="double lerp(double start, double end, float tickDelta)" description="Linear interpolation between two values." params={[{ name: "start", type: "double", desc: "Start value." }, { name: "end", type: "double", desc: "End value." }, { name: "tickDelta", type: "float", desc: "Factor (0.0-1.0)." }]} returns={{ type: "double", desc: "Interpolated value." }} />
+
+### Visibility
+
+<Method name="isOnScreen" signature="boolean isOnScreen(double worldX, double worldY, double worldZ, float tickDelta)" description="Whether a world position projects within the visible viewport." params={[{ name: "worldX/Y/Z", type: "double", desc: "World coordinates." }, { name: "tickDelta", type: "float", desc: "Partial tick." }]} returns={{ type: "boolean", desc: "True if visible." }} />
+
+<Method name="isEntityOnScreen" signature="boolean isEntityOnScreen(Entity entity, float tickDelta)" description="Whether an entity is visible on screen." params={[{ name: "entity", type: "Entity", desc: "Entity." }, { name: "tickDelta", type: "float", desc: "Partial tick." }]} returns={{ type: "boolean", desc: "True if visible." }} />
+
+### Example — Custom Name ESP
+
+```javascript
+module.on("renderScreen", (event) => {
+    if (mc.player === null || mc.world === null) return;
+    const tickDelta = client.getTickDelta();
+
+    const entities = world.getLivingEntitiesInRange(64);
+    for (const entity of entities) {
+        const box = esp.getEntityBox2D(entity, tickDelta);
+        if (box === null) continue;
+
+        // Bounding box outline
+        renderer.rectOutline(box.x, box.y, box.z, box.w, 1.0, client.getThemePrimary());
+
+        // Name tag above box
+        const name = entity.getName().getString();
+        const tw = renderer.textWidth("productsans-medium", name, 7);
+        const tagX = box.x + (box.z / 2) - (tw / 2);
+        const tagY = box.y - 14;
+
+        renderer.roundedRect(tagX - 4, tagY - 3, tw + 8, 14, 3, renderer.color(0, 0, 0, 160));
+        renderer.text("productsans-medium", name, tagX, tagY + 7, 7, 0xFFFFFFFF);
+    }
+});
+```
+
+---
+
+## Types
+
+Script-safe wrapper types for Minecraft objects. These provide stable, non-intermediary method names.
+
+### BlockPos
+
+Represents an integer block position. Construct with `new BlockPos(x, y, z)`.
+
+```javascript
+const pos = player.getBlockPosition();
+const below = new BlockPos(pos.getX(), pos.getY() - 1, pos.getZ());
+```
 
 | Method | Returns | Description |
 |---|---|---|
-| `project(x, y, z)` | `double[2]` or `null` | Screen `[x, y]` for the given world position, or `null` if behind the camera |
-| `getEntityScreenPos(entity)` | `double[2]` or `null` | Screen position of an entity's origin |
-| `isOnScreen(x, y, z)` | `boolean` | Whether a world position projects within the visible viewport |
+| `getX()` | `int` | X coordinate |
+| `getY()` | `int` | Y coordinate |
+| `getZ()` | `int` | Z coordinate |
+| `offset(direction)` | `BlockPos` | New BlockPos shifted one block in the given Direction |
 
-```js
-const pos = esp.getEntityScreenPos(target);
-if (pos !== null) {
-    renderer.text("productsans-bold", "target", pos[0], pos[1], 8, 0xFFFFFFFF);
-}
+### Vec2f
+
+Represents a yaw/pitch pair. Construct with `new Vec2f(yaw, pitch)`.
+
+```javascript
+const rot = rotation.getRotation();
+client.print("Yaw: " + rot.getYaw() + " Pitch: " + rot.getPitch());
 ```
+
+| Method | Returns | Description |
+|---|---|---|
+| `getYaw()` | `float` | Yaw in degrees |
+| `getPitch()` | `float` | Pitch in degrees |
+
+### Direction
+
+Represents a cardinal or vertical facing direction. Comes from `world.getAdjacentDirections()`.
+
+| Method | Returns | Description |
+|---|---|---|
+| `getOpposite()` | `Direction` | The opposite direction |
+| `getName()` | `String` | Lowercase name: `"north"`, `"south"`, `"east"`, `"west"`, `"up"`, `"down"` |
+
+### RaytracedRotation
+
+Returned by `rotation.getRotationFromRaycastedBlock()` and `rotation.getRotationFromRaycastedEntity()`. Contains the validated rotation and the hit result needed for block interaction.
+
+```javascript
+const raytrace = rotation.getRotationFromRaycastedBlock(
+    neighbor, side.getOpposite(), rotation.getRotation(), player.getEyePosition()
+);
+if (raytrace === null) return;
+
+rotation.set(raytrace.getYaw(), raytrace.getPitch());
+mc.interactionManager.interactBlock(MAIN_HAND, raytrace.getHitResult());
+```
+
+| Method | Returns | Description |
+|---|---|---|
+| `getYaw()` | `float` | Target yaw |
+| `getPitch()` | `float` | Target pitch |
+| `getHitResult()` | `HitResult` | Pass to `mc.interactionManager.interactBlock()` |
+
+### Hand Constants
+
+| Constant | Description |
+|---|---|
+| `MAIN_HAND` | Player's main hand |
+| `OFF_HAND` | Player's off hand |
