@@ -1,0 +1,97 @@
+---
+title: "What is HWID and How Does It Work?"
+description: "Learn about Hardware ID (HWID) licensing, why clients use it, and how HWID resets work."
+excerpt: "HWID ties your license to your device. Here's what that means and how to manage it."
+category: "Basics"
+date: "2026-04-06"
+author: "Opal Team"
+---
+
+*Last updated: April 2026*
+
+## What is HWID?
+
+HWID stands for **Hardware ID** — a unique identifier generated from your computer's hardware components. Think of it as a fingerprint for your device.
+
+When you activate a client like Opal, your HWID is recorded. From that point on, only that specific device can use your license.
+
+## Why Clients Use HWID
+
+HWID licensing solves a simple problem: **preventing license sharing**.
+
+Without HWID, one person could buy a license and share it with dozens of friends. That's bad for developers who need revenue to maintain and update the client. HWID ensures one license = one device.
+
+### How it's generated
+
+Your HWID is typically derived from a combination of:
+- CPU identifier
+- Motherboard serial number
+- Disk drive serial numbers
+- MAC address
+- Other hardware identifiers
+
+The exact combination varies by client. The goal is a stable identifier that doesn't change unless you significantly modify your hardware.
+
+## When Your HWID Changes
+
+Your HWID can change if you:
+- **Replace major hardware** — new motherboard, CPU, or storage drive
+- **Reinstall your operating system** — some identifiers reset
+- **Switch computers** — obviously a completely different HWID
+- **Run certain system tools** — disk cloning or hardware spoofing
+
+Minor changes (adding RAM, plugging in a USB device) typically don't affect your HWID.
+
+## HWID Resets
+
+Since hardware changes happen — you upgrade your PC, switch to a laptop, reinstall Windows — most clients offer **HWID resets**.
+
+### Opal's HWID Reset Policy
+
+- You can reset your HWID through the **web dashboard** under account settings
+- Resets are available once every **30 days**
+- After resetting, launch Opal on your new device to bind the new HWID
+- If you need an emergency reset before the cooldown, contact support via Discord
+
+### Common Reset Scenarios
+
+| Scenario | Need a reset? |
+|----------|---------------|
+| New computer | Yes |
+| Reinstalled Windows | Maybe (depends on what changed) |
+| New motherboard/CPU | Yes |
+| Added RAM | No |
+| New GPU | Usually no |
+| Dual-booting | Maybe (depends on OS) |
+
+## Tips for Managing HWID
+
+1. **Don't waste resets** — if you're about to do a hardware upgrade, plan the reset for after all changes are done
+2. **Keep your dashboard access** — HWID resets are done through the web dashboard, so make sure your account credentials are saved
+3. **Contact support for edge cases** — if you've hit the 30-day cooldown but have a legitimate need, Discord support can help
+
+## HWID vs Other Licensing Models
+
+| Model | How it works | Pros | Cons |
+|-------|-------------|------|------|
+| **HWID** | Tied to hardware | Simple, no login needed in-game | Hardware changes require reset |
+| **Account-based** | Tied to login | Works on any device | Credentials can be shared/stolen |
+| **IP-based** | Tied to IP address | No setup | VPNs and dynamic IPs break it |
+| **Subscription** | Time-limited | Revenue for devs | Ongoing cost for users |
+
+Opal uses HWID combined with account authentication — you need both a valid license and matching hardware. This provides strong security while keeping the user experience simple.
+
+## Frequently Asked Questions
+
+**Can I use Opal on two computers?**
+No — one license, one device at a time. Use the HWID reset to switch between devices (30-day cooldown).
+
+**Will a Windows update change my HWID?**
+Standard Windows updates don't change HWID. A full reinstall might, depending on your hardware configuration.
+
+**What if my HWID changes unexpectedly?**
+Contact support on Discord. If you have a legitimate reason, the team can help with an early reset.
+
+---
+
+*Manage your HWID on the Opal dashboard — resets available every 30 days.*
