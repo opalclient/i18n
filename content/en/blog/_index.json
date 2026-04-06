@@ -1,0 +1,29 @@
+[
+  {
+    "slug": "why-opal-is-the-best-value-minecraft-client",
+    "title": "Why Opal is the Best Value Minecraft Client in 2026",
+    "description": "At $8.99, Opal offers more features, better platform support, and a hybrid ghost/blatant approach that competitors can't match.",
+    "excerpt": "We built Opal to be the most accessible premium client on the market. Here's what $8.99 gets you.",
+    "date": "2026-04-01",
+    "category": "Product",
+    "author": "Opal Team"
+  },
+  {
+    "slug": "introducing-opal-scripting-engine",
+    "title": "Introducing Opal's GraalVM Scripting Engine",
+    "description": "Write custom JavaScript scripts that interact with Opal's internal APIs. Automate, customize, and extend your client.",
+    "excerpt": "Opal's scripting engine runs on GraalVM — a full JavaScript runtime inside Minecraft. Here's what you can do with it.",
+    "date": "2026-03-15",
+    "category": "Features",
+    "author": "Opal Team"
+  },
+  {
+    "slug": "opal-config-sharing-guide",
+    "title": "How to Use Opal's Config Sharing System",
+    "description": "Browse, publish, and download community configs. Find optimized module presets for any playstyle.",
+    "excerpt": "Our config sharing system lets you discover and share module presets. Here's how to get the most out of it.",
+    "date": "2026-03-01",
+    "category": "Guides",
+    "author": "Opal Team"
+  }
+]
