@@ -1,19 +1,108 @@
 # Event Reference
 
-Events are registered using `module.on(eventName, callback)`.
+Events are registered using `module.on(eventName, callback)`. The callback receives the Java event object as its argument (except lifecycle events which receive no argument).
+
+## Lifecycle Events
 
 | Event Name | Callback Args | Description |
 | :--- | :--- | :--- |
 | `enable` | None | Fired when the module is toggled on. |
 | `disable` | None | Fired when the module is toggled off. |
+
+```javascript
+module.on("enable", () => {
+    client.print("Module enabled!");
+});
+
+module.on("disable", () => {
+    client.print("Module disabled!");
+});
+```
+
+## Game Loop Events
+
+| Event Name | Callback Args | Description |
+| :--- | :--- | :--- |
 | `preGameTick` | `PreGameTickEvent` | Fired at the start of a game tick (20 TPS). Ideal for logic updates. |
 | `renderScreen` | `RenderScreenEvent` | Fired every frame while the 2D HUD is rendering. Use `renderer` here. |
 | `renderWorld` | `RenderWorldEvent` | Fired every frame while the 3D world is rendering. |
+
+```javascript
+// Game logic — runs 20 times per second
+module.on("preGameTick", (event) => {
+    if (mc.player === null) return;
+    
+    const health = player.getHealth();
+    if (health < 5) {
+        notification.warn("Low HP", "Health below 5!");
+    }
+});
+
+// 2D HUD rendering — runs every frame
+module.on("renderScreen", (event) => {
+    renderer.roundedRect(10, 10, 120, 24, 4, renderer.color(0, 0, 0, 180));
+    renderer.text("productsans-bold", "FPS: " + client.getFPS(), 18, 24, 8, 0xFFFFFFFF);
+});
+
+// 3D world rendering — runs every frame
+module.on("renderWorld", (event) => {
+    // Use esp.* for 3D-to-2D projection here
+});
+```
+
+## Movement Events
+
+| Event Name | Callback Args | Description |
+| :--- | :--- | :--- |
+| `preMovementPacket` | `PreMovementPacketEvent` | Fired before the client sends the movement packet (motion update). |
+| `postMovementPacket` | `PostMovementPacketEvent` | Fired after the movement packet is sent. |
 | `preMove` | `PreMoveEvent` | Fired before player movement calculations are applied. |
 | `postMove` | `PostMoveEvent` | Fired after player movement is calculated. |
-| `preMovementPacket`| `PreMovementPacketEvent`| Fired before the client sends the movement packet (Motion update). |
-| `postMovementPacket`| `PostMovementPacketEvent`| Fired after the movement packet is sent. |
+
+```javascript
+// Rotation spoofing — set server-side rotation before packet
+module.on("preMovementPacket", (event) => {
+    rotation.set(targetYaw, targetPitch);
+});
+
+// Speed modification — adjust motion before it's applied
+module.on("preMove", (event) => {
+    if (movement.isMoving()) {
+        movement.setSpeed(0.5);
+    }
+});
+```
+
+## Packet Events
+
+| Event Name | Callback Args | Description |
+| :--- | :--- | :--- |
 | `sendPacket` | `SendPacketEvent` | Fired when a packet is about to be sent to the server. |
 | `receivePacket` | `ReceivePacketEvent` | Fired when a packet is received from the server. |
-| `instantaneousSendPacket`| `InstantaneousSendPacketEvent`| Fired when an immediate packet is sent (no queue). |
-| `instantaneousReceivePacket`| `InstantaneousReceivePacketEvent`| Fired when an immediate packet is received (no queue). |
+| `instantaneousSendPacket` | `InstantaneousSendPacketEvent` | Fired when an immediate packet is sent (no queue). |
+| `instantaneousReceivePacket` | `InstantaneousReceivePacketEvent` | Fired when an immediate packet is received (no queue). |
+
+```javascript
+module.on("sendPacket", (event) => {
+    // event.getPacket() returns the raw Minecraft packet object
+});
+
+module.on("receivePacket", (event) => {
+    // event.getPacket() returns the incoming packet
+});
+```
+
+## Error Handling
+
+If a callback throws an error, the error is printed to chat and the handler is **removed** to prevent spam. Fix the error and `.script reload`.
+
+## Null Safety
+
+Always check `mc.player` and `mc.world` before accessing game state — they're null in menus and loading screens:
+
+```javascript
+module.on("preGameTick", (event) => {
+    if (mc.player === null || mc.world === null) return;
+    // Safe to use player/world proxies here
+});
+```
