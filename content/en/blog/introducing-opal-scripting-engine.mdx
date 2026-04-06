@@ -1,0 +1,116 @@
+---
+title: "Introducing Opal's GraalVM Scripting Engine"
+description: "Write custom JavaScript scripts that interact with Opal's internal APIs. Automate, customize, and extend your client."
+excerpt: "Opal's scripting engine runs on GraalVM — a full JavaScript runtime inside Minecraft. Here's what you can do with it."
+date: "2026-03-15"
+category: "Features"
+author: "Opal Team"
+---
+
+*Last updated: March 2026*
+
+## What is the Scripting Engine?
+
+Opal includes a **GraalVM JavaScript engine** — a full JS runtime embedded inside the Minecraft client. This lets you write custom scripts that interact with Opal's internal APIs at runtime.
+
+This isn't a simple macro recorder or keybind system. It's a real programming environment with access to the client's event system, module configurations, and game state.
+
+## Why GraalVM?
+
+GraalVM is an enterprise-grade polyglot runtime developed by Oracle. We chose it because:
+
+- **Performance:** Near-native execution speed through JIT compilation
+- **JavaScript:** The most widely known programming language — low learning curve
+- **Thread safety:** Built-in bindings between JS and Java that handle concurrency properly
+- **Ecosystem:** Access to standard JavaScript APIs and patterns
+
+## What You Can Do
+
+### Custom Automation
+
+Write scripts that respond to in-game events:
+
+```javascript
+// Auto-respond to certain chat messages
+on('chat', (event) => {
+  if (event.message.includes('1v1?')) {
+    sendChat('/duel accept');
+  }
+});
+```
+
+### Dynamic Module Configuration
+
+Adjust module settings based on game state:
+
+```javascript
+// Increase reach when health is low
+on('tick', () => {
+  const health = player.getHealth();
+  if (health < 8) {
+    modules.get('Reach').setSetting('distance', 3.3);
+  } else {
+    modules.get('Reach').setSetting('distance', 3.1);
+  }
+});
+```
+
+### Custom HUD Elements
+
+Create your own display overlays:
+
+```javascript
+// Display combo counter on screen
+let combo = 0;
+on('attackEntity', () => { combo++; });
+on('damage', () => { combo = 0; });
+on('render2d', (ctx) => {
+  ctx.drawText(`Combo: ${combo}`, 10, 10, 0xFFFFFF);
+});
+```
+
+### Server-Specific Profiles
+
+Auto-switch configurations when joining different servers:
+
+```javascript
+on('serverJoin', (event) => {
+  if (event.ip.includes('pvp.example.com')) {
+    loadConfig('server-bypass');
+  } else {
+    loadConfig('ghost-default');
+  }
+});
+```
+
+## Getting Started
+
+1. **Open the scripts directory** — located in your Opal config folder
+2. **Create a `.js` file** — any name works
+3. **Write your script** — use the API reference in the dashboard docs
+4. **Load it in-game** — scripts are loaded at runtime, no restart needed
+
+The scripting documentation on the dashboard covers the full API reference, including available events, module access, player state, and rendering utilities.
+
+## Safety
+
+Scripts run in a **sandboxed environment** within GraalVM. They can interact with Opal's APIs but cannot access your filesystem, network, or other applications. Your scripts stay local to your client.
+
+## Community Scripts
+
+The scripting community is growing. Check the Discord for shared scripts, examples, and help with writing your own. Popular community scripts include:
+
+- Auto-game scripts for server minigames
+- Custom statistics trackers
+- Advanced combo detection and response
+- Server-specific config switchers
+
+## No Other Client Has This
+
+Opal is the only Minecraft client with a full GraalVM JavaScript runtime. Other clients offer basic macro systems or simple scripting — none provide the depth and flexibility of a real JS engine with thread-safe game bindings.
+
+This is one of the features that sets Opal apart. At $8.99, you get a programmable client that can be customized far beyond its built-in modules.
+
+---
+
+*Explore Opal's scripting engine — check the docs on your dashboard.*
