@@ -1,0 +1,45 @@
+{
+  "title": "Política de privacidad",
+  "effectiveDate": "1 de mayo de 2025",
+  "sections": [
+    {
+      "title": "1. Introducción",
+      "content": "Esta Política de Privacidad describe las prácticas relacionadas con la recopilación, el uso y el intercambio de su información a través del sitio web y los servicios relacionados proporcionados por Opal x Terminus, accesibles en https://opalxterminus.com."
+    },
+    {
+      "title": "2. Información que recopilamos",
+      "content": [
+        "Datos personales: Su nombre de usuario, dirección de correo electrónico, dirección IP, agente de usuario e información de pago si compró un servicio de Opal directamente.",
+        "Datos no personales: Utilizamos cookies para mejorar su experiencia en nuestro sitio web."
+      ]
+    },
+    {
+      "title": "3. Finalidad de la recopilación de datos",
+      "content": "La finalidad principal de la recopilación de datos personales es la identificación y autenticación de usuarios. Esto asegura que podamos otorgarle de forma segura el acceso y la utilización de nuestros servicios."
+    },
+    {
+      "title": "4. Compartición de datos",
+      "content": "Naturalmente, podemos compartir su información con proveedores de servicios de terceros que utilizamos para operar Opal, como procesadores de pagos y proveedores de servicios de correo electrónico. También podemos compartir su información con otros desarrolladores de Opal si se le concede acceso al mencionado software. No compartimos, vendemos, alquilamos ni comercializamos su información personal con ningún otro tercero."
+    },
+    {
+      "title": "5. Seguridad de la información personal",
+      "content": "Tomamos medidas razonables para proteger su información personal contra el acceso, uso o divulgación no autorizados. Sin embargo, ningún método de transmisión a través de Internet o almacenamiento electrónico es 100% seguro, y no podemos garantizar una seguridad absoluta. Podemos revelar su información si la ley nos lo requiere o en respuesta a una orden judicial o citación. También podemos revelar su información para investigar o prevenir fraudes, o para proteger los derechos, propiedad o seguridad de Opal, nuestros desarrolladores u otras personas."
+    },
+    {
+      "title": "6. Retención de datos",
+      "content": "Conservamos su información personal durante el tiempo necesario para proporcionar los servicios que ha solicitado, o para otros fines esenciales como cumplir con obligaciones legales, resolver disputas y hacer cumplir nuestras políticas. Si desea eliminar su cuenta, por favor contáctenos utilizando la dirección de correo electrónico de soporte que figura a continuación."
+    },
+    {
+      "title": "7. Privacidad de los niños",
+      "content": "Estamos comprometidos a proteger la privacidad de los niños. No recopilamos ni solicitamos conscientemente información personal de nadie menor de 13 años. Si tiene menos de 13 años, por favor no intente usar Opal ni enviar ninguna información personal sobre usted mismo."
+    },
+    {
+      "title": "8. Modificaciones de esta política",
+      "content": "De vez en cuando, podemos actualizar esta Política de Privacidad con o sin aviso previo. Le animamos a revisar periódicamente esta política para mantenerse informado."
+    },
+    {
+      "title": "9. Contáctenos",
+      "content": "Si tiene alguna pregunta sobre esta Política de Privacidad, o si desea ejercer alguno de sus derechos relacionados con sus datos personales, no dude en contactarnos en support@mail.opalxterminus.com. Haremos todo lo posible por responder a la mayor brevedad posible."
+    }
+  ]
+}
