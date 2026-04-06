@@ -1,26 +1,55 @@
 <PageHeader
   title="Client Setup"
-  description="Follow these instructions to get Opal running on your machine."
+  description="Get Opal running in minutes with the Opal Launcher."
 />
 
 <SetupGrid>
 <MainContent>
 
-<SetupCard icon="settings" title="Setup Instructions" description="Step-by-step guide to installation.">
+<SetupCard icon="settings" title="Setup Instructions" description="Step-by-step guide to getting started with Opal.">
 <Steps>
 
-<Step number={1} title="Launcher Setup">
-Download [Prism Launcher](https://prismlauncher.org/download/), setup a new [Fabric](https://fabricmc.net/) profile for 1.21.10, and install the Fabric API mod.
+<Step number={1} title="Create Your Account">
+Register on the [dashboard](/dash) and purchase or activate your license. Once activated, set up your integrations:
 
-<Note>Prism is recommended until our custom launcher releases, but not required.</Note>
+- **Discord** — connect your Discord account under Settings → Connections for community features
+- **Spotify** — connect Spotify for in-game music integration (requires creating a Spotify app — follow the instructions on the connections page)
+</Step>
+
+<Step number={2} title="Download the Launcher">
+Head to the [Downloads](/dash) page on your dashboard and download the **Opal Launcher** for your platform (Windows, macOS, or Linux).
+
+<Note>The launcher handles Fabric installation, mod management, and automatic updates for you.</Note>
+</Step>
+
+<Step number={3} title="Configure the Launcher">
+Open the launcher and sign in with your Opal account. From here you can:
+
+- **Settings** — configure your Minecraft installation path, Java version, and memory allocation
+- **Mods** — manage your mod list alongside Opal (Fabric API is required)
+- **Packs** — install and manage mod packs
+</Step>
+
+<Step number={4} title="Launch & Enjoy">
+Press **Launch** and you're in. The launcher handles authentication, updates, and loading automatically. You'll be prompted to sign in with your Opal account on first launch.
+</Step>
+
+</Steps>
+</SetupCard>
+
+<SetupCard icon="settings" title="External Launcher Setup" description="For users who prefer Prism Launcher or another external launcher.">
+<Steps>
+
+<Step number={1} title="Install Fabric">
+Download and install [Fabric Loader](https://fabricmc.net/) for Minecraft 1.21.10 using your preferred launcher.
 </Step>
 
 <Step number={2} title="Download Opal">
-Download Opal from [/dash](/dash) and place it in your mods folder alongside Fabric API.
+Download the Opal Loader from your [dashboard](/dash) and place it in your mods folder alongside [Fabric API](https://modrinth.com/mod/fabric-api/versions?g=1.21.10).
 </Step>
 
 <Step number={3} title="JVM Arguments">
-Add the following JVM arguments to your launch profile (Profile → Edit → Settings → Java Arguments):
+Add the following JVM arguments to your launch profile:
 
 <JvmArgs>
 {`-XX:+DisableAttachMechanism
@@ -34,49 +63,103 @@ Add the following JVM arguments to your launch profile (Profile → Edit → Set
 </Step>
 
 <Step number={4} title="Launch">
-Launch Opal. You will be prompted to sign in with your Opal account.
+Launch Minecraft with your Fabric profile. You will be prompted to sign in with your Opal account.
 </Step>
 
 </Steps>
+
+<Note>If using an external launcher, you are responsible for managing Fabric, mods, and JVM arguments yourself. The Opal Launcher handles all of this automatically.</Note>
 </SetupCard>
 
-<SetupCard icon="help" title="Troubleshooting" description="Common issues and things to check before asking for help." contentClassName="grid gap-6 md:grid-cols-2">
-<ChecklistSection title="Checklist">
+<SetupCard icon="help" title="Troubleshooting" description="Common issues and things to check before opening a support ticket." contentClassName="grid gap-6 md:grid-cols-2">
+<ChecklistSection title="Before Asking for Help">
 <Checklist>
 <ChecklistItem>Followed setup instructions exactly?</ChecklistItem>
-<ChecklistItem>Using Prism Launcher?</ChecklistItem>
-<ChecklistItem>Correct JVM arguments applied?</ChecklistItem>
-<ChecklistItem>System time synced?</ChecklistItem>
-<ChecklistItem>VPN disabled/changed location?</ChecklistItem>
-<ChecklistItem>Connecting from blocked region (HK/CN)?</ChecklistItem>
+<ChecklistItem>Using the Opal Launcher (recommended)?</ChecklistItem>
+<ChecklistItem>Fabric Loader AND Fabric API both installed?</ChecklistItem>
+<ChecklistItem>Correct JVM arguments applied (external launcher only)?</ChecklistItem>
+<ChecklistItem>System time synced correctly?</ChecklistItem>
+<ChecklistItem>VPN disabled or changed location?</ChecklistItem>
+<ChecklistItem>Linked your account on the dashboard first?</ChecklistItem>
 </Checklist>
 </ChecklistSection>
 </SetupCard>
 
-<SetupCard icon="alert" title="Common Errors" description="If you are encountering any of these errors, please check the following solutions.">
+<SetupCard icon="alert" title="Common Errors" description="Known error codes and their solutions.">
 <ErrorList>
 <ErrorItem code="Launch Error (No Code)" title="Missing Java Arguments">
-This indicates that the required JVM arguments are missing from your launcher profile.
+The required JVM arguments are missing from your launcher profile. This only applies to external launchers — the Opal Launcher sets these automatically.
 </ErrorItem>
 
 <ErrorItem code="0x5e" title="Incompatible Launcher">
-This error means the Java arguments are missing. This often happens when using an incompatible launcher.
+The JVM arguments are missing or your launcher doesn't support them. Switch to the Opal Launcher or a supported external launcher like Prism.
 </ErrorItem>
 
-<ErrorItem code="4e-63 / 4f-63" title="Connection Issue">
-These errors typically indicate a weak or unstable internet connection, interference from a P2P VPN, or a blocked connection due to firewall restrictions (such as those found in China and Russia). Using a VPN or proxy with a stealth protocol such as VLESS will fix this issue.
+<ErrorItem code="4e-63 / 4f-63" title="Connection Blocked">
+The client loader can't download Opal. This is common for users in China or Russia where raw TCP traffic is blocked. Fix: connect through a **VLESS proxy** with a stealth protocol. Other users may see this with a weak or unstable internet connection — try a different network.
 </ErrorItem>
 
 <ErrorItem code="G-26" title="HWID Mismatch">
-Usually resetting your HWID fixes this issue. You can request this in a support ticket if needed.
+Your hardware ID doesn't match. Reset your HWID on the [dashboard](/dash) under account settings (available every 30 days), or open a support ticket for an early reset.
+</ErrorItem>
+
+<ErrorItem code="0x31" title="Debugging Software Detected">
+A program like HTTP Debugger or similar traffic inspection tool is installed or running. Close or uninstall it and try again.
+</ErrorItem>
+
+<ErrorItem code="No Error" title="Game Launches but Opal Doesn't Load">
+Two common causes:
+
+**Missing Fabric Loader** — you have the Fabric API mod but not the Fabric Loader itself. You need both. The Opal Launcher handles this automatically.
+
+**Disconnected from socket** — type `.online` in chat. If the command auto-completes but doesn't return a player list, you're disconnected from the server. Check your internet connection or try a VPN.
+</ErrorItem>
+
+<ErrorItem code="Launch Error" title="Stored Credentials Issue">
+If you see a launch error with no code, your stored credentials may be corrupted. Delete credentials containing "wtf.opalxterminus" and "wtf.opal" from:
+
+- **Windows:** Credential Manager (Control Panel → Credential Manager → Windows Credentials)
+- **macOS:** Keychain Access (delete entries containing "wtf.opal")
+- **Linux:** Delete from your keyring (gnome-keyring or equivalent)
+</ErrorItem>
+</ErrorList>
+</SetupCard>
+
+<SetupCard icon="alert" title="Linux-Specific Issues" description="Additional troubleshooting for Linux users.">
+<ErrorList>
+<ErrorItem code="Chat Spam" title="No Dialog Service">
+If you see repeated spam in chat logs or nothing appears after Minecraft-type log output, you need a dialog popup service installed. Search for your distro's equivalent (e.g., zenity, kdialog).
+</ErrorItem>
+
+<ErrorItem code="Crash (wtf.opal.*)" title="Missing Keyring">
+If the client crashes with an error referencing `wtf.opal`, install and start a keyring service:
+
+- Install `gnome-keyring` (or your desktop's equivalent)
+- Ensure the keyring service is running before launching
 </ErrorItem>
 </ErrorList>
 </SetupCard>
 
 <SetupCard icon="faq" title="FAQ" description="Frequently asked questions.">
 <FAQList>
-<FAQItem question="How can I use Opal on older versions servers?">
-By using [ViaFabricPlus](https://modrinth.com/mod/viafabricplus).
+<FAQItem question="How can I use Opal on older version servers?">
+By using [ViaFabricPlus](https://modrinth.com/mod/viafabricplus). This lets you connect to 1.8 and other older version servers while running Minecraft 1.21.10.
+</FAQItem>
+
+<FAQItem question="Do I need the Opal Launcher?">
+No, but it's strongly recommended. The launcher handles Fabric installation, JVM arguments, mod management, and automatic updates. External launchers require manual setup.
+</FAQItem>
+
+<FAQItem question="I have a lot of mods and something is crashing. How do I find the problem?">
+Use a binary search: remove half your mods, test again. If it still crashes, remove half of the remaining. If it works, swap back and repeat. Keep Fabric API and Opal in place — they're required. This narrows down the conflicting mod quickly.
+</FAQItem>
+
+<FAQItem question="I'm in China/Russia and can't connect.">
+Internet censorship in some regions blocks the raw TCP traffic Opal uses. Connect through a VLESS proxy with a stealth protocol to fix this. See the purchase page for more details.
+</FAQItem>
+
+<FAQItem question="How do I reset my HWID?">
+Go to your dashboard → Settings → Account. HWID resets are available once every 30 days. If you need an early reset, open a support ticket on Discord.
 </FAQItem>
 </FAQList>
 </SetupCard>
@@ -112,7 +195,7 @@ By using [ViaFabricPlus](https://modrinth.com/mod/viafabricplus).
 
 <ModSeparator />
 
-<ModSection title="Unsupported Launchers" badge="Not Supported" badgeColor="red" description="The following launchers are not supported. Please use our official launcher or a compatible alternative.">
+<ModSection title="Unsupported Launchers" badge="Not Supported" badgeColor="red" description="These launchers are not compatible with Opal. Use the Opal Launcher or Prism Launcher instead.">
 <ModList>
 <IncompatibleMod>Modrinth</IncompatibleMod>
 <IncompatibleMod>HMCL</IncompatibleMod>
