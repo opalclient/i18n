@@ -1,0 +1,121 @@
+# Publishing Scripts
+
+Share your scripts with the Opal community. Scripts go through a review process before becoming publicly available.
+
+## How It Works
+
+```
+Local script → Upload to cloud → Submit for review → Developer approves → Public on dashboard
+```
+
+1. **Write locally** — create your `.js` file in `scripts/`
+2. **Upload to private cloud** — syncs your script to your account
+3. **Submit for review** — a developer reviews your code
+4. **Approved** — your script appears on the public Scripts page
+5. **Other users download** — they save it to their private collection and sync to their client
+
+## Step 1: Upload Your Script
+
+Once your script is working locally, upload it to your private cloud storage:
+
+```
+.script upload MyScript
+```
+
+This uploads `scripts/MyScript.js` to your account. The script is now accessible from the web dashboard under **Scripts → Private**.
+
+<Callout type="info">
+    Script names must be 1-32 characters. Max file size is 100KB.
+</Callout>
+
+## Step 2: Submit for Review
+
+1. Go to your **dashboard → Scripts → Private**
+2. Find your uploaded script
+3. Click **Submit for Review**
+
+Your script enters the review queue with status **Pending**.
+
+## Step 3: Review Process
+
+A developer will review your script for:
+
+- **Functionality** — does it work as described?
+- **Safety** — no malicious behavior, no credential stealing, no excessive resource usage
+- **Quality** — reasonable code quality, clear purpose
+
+### Outcomes
+
+**Approved** — your script is copied to the public Scripts page. Other users can browse, search, and save it.
+
+**Rejected** — you'll see the rejection reason on your private scripts page. Fix the issues and resubmit.
+
+<Callout type="warning">
+    You can only have one pending review per script at a time. Wait for the current review to complete before resubmitting.
+</Callout>
+
+## Step 4: Users Download Your Script
+
+Once public, your script appears on **Scripts** in the dashboard. Other users can:
+
+- **Browse and search** — find scripts by name or description
+- **Save to private** — clones the script to their private collection
+- **Sync to client** — download to their local `scripts/` folder via:
+
+```
+.script download ScriptName
+```
+
+The download counter on your script increments each time someone saves it. Users can also like/dislike scripts.
+
+## Updating Published Scripts
+
+To update a script that's already public:
+
+1. **Edit locally** — make your changes in `scripts/MyScript.js`
+2. **Re-upload** — `.script upload MyScript` (overwrites the cloud version)
+3. **Update metadata** — on the dashboard, click **Edit** to update the name, description, or version number
+4. **No re-review needed for the private version** — your cloud copy updates immediately
+
+<Callout type="warning">
+    Currently, updating a public script requires re-uploading to private and editing the public version through the dashboard. The public copy is a separate entity from your private one. We're working on making updates flow through more smoothly.
+</Callout>
+
+### Version Numbering
+
+Use semantic versioning (e.g., `1.0.0`, `1.1.0`, `2.0.0`). Update the version field when you make changes so users know there's a new release. The version field is metadata only — there's no automatic enforcement.
+
+## Managing Cloud Scripts
+
+### Dashboard
+
+- **Scripts → Private** — view, edit, delete, and submit your private scripts
+- **Scripts** — browse all public scripts, save to your collection
+
+### In-Game Commands
+
+| Command | Description |
+|---------|-------------|
+| `.script upload <name>` | Upload local script to private cloud |
+| `.script download <name>` | Download private script from cloud |
+| `.script cloud list` | List your cloud scripts |
+| `.script cloud delete <name>` | Delete a cloud script |
+
+## Limits
+
+| Limit | Value |
+|-------|-------|
+| Max file size | 100KB |
+| Name length | 1-32 characters |
+| Description | Max 256 characters |
+| Version string | Max 16 characters |
+| Pending reviews | 1 per script at a time |
+
+## Tips for Getting Approved
+
+1. **Clear metadata** — give your script a descriptive name and description in `registerScript()`
+2. **Test thoroughly** — make sure it works before submitting
+3. **Keep it focused** — one script, one purpose
+4. **No obfuscation** — reviewers need to read your code
+5. **Document settings** — use clear names for your `addBool`, `addNumber`, `addMode` settings
+6. **Version it** — start at `1.0.0` and increment meaningfully
