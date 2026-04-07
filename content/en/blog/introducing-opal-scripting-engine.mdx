@@ -3,8 +3,18 @@ title: "Introducing Opal's GraalVM Scripting Engine"
 description: "Write custom JavaScript scripts that interact with Opal's internal APIs. Automate, customize, and extend your client."
 excerpt: "Opal's scripting engine runs on GraalVM — a full JavaScript runtime inside Minecraft. Here's what you can do with it."
 date: "2026-03-15"
+lastUpdated: "2026-03-15"
 category: "Features"
 author: "Opal Team"
+faqs:
+  - q: "What scripting engine does Opal use?"
+    a: "Opal uses GraalVM, an enterprise-grade JavaScript runtime by Oracle, embedded directly inside Minecraft with thread-safe bindings to the client's APIs."
+  - q: "Can scripts access my files or network?"
+    a: "No. Scripts run in a sandboxed GraalVM environment. They can interact with Opal's APIs but cannot access your filesystem, network, or other applications."
+  - q: "Do I need to restart Minecraft to load scripts?"
+    a: "No. Scripts are loaded at runtime — create a .js file in the scripts directory and it's available immediately without restarting."
+  - q: "Does any other Minecraft client have a scripting engine like this?"
+    a: "No. Opal is the only Minecraft client with a full GraalVM JavaScript runtime. Other clients offer basic macro systems but none provide a real JS engine with thread-safe game bindings."
 ---
 
 *Last updated: March 2026*
