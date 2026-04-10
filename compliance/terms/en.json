@@ -1,48 +1,92 @@
 {
-  "title": "Privacy Policy",
+  "title": "Terms of Service",
   "effectiveDate": "May 1, 2025",
   "sections": [
     {
-      "title": "1. Introduction",
-      "content": "This Privacy Policy outlines the practices regarding the collection, usage, and sharing of your information through the website and related services provided by Opal x Terminus, accessible at https://opalxterminus.com."
+      "title": "1. Acceptance of Terms",
+      "content": "By accessing or using Opal x Terminus and any related software, websites, or services (collectively, the \"Service\"), you agree to be bound by these Terms of Service. If you do not agree to these terms, you must not access or use the Service. Your continued use of the Service constitutes acceptance of any future revisions to these terms."
     },
     {
-      "title": "2. Information We Collect",
+      "title": "2. Description of Service",
+      "content": "The Service is a modification and companion platform for the Minecraft game client. It provides features including, but not limited to, client modifications, configuration sharing, user scripting, and related community tools. The Service is not affiliated with, endorsed by, or sponsored by Mojang Studios or Microsoft Corporation."
+    },
+    {
+      "title": "3. Eligibility",
+      "content": "You must be at least 13 years of age to use the Service. If you are under the age of majority in your jurisdiction, you may only use the Service with the involvement of a parent or legal guardian. By using the Service, you represent and warrant that you meet these eligibility requirements."
+    },
+    {
+      "title": "4. Accounts and Security",
       "content": [
-        "Personal Data: Your username, email address, IP address, user agent, and payment information if you purchased an Opal service directly.",
-        "Non-Personal Data: We use cookies to enhance your experience on our website."
+        "You are responsible for maintaining the confidentiality of your account credentials, including your password, session tokens, and hardware identifiers associated with your account.",
+        "You are responsible for all activity that occurs under your account, whether or not authorized by you.",
+        "You agree to notify us immediately of any unauthorized access or use of your account.",
+        "We reserve the right to suspend or terminate any account that we believe, in our sole discretion, has been compromised or used in violation of these terms."
       ]
     },
     {
-      "title": "3. Purpose of Data Collection",
-      "content": "The primary purpose of collecting personal data is for user identification and authentication. This ensures that we can securely grant you to access and utilize our services."
+      "title": "5. License to Use",
+      "content": "Subject to your compliance with these terms, we grant you a personal, non-exclusive, non-transferable, revocable, and limited license to use the Service for your own personal, non-commercial purposes. This license does not grant you any rights in the Service beyond those expressly set forth in these terms."
     },
     {
-      "title": "4. Data Sharing",
-      "content": "By nature, we may share your information with third-party service providers that we use to operate Opal, such as payment processors and email service providers. We may also share your information with other developers of Opal if you are granted access to said software. We do not share, sell, rent, or trade your personal information with any other third parties."
+      "title": "6. Prohibited Conduct",
+      "content": [
+        "Redistributing, reselling, sublicensing, renting, leasing, or otherwise transferring access to the Service, in whole or in part, without prior written authorization.",
+        "Reverse engineering, decompiling, disassembling, or otherwise attempting to derive the source code of any part of the Service, except to the extent such activity is expressly permitted by applicable law.",
+        "Circumventing, disabling, or otherwise interfering with any security-related, authentication, or anti-tamper features of the Service.",
+        "Using the Service to engage in harassment, hate speech, doxxing, threats, or any activity that is unlawful, harmful, or infringes the rights of others.",
+        "Uploading, distributing, or executing any script, configuration, or content that contains malware, backdoors, or malicious code, or that is designed to harm other users or third parties.",
+        "Using the Service to gain unauthorized access to any server, network, account, or system, or to interfere with the operation of any such system.",
+        "Sharing, leaking, or publishing any part of the Service's proprietary code, assets, or internal systems."
+      ]
     },
     {
-      "title": "5. Security of Personal Information",
-      "content": "We take reasonable measures to protect your personal information from unauthorized access, use, or disclosure. However, no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee absolute security. We may disclose your information if required to do so by law or in response to a court order or subpoena. We may also disclose your information to investigate or prevent fraud, or to protect the rights, property, or safety of Opal, our developers, or others."
+      "title": "7. User-Submitted Content",
+      "content": "The Service may allow you to submit content, including scripts, configurations, forum posts, and other materials (\"User Content\"). You retain ownership of your User Content, but by submitting it you grant us a worldwide, royalty-free, non-exclusive license to host, store, reproduce, modify, display, and distribute that User Content in connection with the operation and promotion of the Service. You represent and warrant that you have all rights necessary to grant this license and that your User Content does not violate any third-party rights or applicable law. We reserve the right to remove any User Content at our sole discretion, with or without notice."
     },
     {
-      "title": "6. Data Retention",
-      "content": "We retain your personal information for as long as necessary to provide the services you have requested, or for other essential purposes such as complying with legal obligations, resolving disputes, and enforcing our policies. If you wish to delete your account, please contact us using the support email listed below."
+      "title": "8. Payments, Subscriptions, and Refunds",
+      "content": [
+        "Certain features of the Service may be offered for a one-time fee or on a subscription basis. All prices are listed at the point of purchase and are subject to change.",
+        "Payments are processed by third-party payment providers. By making a purchase, you agree to the terms of the applicable payment provider.",
+        "All sales are final. Because the Service consists of digital goods delivered electronically, we do not offer refunds, credits, or exchanges except where required by applicable law.",
+        "Initiating a chargeback, payment reversal, or fraudulent dispute without first contacting support may result in the immediate and permanent termination of your account."
+      ]
     },
     {
-      "title": "7. Children's Privacy",
-      "content": "We are committed to protecting the privacy of children. We do not knowingly collect or solicit personal information from anyone under the age of 13. If you are under 13, please do not attempt to use Opal or send any personal information about yourself to us."
+      "title": "9. Intellectual Property",
+      "content": "All rights, title, and interest in and to the Service, including all software, code, designs, trademarks, logos, and content (excluding User Content), are and will remain the exclusive property of the Opal Team and its licensors. These terms do not grant you any right to use any trademark, logo, or trade name of the Opal Team or any third party."
     },
     {
-      "title": "8. Modifications to this Policy",
-      "content": "From time to time, we may update this Privacy Policy with or without notice. We encourage you to periodically review this policy to stay informed about your information."
+      "title": "10. Privacy",
+      "content": "Your use of the Service is also governed by our Privacy Policy, which describes how we collect, use, and protect your information. By using the Service, you consent to the data practices described in the Privacy Policy."
     },
     {
-      "title": "9. Contact Us",
-      "content": "If you have any questions about this Privacy Policy, or if you want to exercise any of your rights related to your personal data, feel free to contact us at support@mail.opalxterminus.com. We will do our best to respond at our earliest convenience."
+      "title": "11. Termination",
+      "content": "We may suspend or terminate your access to the Service at any time, with or without notice, for any reason, including but not limited to any violation of these terms. Upon termination, your right to use the Service will immediately cease. All provisions of these terms that by their nature should survive termination shall survive, including ownership provisions, warranty disclaimers, indemnity, and limitations of liability."
+    },
+    {
+      "title": "12. Disclaimer of Warranties",
+      "content": "The Service is provided on an \"as is\" and \"as available\" basis, without warranties of any kind, either express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, non-infringement, or course of performance. We do not warrant that the Service will be uninterrupted, secure, error-free, or free of harmful components, or that any defects will be corrected."
+    },
+    {
+      "title": "13. Limitation of Liability",
+      "content": "To the fullest extent permitted by applicable law, in no event shall the Opal Team, its contributors, or its affiliates be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation loss of profits, data, goodwill, game accounts, or other intangible losses, arising out of or in connection with your use of or inability to use the Service. Our total cumulative liability to you for any claim arising out of these terms or the Service shall not exceed the amount you have paid us in the twelve (12) months preceding the event giving rise to the claim."
+    },
+    {
+      "title": "14. Indemnification",
+      "content": "You agree to defend, indemnify, and hold harmless the Opal Team and its affiliates from and against any claims, liabilities, damages, losses, and expenses, including reasonable legal fees, arising out of or in any way connected with your access to or use of the Service, your User Content, or your violation of these terms."
+    },
+    {
+      "title": "15. Changes to These Terms",
+      "content": "We may revise these Terms of Service from time to time at our sole discretion. When we do, we will update the effective date above. Material changes may also be communicated through the Service. Your continued use of the Service after any such changes constitutes your acceptance of the revised terms."
+    },
+    {
+      "title": "16. Governing Law",
+      "content": "These terms shall be governed by and construed in accordance with applicable law, without regard to conflict of law principles. Any disputes arising out of or relating to these terms or the Service shall be resolved through good-faith negotiation and, if necessary, in a court of competent jurisdiction."
+    },
+    {
+      "title": "17. Contact",
+      "content": "If you have any questions about these Terms of Service, please contact the Opal Team at support@mail.opalxterminus.com."
     }
-  ]
-}
-
   ]
 }
