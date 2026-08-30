@@ -517,6 +517,7 @@
       "forgotPassword": "نسيت كلمة المرور؟",
       "signIn": "تسجيل الدخول",
       "noAccount": "ليس لديك حساب؟",
+      "sharedAccount": "One account for Opal and Terminus — the same email and password sign you in to both.",
       "signUp": "إنشاء حساب",
       "twoFactor": {
         "title": "كود المصادقة الثنائية",

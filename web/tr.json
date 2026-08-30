@@ -517,6 +517,7 @@
       "forgotPassword": "Şifreni mi unuttun?",
       "signIn": "Giriş yap",
       "noAccount": "Hesabın yok mu?",
+      "sharedAccount": "One account for Opal and Terminus — the same email and password sign you in to both.",
       "signUp": "Kayıt ol",
       "twoFactor": {
         "title": "İki Faktörlü Kod",

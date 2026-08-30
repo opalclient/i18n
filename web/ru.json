@@ -517,6 +517,7 @@
       "forgotPassword": "Забыли пароль?",
       "signIn": "Войти",
       "noAccount": "Нет аккаунта?",
+      "sharedAccount": "One account for Opal and Terminus — the same email and password sign you in to both.",
       "signUp": "Зарегистрироваться",
       "twoFactor": {
         "title": "Код 2FA",

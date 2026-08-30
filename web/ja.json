@@ -517,6 +517,7 @@
       "forgotPassword": "パスワードを忘れましたか?",
       "signIn": "サインイン",
       "noAccount": "アカウントを持っていませんか?",
+      "sharedAccount": "One account for Opal and Terminus — the same email and password sign you in to both.",
       "signUp": "サインアップ",
       "twoFactor": {
         "title": "2段階認証コード",

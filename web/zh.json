@@ -517,6 +517,7 @@
       "forgotPassword": "忘记密码？",
       "signIn": "登录",
       "noAccount": "还没有账户？",
+      "sharedAccount": "One account for Opal and Terminus — the same email and password sign you in to both.",
       "signUp": "注册",
       "twoFactor": {
         "title": "双重认证码",

@@ -517,6 +517,7 @@
       "forgotPassword": "Passwort vergessen?",
       "signIn": "Anmelden",
       "noAccount": "Haben Sie kein Konto?",
+      "sharedAccount": "One account for Opal and Terminus — the same email and password sign you in to both.",
       "signUp": "Konto erstellen",
       "twoFactor": {
         "title": "2FA Code",
